@@ -14,6 +14,7 @@ import PastEventsGrid from '~/components/PastEventsGrid.vue';
 export default {
   name: 'HomePage',
   components: { AppHeader, PastEventsGrid },
+  // test
   head() {
     return {
       title: 'Bitcamp',
