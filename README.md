@@ -1,13 +1,42 @@
-# Bitcamp's Sleeper Site for 2024
+# Nuxt 3 Minimal Starter
 
-## Design
-<img width="1512" alt="Screenshot 2023-09-05 at 2 33 47 PM" src="https://github.com/bitcamp/bitcamp-sleeper-site-2024/assets/63428949/d4d03e14-a554-4785-adbb-b61848dd7e6e">
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-Thank you to our design team (Eunice) for the page that you see above! 
+## Setup
 
-Made with Vue.js, Nuxt, and ❤️.
+Make sure to install the dependencies:
 
-## Features
-- Animate sun on scroll
-- Darken background as sun sets
-- Awesome look
+```bash
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
+```
+
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
