@@ -1,19 +1,33 @@
 <template>
   <div class="wrapper" ref="el">
     <div class="app-container">
-      <AppHeader />
-      <PastEventsGrid />
+      <LandingPage />
+      <Break />
+      <TracksPage />
+      <Break />
+      <CampGamesPage />
+      <Break />
+      <TeamPage />
+      <Break />
+      <FAQSponsorPage />
+      <Break />
+      <FooterContent />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import AppHeader from '~/components/AppHeader.vue';
-import PastEventsGrid from '~/components/PastEventsGrid.vue';
+import Break from '../components/Break.vue';
+import CampGamesPage from '../components/CampGamesPage.vue';
+import FAQSponsorPage from '../components/FAQSponsorPage.vue';
+import FooterContent from "../components/FooterContent.vue"
+import LandingPage from '../components/LandingPage.vue';
+import TeamPage from '../components/TeamPage.vue';
+import TracksPage from '../components/TracksPage.vue';
 
 export default {
   name: 'HomePage',
-  components: { AppHeader, PastEventsGrid },
+  components: { FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
   head() {
     return {
       title: 'Bitcamp',
@@ -122,6 +136,5 @@ export default {
   min-height: 100vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: hsla(227, 42%, 13%, 1);
 }
 </style>

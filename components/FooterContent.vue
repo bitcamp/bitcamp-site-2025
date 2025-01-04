@@ -1,16 +1,6 @@
 <template>
-  <div class="event-text-only">
-    <div class="event-theme">Explore The Past Ten Years of Bitcamp</div>
-  </div>
   <div class="gradient">
     <div class="section-container">
-      <div class="past-grid-container">
-        <div class="past-grid">
-          <template v-for="year in years" :key="year">
-            <EventCard :year="year" :theme="themes[year]" />
-          </template>
-        </div>
-      </div>
       <div class="footer">
         <div class="floatie-text past-grid-container">
           <div class="links">
@@ -30,25 +20,11 @@
 </template>
 
 <script lang="ts">
-import EventCard from '~/components/EventCard.vue';
 export default {
   name: 'PastEventsGrid',
-  components: { EventCard },
+  components: {},
   data() {
     return {
-      years: [2024, 2023, 2022, 2021, 2019, 2018, 2017, 2016, 2015, 2014] as const,
-      themes: {
-        2024: 'All About the Journey',
-        2023: 'Find Your Frontier',
-        2022: 'Adventure Awaits',
-        2021: 'Explore Together',
-        2019: 'Build With Purpose',
-        2018: 'Mark Your Trail',
-        2017: 'Build Together',
-        2016: 'Explore New Grounds',
-        2015: 'Imagine Tomorrow',
-        2014: 'A New Hackathon',
-      },
     };
   },
 };
@@ -59,36 +35,6 @@ export default {
   width: 125px;
   height: 125px;
   transform: rotate(4.426deg);
-}
-
-.event-text {
-  position: absolute;
-  bottom: 0;
-  padding: 0px 0px 20px 25px;
-}
-
-.event-text-only {
-  margin: 0px 60px 0 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.event-text h3 {
-  font-family: Aleo;
-  font-weight: 700;
-  font-size: 4rem;
-}
-
-.event-theme {
-  font-family: Aleo;
-  font-weight: bold;
-  font-size: 4rem;
-
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
 }
 
 .footer {
@@ -132,7 +78,7 @@ export default {
 }
 
 .gradient {
-  background: linear-gradient(180deg, #13192E 0%, #393D64 60.5%, #656080 81.83%, #BD9290 95.5%);
+  background-color: #560000;
 }
 
 .section-container {
