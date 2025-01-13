@@ -81,7 +81,7 @@
         "../node_modules/@nuxt/schema"
       ],
       "nuxt": [
-        "../node_modules/nuxt"
+        "../node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@8.57.1_ioredis@5.4.2_m_mw6er23d6axnml6fish6njxl7e/node_modules/nuxt"
       ],
       "vite/client": [
         "../node_modules/vite/client"
@@ -120,7 +120,7 @@
         "./*"
       ],
       "#internal/nuxt/paths": [
-        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "../node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@8.57.1_ioredis@5.4.2_m_mw6er23d6axnml6fish6njxl7e/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "#vue-router": [
         "./vue-router"
@@ -142,7 +142,7 @@
   ],
   "exclude": [
     "../node_modules",
-    "../node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@8.57.1_ioredis@5.4.2_m_mw6er23d6axnml6fish6njxl7e/node_modules/nuxt/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../dist"

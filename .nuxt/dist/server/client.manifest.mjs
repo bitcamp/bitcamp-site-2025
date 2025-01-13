@@ -7,12 +7,12 @@ export default {
     "module": true,
     "resourceType": "script"
   },
-  "/Users/sai_pranav_theerthala/Desktop/School/Clubs/Bitcamp/Bitcamp_2025/bitcamp-site-2025/node_modules/nuxt/dist/app/entry.js": {
+  "C:/Users/leejo/OneDrive/Documents/GitHub/bitcamp-site-2025/node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@8.57.1_ioredis@5.4.2_m_mw6er23d6axnml6fish6njxl7e/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/sai_pranav_theerthala/Desktop/School/Clubs/Bitcamp/Bitcamp_2025/bitcamp-site-2025/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/Users/leejo/OneDrive/Documents/GitHub/bitcamp-site-2025/node_modules/.pnpm/nuxt@3.15.1_@parcel+watcher@2.5.0_@types+node@22.10.5_db0@0.2.1_eslint@8.57.1_ioredis@5.4.2_m_mw6er23d6axnml6fish6njxl7e/node_modules/nuxt/dist/app/entry.js"
   }
 }

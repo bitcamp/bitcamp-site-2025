@@ -1,5 +1,34 @@
 <template>
-    <div class="gradient">Campfire Games Page
+    <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+    <div class="cfg-top">
+        <img
+            class="marshie-skeleton"
+            src="assets\img\images\Marshieskeleton 1.svg"
+            alt="Marshie skeleton"
+        />
+        <img
+            class="cfg-title"
+            src="assets\img\images\CAMPFIRE GAMES.svg"
+            alt="Campfire games title"
+        />
+        <img
+            class="dino-skeleton"
+            src="assets\img\images\Dinoskeleton 2.svg"
+            alt="Dino skeleton"
+        />
+    </div>
+    <div class="gradient">
+        <div class="cfg-box"> 
+            <p id="cfg-blurb">
+                The Campfire Games are a way to learn, grow, and build with the Bitcamp Community. 
+                At the start of this year's event, you will join one of three teams based on your personality and 
+                interests—joining forces with hackers from around the world! By winning unique challenges, attending workshops, 
+                and participating in mini-events, you'll rack up points for your team. At the end of Bitcamp, members of the 
+                winning team will receive limited edition Bitcamp swag. 
+                <br><br>
+                Find your community, develop your team identity, and collaborate on something bigger than yourself: #UnearthYourPotential
+            </p>
+        </div>
     </div>
 </template>
 
@@ -10,9 +39,122 @@ export default {
 </script>
 
 <style scoped>
-.gradient {
-    background-color: #ff5b01;
+.cfg-title {
     display: flex;
-    height: 40rem;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
+
+.dino-skeleton {
+    width: 23%;
+    margin-left: auto;
+    visibility:visible;
+}
+
+.marshie-skeleton {
+    width: 26%;
+    margin-bottom:-5%;
+    visibility:visible;
+}
+
+.cfg-box {
+    background-color: #500001;
+    border-color: #F98F37;
+    border-style:solid;
+    border-width: 17px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#cfg-blurb {
+    font-family: 'Aleo'; font-size: 24px;
+    text-align:center;
+    padding:4% 8%;
+}
+
+.cfg-top {
+    padding-top: 5%;
+    background-color: #701407;
+    display: flex;
+}
+.gradient {
+    background-image: url(assets/img/images/Brownandpurplecaves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    #cfg-blurb {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #cfg-blurb {
+        font-size: 20px;
+    }
+    .cfg-box {
+        border-width: 15px;
+        border-radius: 50px;
+        width:80%;
+    }   
+    .dino-skeleton {
+        visibility:visible;
+    }
+
+    .marshie-skeleton {
+        visibility:visible;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #cfg-blurb {
+        padding:5% 10%;
+    }
+    .cfg-box {
+        border-width: 12px;
+        border-radius: 50px;
+    }   
+    .dino-skeleton {
+        visibility:hidden;
+        width:0px;
+    }
+
+    .marshie-skeleton {
+        visibility:hidden;
+        width:0px;
+    }
+    .cfg-title {
+        padding: inherit;
+        margin:auto;
+        width: 70%;
+        display: block;
+        margin-bottom:5%;
+    }
+    .cfg-top {
+        background-image: linear-gradient(180deg, #B94923 0%, #942F15 50%, #701407 100%);
+        display: block;
+    }
+    .gradient {
+        background-image: url(assets/img/images/Browncavestretched.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cfg-title {
+        width: 90%;
+    }
+    #cfg-blurb {
+        font-size: 16px;
+        padding:10% 13%;
+    }
+}
+
+
 </style>
