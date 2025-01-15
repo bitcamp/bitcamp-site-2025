@@ -71,7 +71,8 @@ export default {
 }
 
 #cfg-blurb {
-    font-family: 'Aleo'; font-size: 24px;
+    font-family: 'Aleo'; 
+    font-size: 24px;
     text-align:center;
     padding:4% 8%;
 }
