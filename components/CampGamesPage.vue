@@ -16,25 +16,26 @@ export default {
 <style scoped>
 .gradient {
     background-color: #ff5b01;
-    background-image: url('../assets/img/images/Brownandpurplecaves.svg');  
-    background-size: cover;  
+    background-image: url('../assets/img/images/Brownandpurplecaves.svg');
+    background-size: cover;
     background-position: center -50px;
     display: flex;
-    height: 170vh; 
+    height: 170vh;
     flex-direction: column;
     position: relative;
 }
 
 .image-container {
+    width: 80%;
     position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .dinos {
-    width: 110rem;
+    display: flex;
+    width: 100%;
     /* transform: translate(-50%, -50%); */
 }
 
@@ -46,11 +47,11 @@ export default {
         background-position: center center;
         height: 380rem
     }
-    
+
     /* Adjust dino positions for smaller screens */
     .overlay-blue-dino {
         top: 55%;
-        left: 50%;            
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -83,11 +84,10 @@ export default {
     }
 
     .overlay-red-blurb-mv {
-        position: absolute;           
+        position: absolute;
         top: 23%;
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
 </style>
