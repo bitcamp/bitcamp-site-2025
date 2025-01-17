@@ -1,5 +1,5 @@
 <template>
-    <div class="gradient">Campfire Games Page
+    <div class="gradient">Campfire Games
     </div>
 </template>
 
