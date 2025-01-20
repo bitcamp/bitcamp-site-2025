@@ -4,6 +4,13 @@
         <div class="image-container">
             <img src="../assets/img/images/marshies.svg" class="dinos">
         </div>
+        <div class="vertical-img-container">
+            <img src="../assets/img/images/dinos-vertical.svg" class="dinos-vertical">
+            <img src="../assets/img/images/red-blurb.svg" class="red-blurb">
+            <img src="../assets/img/images/blue-blurb.svg" class="blue-blurb">
+            <img src="../assets/img/images/green-blurb.svg" class="green-blurb">
+        </div>
+            
     </div>
 </template>
 
@@ -27,67 +34,87 @@ export default {
 
 .image-container {
     width: 80%;
-    position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 27%;
+    margin-left: 10%;
 }
 
 .dinos {
     display: flex;
     width: 100%;
-    /* transform: translate(-50%, -50%); */
+}
+.vertical-img-container {
+    visibility: hidden;
+}
+.dinos-vertical {
+    visibility: hidden;
+}
+.blue-blurb {
+    visibility: hidden;
+}
+.red-blurb {
+    visibility: hidden;
+}
+.green-blurb {
+    visibility: hidden;
 }
 
-/* For mobile screens */
 @media screen and (max-width: 768px) {
     .gradient {
         background-image: url('../assets/img/images/Browncavestretched.svg');
         background-size: cover;
         background-position: center center;
-        height: 380rem
+        display: flex;
+        flex-direction: column;
+        height: 170vh;
     }
-
-    /* Adjust dino positions for smaller screens */
-    .overlay-blue-dino {
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .overlay-red-dino {
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .overlay-green-dino {
-        top: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .overlay-blue-blurb {
-        top: 48%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .overlay-green-blurb {
-        top: 74%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .overlay-red-blurb {
+    .image-container {
         visibility: hidden;
     }
-
-    .overlay-red-blurb-mv {
+    .dinos {
+        visibility: hidden;
+    }
+    .vertical-img-container {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 27%;
+        margin-left: 10%;
+        visibility: visible;
+        max-height: 120vh;
+        display: flex;
+    }
+    .dinos-vertical {
+        visibility: visible;
+        /* display: flex; */
+        width: 100%;
+        max-height: 120vh;   
+        object-fit: contain;
+    }
+    .red-blurb {
+        visibility: visible;
         position: absolute;
-        top: 23%;
-        left: 50%;
-        transform: translateX(-50%);
+        /* display: flex; */
+        width: 90%;
+        top: 6%;
+        left: 5%;
+    }
+    .blue-blurb {
+        visibility: visible;
+        /* display: flex; */
+        position: absolute;
+        width: 90%;
+        top: 33%;
+        left: 5%
+    }
+    .green-blurb {
+        visibility: visible;
+        position: absolute;
+        /* display: flex; */
+        width: 90%;
+        top: 63%;
+        left: 5%;
     }
 }
 </style>
