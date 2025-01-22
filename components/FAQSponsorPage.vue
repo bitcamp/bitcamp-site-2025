@@ -310,7 +310,7 @@
     font-style: normal;
     font-weight: 500;
     border-radius: 15px;
-    padding: 4vw;
+    padding: 3vw;
     overflow-y: visible;
     aspect-ratio: 10;
     background-size: cover !important;
@@ -348,7 +348,7 @@
   .Question {
     display: block;
     padding-bottom: 2px;
-    padding-left: 10px;
+    // padding-left: 10px;
     padding-right: 10px;
     border-radius: 12px;
     font-family: 'Avenir';
@@ -365,8 +365,8 @@
   .Question_Button {
     &::after {
       content: url(../assets/img/icons/plus.svg);
-      min-width: 4rem;
-      min-height: 4rem;
+      min-width: 3rem;
+      min-height: 3rem;
       max-width: 10rem;
       max-height: 10rem;
     //   width: 4rem;
@@ -409,7 +409,7 @@
     overflow: hidden;
     height: 6vw;
     width: 100%;
-    padding: 3rem 12px 2.7rem;
+    padding: 3.5rem 12px 3.3rem;
     cursor: pointer;
   }
   
@@ -447,12 +447,25 @@
     .Question_Button {
       height: 10vw;
       padding: 2rem 12px 1.75rem;
+      &::after{
+        min-width: 4rem;
+        min-height: 4rem;
+      }
     }
   
     .Answer,
     .Answer_Opened {
       height: 100%;
       font-size: 2.5vw;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .Question_Button {
+      &::after {
+        min-width: 4rem;
+        min-height: 4rem;
+      }
     }
   }
   
