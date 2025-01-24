@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.4.1",
+    "bitcamp-sleeper-site-2024": "file:",
     "bootstrap": "^5.3.3",
     "vue-gtag-next": "^1.14.0"
   }
