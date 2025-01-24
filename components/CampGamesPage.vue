@@ -28,7 +28,7 @@
     position: absolute;
     width: 75%;
     justify-self: center;
-    margin-top: 28%;
+    margin-top: 31%;
 }
 
 .dinos {
