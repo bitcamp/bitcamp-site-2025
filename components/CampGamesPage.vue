@@ -5,10 +5,7 @@
             <img src="../assets/img/images/marshies.svg" class="dinos">
         </div>
         <div class="vertical-img-container">
-            <img src="../assets/img/images/dinos-vertical.svg" class="dinos-vertical">
-            <img src="../assets/img/images/red-blurb.svg" class="red-blurb">
-            <img src="../assets/img/images/blue-blurb.svg" class="blue-blurb">
-            <img src="../assets/img/images/green-blurb.svg" class="green-blurb">
+            <img src="../assets/img/images/marshies-mv.svg" class="dinos-vertical">
         </div>
             
     </div>
@@ -47,18 +44,6 @@ export default {
 .vertical-img-container {
     visibility: hidden;
 }
-.dinos-vertical {
-    visibility: hidden;
-}
-.blue-blurb {
-    visibility: hidden;
-}
-.red-blurb {
-    visibility: hidden;
-}
-.green-blurb {
-    visibility: hidden;
-}
 
 @media screen and (max-width: 768px) {
     .gradient {
@@ -82,39 +67,11 @@ export default {
         margin-top: 27%;
         margin-left: 10%;
         visibility: visible;
-        max-height: 120vh;
-        display: flex;
     }
     .dinos-vertical {
-        visibility: visible;
-        /* display: flex; */
+        display: flex;
         width: 100%;
-        max-height: 120vh;   
-        object-fit: contain;
-    }
-    .red-blurb {
-        visibility: visible;
-        position: absolute;
-        /* display: flex; */
-        width: 90%;
-        top: 6%;
-        left: 5%;
-    }
-    .blue-blurb {
-        visibility: visible;
-        /* display: flex; */
-        position: absolute;
-        width: 90%;
-        top: 33%;
-        left: 5%
-    }
-    .green-blurb {
-        visibility: visible;
-        position: absolute;
-        /* display: flex; */
-        width: 90%;
-        top: 63%;
-        left: 5%;
+        max-height: 120vh;
     }
 }
 </style>
