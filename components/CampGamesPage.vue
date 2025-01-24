@@ -7,15 +7,9 @@
         <div class="vertical-img-container">
             <img src="../assets/img/images/marshies-mv.svg" class="dinos-vertical">
         </div>
-            
+
     </div>
 </template>
-
-<script lang="ts">
-export default {
-    name: 'PastEventsGrid',
-};
-</script>
 
 <style scoped>
 .gradient {
@@ -24,11 +18,11 @@ export default {
     background-size: cover;
     background-position: center -50px;
     display: flex;
+    height: 40rem;
     height: 170vh;
     flex-direction: column;
     position: relative;
 }
-
 .image-container {
     width: 80%;
     justify-content: center;
@@ -36,7 +30,6 @@ export default {
     margin-top: 27%;
     margin-left: 10%;
 }
-
 .dinos {
     display: flex;
     width: 100%;
@@ -44,7 +37,6 @@ export default {
 .vertical-img-container {
     visibility: hidden;
 }
-
 @media screen and (max-width: 768px) {
     .gradient {
         background-image: url('../assets/img/images/Browncavestretched.svg');
@@ -55,7 +47,7 @@ export default {
         height: 170vh;
     }
     .image-container {
-        visibility: hidden;
+        display: none;
     }
     .dinos {
         visibility: hidden;
