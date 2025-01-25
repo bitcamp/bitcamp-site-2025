@@ -43,11 +43,12 @@
 @media screen and (max-width: 768px) {
     .gradient {
         background-image: url('../assets/img/images/Browncavestretched.svg');
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         display: flex;
         flex-direction: column;
-        height: 170vh;
+        height:100%;
+        width:100%;
     }
 
     .image-container {
