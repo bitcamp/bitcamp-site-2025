@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper" ref="el">
     <div class="app-container">
+      <Navbar />
+      <Break />
       <LandingPage />
       <Break />
       <TracksPage />
@@ -17,17 +19,20 @@
 </template>
 
 <script lang="ts">
-import Break from '../components/Break.vue';
-import CampGamesPage from '../components/CampGamesPage.vue';
-import FAQSponsorPage from '../components/FAQSponsorPage.vue';
-import FooterContent from "../components/FooterContent.vue"
-import LandingPage from '../components/LandingPage.vue';
-import TeamPage from '../components/TeamPage.vue';
-import TracksPage from '../components/TracksPage.vue';
+import Navbar from '~/components/Navbar.vue';
+// import Break from '../components/Break.vue';
+// import CampGamesPage from '../components/CampGamesPage.vue';
+// import FAQSponsorPage from '../components/FAQSponsorPage.vue';
+// import FooterContent from "../components/FooterContent.vue"
+// import LandingPage from '../components/LandingPage.vue';
+// import TeamPage from '../components/TeamPage.vue';
+// import TracksPage from '../components/TracksPage.vue';
 
 export default {
   name: 'HomePage',
-  components: { FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+  // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+  components: { Navbar },
+
   head() {
     return {
       title: 'Bitcamp',
