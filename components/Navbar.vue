@@ -160,8 +160,8 @@
   
   #logo-container {
     position: absolute;
-    margin-top: 2px;
     margin-left: 5%;
+    margin-top: 1px;
     height: 100%;
     width: 10%;
   }
