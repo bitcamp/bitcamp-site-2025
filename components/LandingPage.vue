@@ -81,14 +81,17 @@ export default {
 }
 
 @media (max-width: 796px) {
-    /* .register-button {
-        font-size: 1.2rem;
-        padding: 0.8rem 2.5rem;
-    } */
+    .register-button {
+        font-size: clamp(2rem, 5vw, 6rem);;
+        padding: calc(2vw + 1rem) calc(7vw + 1rem);
+        border-radius: 3.5rem;
+        background-color: #F2C042;
+        letter-spacing: 0.3rem;
+    }
 
     .content-wrapper {
         width: 100%;
-        top: 113vw;
+        margin-top: 60vw;
     }
 }
 </style>

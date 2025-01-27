@@ -27,9 +27,7 @@ export default {
     border-bottom-right-radius: 0;
     float: right;
     color: white;
-    padding: 3rem;
-    padding-left: 5rem;
-    padding-right: 6rem;
+    padding: 3rem 5rem 3rem 6rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     font-family: Aleo;
     box-sizing: border-box;
@@ -49,10 +47,9 @@ export default {
         text-align: center;
         width: 100%;
         margin: 0;
-        padding: 6rem;
-        padding-left: 13rem;
-        padding-right: 13rem;
+        padding: 6rem calc(5rem + 5vw);
         max-width: none;
+        font-size: 2.7rem;
     }
 }
 </style>
