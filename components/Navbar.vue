@@ -345,7 +345,9 @@
       display: flex;
       max-width: 100%;
       width: 70px;
+      min-width: 70px;
       height: 70px;
+      min-height: 70px;
     }
   
     .nav-pages {
