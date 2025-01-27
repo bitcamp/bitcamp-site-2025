@@ -2,7 +2,9 @@
     <div class="gradient">
         <img src="../assets/img/images/DinolandingGroup.svg" class="dino-background" alt="landing image" />
         <div class="content-wrapper">
-            <button class="register-button">REGISTER</button>
+            <div class="button-wrapper">
+                <button class="register-button">REGISTER</button>
+            </div>
             <ExplorationMessage />
         </div>
     </div>
@@ -40,7 +42,12 @@ export default {
     color: white;
     z-index: 1;
     right: 0;
-    top: 67rem;
+    top: 45vw;
+    width: 48%
+}
+
+.button-wrapper {
+    width: 100%;
 }
 
 .dino-background {
@@ -63,7 +70,7 @@ export default {
     font-weight: bold;
     padding: 1.5rem 5rem;
     letter-spacing: 0.2rem;
-    margin-bottom: 14rem;
+    margin-bottom: 10%;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -74,14 +81,14 @@ export default {
 }
 
 @media (max-width: 796px) {
-    .gradient {
-        height: 50rem;
-        background-size: cover;
-    }
-
-    .register-button {
+    /* .register-button {
         font-size: 1.2rem;
         padding: 0.8rem 2.5rem;
+    } */
+
+    .content-wrapper {
+        width: 100%;
+        top: 113vw;
     }
 }
 </style>
