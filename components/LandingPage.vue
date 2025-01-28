@@ -42,12 +42,13 @@ export default {
     color: white;
     z-index: 1;
     right: 0;
-    top: 45vw;
+    top: 44vw;
     width: 48%
 }
 
 .button-wrapper {
     width: 100%;
+    padding: 0 0 3vw 3.2vw;
 }
 
 .dino-background {
@@ -63,12 +64,12 @@ export default {
 .register-button {
     background-color: #FFB353;
     border: none;
-    border-radius: 2.0rem;
+    border-radius: 2.5rem;
     color: #4F2525;
     font-family: Aleo, sans-serif;
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: bold;
-    padding: 1.5rem 5rem;
+    padding: 1.7rem 4.8rem;
     letter-spacing: 0.2rem;
     margin-bottom: 10%;
     cursor: pointer;
@@ -82,16 +83,28 @@ export default {
 
 @media (max-width: 796px) {
     .register-button {
-        font-size: clamp(2rem, 5vw, 6rem);;
-        padding: calc(2vw + 1rem) calc(7vw + 1rem);
-        border-radius: 3.5rem;
+        font-size: clamp(2rem, 7.5vw, 8rem);;
+        padding: calc(2.8vw + 1rem) calc(7.8vw + 2rem);
+        border-radius: 4.5rem;
         background-color: #F2C042;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.4rem;
     }
 
     .content-wrapper {
         width: 100%;
-        margin-top: 60vw;
+        margin-top: clamp(39rem, 63.1vw, 53rem);
+    }
+
+    .button-wrapper {
+        padding: 0;
+        width: auto;
     }
 }
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        margin-top: clamp(38rem, 62vw, 53rem);
+    }
+}
+
 </style>
