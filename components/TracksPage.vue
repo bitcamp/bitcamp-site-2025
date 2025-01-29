@@ -146,18 +146,31 @@ export default {
   color: #f8f8f8;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .tracks-container {
     padding: 1.5rem;
+    border-radius: 0; 
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+    background: url("/assets/img/images/track-bg.svg");
+    background-size: cover;
+  }
+
+  .gradient {
+    padding: 0; 
   }
 
   .title {
     width: 80%;
-    max-width: unset;
+    max-width: none;
   }
 
   .tracks-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
   }
 
   .foot {
@@ -166,16 +179,6 @@ export default {
 
   .track-card {
     max-width: 100%;
-  }
-  .tracks-container {
-    border-radius: unset;
-    border: unset;
-    box-shadow: unset;
-    max-width: 100%;
-  }
-
-  .gradient {
-    padding: unset;
   }
 }
 </style>
