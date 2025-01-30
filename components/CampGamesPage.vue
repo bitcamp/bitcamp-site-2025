@@ -94,11 +94,30 @@ export default {
     background-image: url(assets/img/images/marshies-new.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250vh;
+    height: 370vh;
     background-position: center;
 }
 
-
+@media screen and (max-width: 1790px) {
+    .gradient {
+        height: 320vh;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .gradient {
+        height: 320vh;
+    }
+}
+@media  screen and (max-width: 1510px) {
+    .gradient {
+        height: 300vh;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .gradient {
+        height: 250vh;
+    }
+}
 @media screen and (max-width: 1200px) {
     #cfg-blurb {
         font-size: 20px;
