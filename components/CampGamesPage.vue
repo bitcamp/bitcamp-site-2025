@@ -49,25 +49,23 @@ export default {
     margin-right: auto;
     margin-left: auto;
 }
-
 .dino-skeleton {
     width: 23%;
     margin-left: auto;
-    visibility:visible;
+    visibility: visible;
 }
-
 .marshie-skeleton {
     width: 26%;
-    margin-bottom:-5%;
-    visibility:visible;
+    margin-bottom: -5%;
+    visibility: visible;
 }
 .dinos-vertical {
-    display:none;
+    display: none;
 }
 .cfg-box {
     background-color: #500001;
     border-color: #F98F37;
-    border-style:solid;
+    border-style: solid;
     border-width: 17px;
     border-radius: 50px;
     display: block;
@@ -75,13 +73,12 @@ export default {
     margin-right: auto;
     width: 70%;
 }
-
 #cfg-blurb {
-    font-family: 'Aleo'; font-size: 24px;
+    font-family: 'Aleo'; 
+    font-size: 24px;
     text-align:center;
     padding:4% 8%;
 }
-
 .cfg-top {
     padding-top: 5%;
     background-color: #701407;
@@ -94,89 +91,36 @@ export default {
     background-image: url(assets/img/images/marshies-new.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 370vh;
+    height: 400vh;
     background-position: center;
 }
-
-@media screen and (max-width: 1790px) {
+/* @media screen and (width:1024px) and (height: 1366px) {
     .gradient {
-        height: 320vh;
+        height: 200vh;
     }
-}
-@media screen and (max-width: 1550px) {
-    .gradient {
-        height: 320vh;
-    }
-}
-@media  screen and (max-width: 1510px) {
-    .gradient {
-        height: 300vh;
-    }
-}
-@media screen and (max-width: 1450px) {
-    .gradient {
-        height: 250vh;
-    }
-}
-@media screen and (max-width: 1200px) {
-    #cfg-blurb {
-        font-size: 20px;
-    }
-    .gradient {
-        height: 225vh;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .gradient {
-        height: 215vh;
-    }
-}
-
+} */
 @media screen and (max-width: 1024px) {
     #cfg-blurb {
-        font-size: 20px;
-    }
-    .cfg-box {
-        border-width: 15px;
-        border-radius: 50px;
-        width:80%;
-    }   
-    .dino-skeleton {
-        visibility:visible;
-    }
-
-    .marshie-skeleton {
-        visibility:visible;
-    }
-    .gradient {
-        height: 195vh;
-    }
-    
-}
-
-@media screen and (max-width: 950px) {
-    #cfg-blurb {
-        padding:5% 10%;
+        padding: 5% 10%;
     }
     .cfg-box {
         border-width: 12px;
         border-radius: 50px;
-    }   
-    .dino-skeleton {
-        visibility:hidden;
-        width:0px;
     }
-
+    .dino-skeleton {
+        visibility: hidden;
+        width: 0px;
+    }
     .marshie-skeleton {
-        visibility:hidden;
-        width:0px;
+        visibility: hidden;
+        width: 0px;
     }
     .cfg-title {
         padding: inherit;
-        margin:auto;
+        margin: auto;
         width: 70%;
         display: block;
-        margin-bottom:5%;
+        margin-bottom: 5%;
     }
     .cfg-top {
         background-image: linear-gradient(180deg, #B94923 0%, #942F15 50%, #701407 100%);
@@ -188,38 +132,17 @@ export default {
         background-size: cover;
         background-position: center;
         height: auto;
-        
     }
     .vertical-img-container {
         padding-top: 10%;
         padding-bottom: 40%;
         display: flex;
         margin-left: 15%;
-
     }
     .dinos-vertical {
         display: flex;
         width: 90%;
         visibility: visible;
-        margin-bottom: 30%; 
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .cfg-title {
-        width: 90%;
-    }
-    #cfg-blurb {
-        font-size: 16px;
-        padding:10% 13%;
-    }
-    .dinos-vertical {
-        margin-bottom: 60%;
-    }
-}
-@media screen and (max-width: 250px) {
-    .dinos-vertical {
-        margin-bottom: 60%;
     }
 }
 </style>
