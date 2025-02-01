@@ -1,6 +1,6 @@
 <template>
     <div class="gradient">
-        <img src="../assets/img/images/DinolandingGroup.svg" class="dino-background" alt="landing image" />
+        <img src="../assets/img/images/DinolandingGroup.svg" class="dino-background " alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
                 <button class="register-button">REGISTER</button>
@@ -27,9 +27,23 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200rem;
+    min-height: 135vw;
+    height: auto;
     overflow: hidden;
-    background-color: #ff5b01;
+    background-color: #5E5700;
+    background-size: cover;
+}
+
+.dino-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
 }
 
 .content-wrapper {
@@ -49,16 +63,6 @@ export default {
 .button-wrapper {
     width: 100%;
     padding: 0 0 3vw 3.2vw;
-}
-
-.dino-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    object-fit: cover;
 }
 
 .register-button {
@@ -83,7 +87,8 @@ export default {
 
 @media (max-width: 796px) {
     .register-button {
-        font-size: clamp(2rem, 7.5vw, 8rem);;
+        font-size: clamp(2rem, 7.5vw, 8rem);
+        ;
         padding: calc(2.8vw + 1rem) calc(7.8vw + 2rem);
         border-radius: 4.5rem;
         background-color: #F2C042;
@@ -92,18 +97,29 @@ export default {
 
     .content-wrapper {
         width: 100%;
-        margin-top: clamp(39rem, 63.1vw, 53rem);
+        margin-top: calc(300% - 232.5vw);
     }
 
     .button-wrapper {
         padding: 0;
         width: auto;
     }
+
+    .gradient {
+        background-color: #C4B500;
+        padding-bottom: calc(339% - 239vw);
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .content-wrapper {
-        margin-top: clamp(38rem, 62vw, 53rem);
+        width: 100%;
+        margin-top: calc(298% - 232.5vw);
+    }
+
+    .gradient {
+        background-color: #C4B500;
+        padding-bottom: calc(341% - 240vw);
     }
 }
 

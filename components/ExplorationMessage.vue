@@ -47,9 +47,10 @@ export default {
         text-align: center;
         width: 100%;
         margin: 0;
-        padding: 6rem calc(5rem + 5vw);
+        padding: 10vw;
         max-width: none;
-        font-size: 2.7rem;
+        font-size: 5vw;
+        box-shadow: none;
     }
 }
 </style>
