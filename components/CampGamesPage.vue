@@ -145,4 +145,24 @@ export default {
         visibility: visible;
     }
 }
+@media screen and (max-width: 700px) {
+    #cfg-blurb {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 515px) {
+    #cfg-blurb {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #cfg-blurb {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 270px) {
+    #cfg-blurb {
+        font-size: 10px;
+    }
+}
 </style>
