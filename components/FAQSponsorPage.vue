@@ -135,7 +135,7 @@
     {
       question: 'What have people made in the past at Bitcamp?',
       answer:
-        'From Augmented Reality Human-Scale Pong to a research paper detailing vulnerabilities in Google\'s reCaptcha system, the projects at Bitcamp span across all categories and interests. You can check out all of the amazing submissions at the <a class="link" href="https://bitcamp2023.devpost.com/project-gallery"> Bitcamp 2023 Devpost!</a>', //ADD LINK
+        'From Augmented Reality Human-Scale Pong to a research paper detailing vulnerabilities in Google\'s reCaptcha system, the projects at Bitcamp span across all categories and interests. You can check out all of the amazing submissions at the <a class="link" href="https://bitcamp2024.devpost.com/project-gallery"> Bitcamp 2024 Devpost!</a>', //ADD LINK
     },
     {
       question: 'What hardware is provided at Bitcamp?',
@@ -144,7 +144,7 @@
     },
     {
       question: "Does Bitcamp provide travel accomodations or reimbursement?",
-      answer: 'We are currently gauging interest for a new travel reimbursement application! If you’re interested, please fill out <a class="link" href="https://forms.gle/nX2NuooijXav2qgr6">this form</a>. In addition, feel free to contact <a class="link" href="mailto:travel@bit.camp">travel@bit.camp</a> with any additional questions!',
+      answer: "This year, Bitcamp will be providing reimbursements to travelers through an application that will be reviewed on a rolling basis. We will consider reimbursing public transportation, rideshare, and inter-state transportation (train/plane). However, it is important to note that due to a limited budget, public transportation is encouraged and the most likely to be fully reimbursed! You will hear of your reimbursement decision within a matter of 1-2 days after you fill out our designated application. Depending on the state of our budget, we may also open a counter during the weekend of Bitcamp providing reimbursement on a case-by-case basis.",
     },
     {
       question: 'Do I need to wear a mask?',
@@ -183,18 +183,21 @@
 
   .top-cliffs {
     width: 100%;
+    height: 100%;
     margin-bottom: -10px;;
   }
 
   .bottom-cliffs {
     width: 100%;
-    margin-bottom: -10px;;
+    height: 100%;
+    margin-bottom: -10px;
+    margin-top: -1px;
   }
 
   .content-wrapper {
     background-image: url("~/assets/img/faq/faq_sponsor_background_middle.png");
     background-size: 100% 100%;
-    border-top: 2px solid #000;    
+    border-top: 1px solid #000;    
     // idk why corder-top fixes the gradient continuity but it does
     // width: 100vw;
     // height: 100%;
@@ -348,14 +351,14 @@
   .Question {
     display: block;
     padding-bottom: 2px;
-    // padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px;
+    // padding-right: -30px;
     border-radius: 12px;
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     color: white;
-    width: 100%;
+    width: 96%;
     background-color: transparent;
     border-bottom-style: solid rgba(151, 29, 29, 0.2);
   
@@ -402,14 +405,14 @@
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     line-height: 1.3;
     font-weight: bold;
     color: white;
     overflow: hidden;
     height: 6vw;
     width: 100%;
-    padding: 3.5rem 12px 3.3rem;
+    padding: 3rem 12px 2.8rem;
     cursor: pointer;
   }
   
@@ -458,6 +461,18 @@
       height: 100%;
       font-size: 2.5vw;
     }
+
+    // .top-cliffs {
+    //   width: 200%;
+    // }
+
+    // .bottom-cliffs {
+    //   width: 200%;
+    // }
+    
+    // .content-wrapper {
+    //   background-size: 200% 100%;
+    // }
   }
 
   @media (min-width: 1200px) {
