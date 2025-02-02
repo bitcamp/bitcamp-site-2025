@@ -4,7 +4,7 @@
       <div class="title-container">
         <img src="@/assets/img/icons/foot-1.svg" class="foot" />
         <img src="@/assets/img/icons/foot-2.svg" class="foot" />
-        <img src="@/assets/img/icons/track-title.svg" class="title" />
+        <img src="@/assets/img/icons/TRACKS (1).svg" class="title" />
         <img src="@/assets/img/icons/foot-3.svg" class="foot" />
         <img src="@/assets/img/icons/foot-4.svg" class="foot" />
       </div>
@@ -12,8 +12,10 @@
       <div class="tracks-grid">
         <div v-for="track in tracks" :key="track.title" class="track-card">
           <img :src="track.icon" :alt="track.title" class="track-icon" />
-          <h2 class="track-title">{{ track.title }}</h2>
-          <p class="track-description">{{ track.description }}</p>
+          <div class="track-text-cont">
+            <h2 class="track-title">{{ track.title }}</h2>
+            <p class="track-description">{{ track.description }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -123,8 +125,19 @@ export default {
 }
 
 .track-card {
+  display: flex;
   max-width: 36.5rem;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-text-cont {
+  display: flex;
+  max-width: 36.5rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .track-icon {
@@ -146,7 +159,7 @@ export default {
   color: #f8f8f8;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .tracks-container {
     padding: 1.5rem;
     border-radius: 0; 
@@ -161,16 +174,36 @@ export default {
     padding: 0; 
   }
 
+  .track-icon {
+  width: 30vw;
+  max-width: 200px;
+  height: auto;
+}
+
+  .track-text-cont {
+    display: flex;
+    width: 30rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .title {
-    width: 80%;
-    max-width: none;
+    width: 355px;
+    height: 172px;
+    top: 1052px;
+    left: 37px;
+    gap: 0px;
+    opacity: 0px;
+
+
   }
 
   .tracks-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 23rem;
   }
 
   .foot {
@@ -178,7 +211,9 @@ export default {
   }
 
   .track-card {
+    flex-direction: row;
     max-width: 100%;
+    gap: 2rem;
   }
 }
 </style>
