@@ -10,8 +10,16 @@
       </div>
 
       <div class="tracks-grid">
-        <div v-for="track in tracks" :key="track.title" class="track-card">
+        <div
+          v-for="(track, index) in tracks"
+          :key="track.title"
+          class="track-card"
+          :class="index % 2 === 0 ? 'left' : 'right'"
+        >
+          <!-- Track Icon -->
           <img :src="track.icon" :alt="track.title" class="track-icon" />
+
+          <!-- Track Text Container -->
           <div class="track-text-cont">
             <h2 class="track-title">{{ track.title }}</h2>
             <p class="track-description">{{ track.description }}</p>
@@ -159,10 +167,19 @@ export default {
   color: #f8f8f8;
 }
 
+.track-card.left {
+  flex-direction: row;
+}
+
+.track-card.right {
+  flex-direction: row-reverse;
+  text-align: right; /* Adjust text alignment for the right side */
+}
+
 @media (max-width: 1000px) {
   .tracks-container {
     padding: 1.5rem;
-    border-radius: 0; 
+    border-radius: 0;
     border: none;
     box-shadow: none;
     max-width: 100%;
@@ -171,14 +188,14 @@ export default {
   }
 
   .gradient {
-    padding: 0; 
+    padding: 0;
   }
 
   .track-icon {
-  width: 30vw;
-  max-width: 200px;
-  height: auto;
-}
+    width: 30vw;
+    max-width: 200px;
+    height: auto;
+  }
 
   .track-text-cont {
     display: flex;
@@ -195,8 +212,6 @@ export default {
     left: 37px;
     gap: 0px;
     opacity: 0px;
-
-
   }
 
   .tracks-grid {
