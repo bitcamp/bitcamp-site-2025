@@ -16,6 +16,30 @@
           class="track-card"
           :class="index % 2 === 0 ? 'left' : 'right'"
         >
+          <!-- Conditional Rendering for Specific Track -->
+          <div v-if="track.title === 'Cybersecurity Track'" class="special-icon">
+          <!-- Special Track Icon -->
+          <img :src="track.icon" :alt="track.title" class="special-icon" />
+          </div>
+          <div v-else class="default-icon-div">
+          <!-- Default Track Icon -->
+          <img :src="track.icon" :alt="track.title" class="track-icon" />
+          </div>
+
+          <!-- Track Text Container -->
+          <div class="track-text-cont">
+            <h2 class="track-title">{{ track.title }}</h2>
+            <p class="track-description">{{ track.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="tracks-grid1">
+        <div
+          v-for="(track, index) in tracks1"
+          :key="track.title"
+          class="track-card"
+          :class="index % 2 === 0 ? 'right' : 'left'"
+        >
           <!-- Track Icon -->
           <img :src="track.icon" :alt="track.title" class="track-icon" />
 
@@ -60,6 +84,8 @@ export default {
             "One of our newest tracks! Explore the realm of cybersecurity and understand various aspects of the field through interactive workshops that include discussions of web vulnerabilities, real-world applications of combating security weaknesses, and ethical decision-making.",
           icon: cyberLogo,
         },
+      ],
+      tracks1: [
         {
           title: "Quantum Track",
           description:
@@ -127,9 +153,19 @@ export default {
   display: flex;
   gap: 8rem;
   width: 100%;
+  padding-bottom: 8rem;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tracks-grid1 {
+  display: flex;
+  gap: 8rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .track-card {
@@ -146,9 +182,16 @@ export default {
   text-align: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .track-icon {
+  width: 9vw;
+  max-width: 200px;
+  height: auto;
+}
+
+.special-icon {
   width: 9vw;
   max-width: 200px;
   height: auto;
@@ -168,22 +211,22 @@ export default {
 }
 
 .track-card.left {
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .track-card.right {
-  flex-direction: row-reverse;
+  flex-direction: column;
   text-align: right; /* Adjust text alignment for the right side */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 766px) {
   .tracks-container {
-    padding: 1.5rem;
+    padding: 5vh 3vw;
     border-radius: 0;
     border: none;
     box-shadow: none;
     max-width: 100%;
-    background: url("/assets/img/images/track-bg.svg");
+    background: url("/assets/img/images/Group 20.svg");
     background-size: cover;
   }
 
@@ -192,34 +235,54 @@ export default {
   }
 
   .track-icon {
-    width: 30vw;
-    max-width: 200px;
+    width: 29vw;
+    max-width: 29vw;
     height: auto;
   }
 
+  .special-icon {
+    width: 29vw;
+    max-width: 29vw;
+    height: auto;
+    padding-bottom: 4vw;
+}
+
   .track-text-cont {
     display: flex;
-    width: 30rem;
+    width: 80vw;
     text-align: center;
     flex-direction: column;
     align-items: center;
   }
 
   .title {
-    width: 355px;
-    height: 172px;
-    top: 1052px;
-    left: 37px;
-    gap: 0px;
-    opacity: 0px;
+    width: 80vw; /* Dynamically scale title width */
+    height: auto; /* Let height adjust automatically */
+    padding-top: 11vh;
   }
+
+  .track-card.left {
+  flex-direction: row;
+}
+
+  .track-card.right {
+  flex-direction: row-reverse;
+  text-align: right; /* Adjust text alignment for the right side */
+}
 
   .tracks-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 23rem;
+    gap: 19vh;
+    padding-bottom: 14vh;
   }
+
+  .tracks-grid1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24vh; /* Adjust gap for smaller grids */
+    padding-bottom: 8vh;
+}
 
   .foot {
     display: none;
@@ -227,8 +290,23 @@ export default {
 
   .track-card {
     flex-direction: row;
+    align-content: center;
     max-width: 100%;
-    gap: 2rem;
+    height: 21vh;
+    justify-items: left;
+    gap: 1vw;
+  }
+
+  .track-title {
+    font-size: 1.7em; /* Scale font size dynamically */
+    max-width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .track-description {
+    font-size: 1em; /* Scale font size for readability */
+    max-width: 85%;
   }
 }
 </style>
