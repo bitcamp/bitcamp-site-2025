@@ -114,7 +114,7 @@ export default {
 
 .tracks-container {
   text-align: center;
-  max-width: 85%;
+  max-width: 90vw;
   width: 100%;
   background: #b94923;
   border-radius: 75px;
@@ -138,13 +138,13 @@ export default {
 
 .title {
   width: 30vw;
-  max-width: 600px;
-  margin-bottom: 2rem;
+  max-width: 90vw;
+  margin-bottom: 2vw;
 }
 
 .foot {
   width: 8vw;
-  max-width: 200px;
+  max-width: 8vw;
   height: auto;
   padding: 2vw;
 }
@@ -187,13 +187,13 @@ export default {
 
 .track-icon {
   width: 9vw;
-  max-width: 200px;
+  max-width: 9vw;
   height: auto;
 }
 
 .special-icon {
   width: 9vw;
-  max-width: 200px;
+  max-width: 9vw;
   height: auto;
 }
 
@@ -225,9 +225,11 @@ export default {
     border-radius: 0;
     border: none;
     box-shadow: none;
-    max-width: 100%;
+    max-width: 95vw;
     background: url("/assets/img/images/Group 20.svg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .gradient {
@@ -244,7 +246,7 @@ export default {
     width: 29vw;
     max-width: 29vw;
     height: auto;
-    padding-bottom: 4vw;
+    padding-bottom: 6vw;
 }
 
   .track-text-cont {
@@ -258,7 +260,7 @@ export default {
   .title {
     width: 80vw; /* Dynamically scale title width */
     height: auto; /* Let height adjust automatically */
-    padding-top: 11vh;
+    padding-top: 40vw;
   }
 
   .track-card.left {
@@ -273,14 +275,15 @@ export default {
   .tracks-grid {
     display: flex;
     flex-direction: column;
-    gap: 19vh;
-    padding-bottom: 14vh;
+    gap: 36vw;
+    padding-bottom: 14vw;
   }
 
   .tracks-grid1 {
     display: flex;
     flex-direction: column;
     gap: 24vh; /* Adjust gap for smaller grids */
+    padding-top: 10vw;
     padding-bottom: 8vh;
 }
 
@@ -292,7 +295,7 @@ export default {
     flex-direction: row;
     align-content: center;
     max-width: 100%;
-    height: 21vh;
+    height: auto;
     justify-items: left;
     gap: 1vw;
   }
