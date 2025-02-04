@@ -91,7 +91,7 @@ export default {
     background-image: url(assets/img/images/marshies-new.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400vh;
+    height: 176vh;
     background-position: center;
 }
 /* @media screen and (width:1024px) and (height: 1366px) {
