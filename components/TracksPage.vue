@@ -20,9 +20,7 @@
           </div>
         </div>
         <img :src="tracks[0].feet" :alt="tracks[0].title" class="feet" />
-      </div>
 
-      <div class="tracks-grid">
         <div class="track-card right">
           <!-- Track Text Container -->
           <img :src="tracks[1].icon" :alt="tracks[1].title" class="track-icon" />
@@ -33,9 +31,7 @@
           </div>
         </div>
         <img :src="tracks[1].feet" :alt="tracks[1].title" class="feet" />
-      </div>
 
-      <div class="tracks-grid">
         <div class="track-card left">
           <!-- Track Text Container -->
           <img :src="tracks[2].icon" :alt="tracks[2].title" class="track-icon" />
@@ -46,9 +42,7 @@
           </div>
         </div>
         <img :src="tracks[2].feet" :alt="tracks[2].title" class="feet" />
-      </div>
 
-      <div class="tracks-grid">
         <div class="track-card right">
           <!-- Track Text Container -->
           <img :src="tracks[3].icon" :alt="tracks[3].title" class="track-icon" />
@@ -59,9 +53,7 @@
           </div>
         </div>
         <img :src="tracks[3].feet" :alt="tracks[3].title" class="feet" />
-      </div>
 
-      <div class="tracks-grid">
         <div class="track-card left">
           <!-- Track Text Container -->
           <img :src="tracks[4].icon" :alt="tracks[4].title" class="track-icon" />
