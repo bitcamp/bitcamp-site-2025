@@ -292,7 +292,7 @@ export default {
     flex-direction: row;
     align-content: center;
     width: 80vw;
-    height: 40vh;
+    height: auto;
     justify-items: left;
 
   }
@@ -330,7 +330,7 @@ export default {
     flex-direction: row;
     align-content: center;
     max-width: 95%;
-    height: 37vh;
+    height: auto;
     justify-items: left;
     gap: 1vw;
   }
