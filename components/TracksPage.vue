@@ -10,7 +10,7 @@
       </div>
 
       <div class="tracks-grid">
-        <div class="track-card">
+        <div class="track-card left">
           <!-- Track Text Container -->
           <img :src="tracks[0].icon" :alt="tracks[0].title" class="track-icon" />
 
@@ -23,7 +23,7 @@
       </div>
 
       <div class="tracks-grid">
-        <div class="track-card">
+        <div class="track-card right">
           <!-- Track Text Container -->
           <img :src="tracks[1].icon" :alt="tracks[1].title" class="track-icon" />
 
@@ -36,7 +36,7 @@
       </div>
 
       <div class="tracks-grid">
-        <div class="track-card">
+        <div class="track-card left">
           <!-- Track Text Container -->
           <img :src="tracks[2].icon" :alt="tracks[2].title" class="track-icon" />
 
@@ -49,7 +49,7 @@
       </div>
 
       <div class="tracks-grid">
-        <div class="track-card">
+        <div class="track-card right">
           <!-- Track Text Container -->
           <img :src="tracks[3].icon" :alt="tracks[3].title" class="track-icon" />
 
@@ -62,7 +62,7 @@
       </div>
 
       <div class="tracks-grid">
-        <div class="track-card">
+        <div class="track-card left">
           <!-- Track Text Container -->
           <img :src="tracks[4].icon" :alt="tracks[4].title" class="track-icon" />
 
@@ -292,7 +292,7 @@ export default {
     flex-direction: row;
     align-content: center;
     width: 80vw;
-    height: auto;
+    height: 40vh;
     justify-items: left;
 
   }
@@ -356,6 +356,7 @@ export default {
     width: 80vw;
     height: auto;
     justify-items: left;
+
 
   }
 }
