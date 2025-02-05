@@ -132,13 +132,14 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 0.8vw;
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
   flex-wrap: wrap;
 }
 
 .title {
   width: 30vw;
   max-width: 90vw;
+  height: 10vw;
   margin-bottom: 2vw;
 }
 
@@ -237,14 +238,14 @@ export default {
   }
 
   .track-icon {
-    width: 29vw;
-    max-width: 29vw;
+    width: 28vw;
+    max-width: 28vw;
     height: auto;
   }
 
   .special-icon {
-    width: 29vw;
-    max-width: 29vw;
+    width: 28vw;
+    max-width: 28vw;
     height: auto;
     padding-bottom: 6vw;
 }
@@ -260,8 +261,17 @@ export default {
   .title {
     width: 80vw; /* Dynamically scale title width */
     height: auto; /* Let height adjust automatically */
-    padding-top: 40vw;
+    padding-top: 32vw;
   }
+
+  .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+  margin-bottom: 2vw;
+  flex-wrap: wrap;
+}
 
   .track-card.left {
   flex-direction: row;
