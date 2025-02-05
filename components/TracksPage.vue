@@ -10,43 +10,65 @@
       </div>
 
       <div class="tracks-grid">
-        <div
-          v-for="(track, index) in tracks"
-          :key="track.title"
-          class="track-card"
-          :class="index % 2 === 0 ? 'left' : 'right'"
-        >
-          <!-- Conditional Rendering for Specific Track -->
-          <div v-if="track.title === 'Cybersecurity Track'" class="special-icon">
-          <!-- Special Track Icon -->
-          <img :src="track.icon" :alt="track.title" class="special-icon" />
-          </div>
-          <div v-else class="default-icon-div">
-          <!-- Default Track Icon -->
-          <img :src="track.icon" :alt="track.title" class="track-icon" />
-          </div>
-
+        <div class="track-card">
           <!-- Track Text Container -->
+          <img :src="tracks[0].icon" :alt="tracks[0].title" class="track-icon" />
+
           <div class="track-text-cont">
-            <h2 class="track-title">{{ track.title }}</h2>
-            <p class="track-description">{{ track.description }}</p>
+            <h2 class="track-title">{{ tracks[0].title }}</h2>
+            <p class="track-description">{{ tracks[0].description }}</p>
           </div>
         </div>
+        <img :src="tracks[0].feet" :alt="tracks[0].title" class="feet" />
       </div>
-      <div class="tracks-grid1">
-        <div
-          v-for="(track, index) in tracks1"
-          :key="track.title"
-          class="track-card"
-          :class="index % 2 === 0 ? 'right' : 'left'"
-        >
-          <!-- Track Icon -->
-          <img :src="track.icon" :alt="track.title" class="track-icon" />
 
+      <div class="tracks-grid">
+        <div class="track-card">
           <!-- Track Text Container -->
+          <img :src="tracks[1].icon" :alt="tracks[1].title" class="track-icon" />
+
           <div class="track-text-cont">
-            <h2 class="track-title">{{ track.title }}</h2>
-            <p class="track-description">{{ track.description }}</p>
+            <h2 class="track-title">{{ tracks[1].title }}</h2>
+            <p class="track-description">{{ tracks[1].description }}</p>
+          </div>
+        </div>
+        <img :src="tracks[1].feet" :alt="tracks[1].title" class="feet" />
+      </div>
+
+      <div class="tracks-grid">
+        <div class="track-card">
+          <!-- Track Text Container -->
+          <img :src="tracks[2].icon" :alt="tracks[2].title" class="track-icon" />
+
+          <div class="track-text-cont">
+            <h2 class="track-title">{{ tracks[2].title }}</h2>
+            <p class="track-description">{{ tracks[2].description }}</p>
+          </div>
+        </div>
+        <img :src="tracks[2].feet" :alt="tracks[2].title" class="feet" />
+      </div>
+
+      <div class="tracks-grid">
+        <div class="track-card">
+          <!-- Track Text Container -->
+          <img :src="tracks[3].icon" :alt="tracks[3].title" class="track-icon" />
+
+          <div class="track-text-cont">
+            <h2 class="track-title">{{ tracks[3].title }}</h2>
+            <p class="track-description">{{ tracks[3].description }}</p>
+          </div>
+        </div>
+        <img :src="tracks[3].feet" :alt="tracks[3].title" class="feet" />
+      </div>
+
+      <div class="tracks-grid">
+        <div class="track-card">
+          <!-- Track Text Container -->
+          <img :src="tracks[4].icon" :alt="tracks[4].title" class="track-icon" />
+
+          <div class="track-text-cont">
+            <h2 class="track-title">{{ tracks[4].title }}</h2>
+            <p class="track-description">{{ tracks[4].description }}</p>
           </div>
         </div>
       </div>
@@ -60,6 +82,10 @@ import appDevLogo from "@/assets/img/icons/appdev-logo.svg";
 import cyberLogo from "@/assets/img/icons/cyber-logo.svg";
 import generalLogo from "@/assets/img/icons/general-logo.svg";
 import mlLogo from "@/assets/img/icons/ml-logo.svg";
+import generalFeet from "@/assets/img/icons/generalFeet.svg";
+import mlFeet from "@/assets/img/icons/mlFeet.svg";
+import quantamFeet from "@/assets/img/icons/quantamFeet.svg";
+import cyberFeet from "@/assets/img/icons/cyberFeet.svg";
 
 export default {
   name: "TracksPage",
@@ -71,26 +97,28 @@ export default {
           description:
             "For any and all hackers! Build the perfect hack using hardware, software, and collaboration with other tech-lovers, design thinkers, and students - all skill and experience levels are welcome!",
           icon: generalLogo,
+          feet: generalFeet,
         },
         {
           title: "Machine Learning",
           description:
             "If you're wowed by recent AI advancements like ChatGPT, this is the track for you! We will expand upon specialized learning experiences by hosting a series of workshops with content related to building and hosting ML models, unsupervised learning, and discussions of recent AI advancements.",
           icon: mlLogo,
+          feet: mlFeet,
         },
         {
           title: "Cybersecurity Track",
           description:
             "One of our newest tracks! Explore the realm of cybersecurity and understand various aspects of the field through interactive workshops that include discussions of web vulnerabilities, real-world applications of combating security weaknesses, and ethical decision-making.",
           icon: cyberLogo,
+          feet: cyberFeet,
         },
-      ],
-      tracks1: [
         {
           title: "Quantum Track",
           description:
             "Hackers will delve into the field of quantum computing with exclusive mentors, sponsors, and workshops! Hackers will use their knowledge of Python and other computing skills on educational and interactive Quantum Track activities. If you've been a previous participant of the Quantum track, there will be new, challenging prompts for you to tackle!",
           icon: quantumLogo,
+          feet: quantamFeet,
         },
         {
           title: "App Development Track",
@@ -220,6 +248,10 @@ export default {
   text-align: right; /* Adjust text alignment for the right side */
 }
 
+.feet {
+  display: none;
+}
+
 @media (max-width: 766px) {
   .tracks-container {
     padding: 5vh 3vw;
@@ -227,7 +259,7 @@ export default {
     border: none;
     box-shadow: none;
     max-width: 95vw;
-    background: url("/assets/img/images/Group 20.svg");
+    background: url("/assets/img/icons/Rectangle 121 (1).svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,6 +296,16 @@ export default {
     padding-top: 32vw;
   }
 
+  .feet {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+    justify-items: left;
+    gap: 1vw;
+  }
+
   .title-container {
   display: flex;
   align-items: center;
@@ -285,17 +327,8 @@ export default {
   .tracks-grid {
     display: flex;
     flex-direction: column;
-    gap: 36vw;
-    padding-bottom: 14vw;
+    padding-bottom: 25vw;
   }
-
-  .tracks-grid1 {
-    display: flex;
-    flex-direction: column;
-    gap: 24vh; /* Adjust gap for smaller grids */
-    padding-top: 10vw;
-    padding-bottom: 8vh;
-}
 
   .foot {
     display: none;
@@ -304,8 +337,8 @@ export default {
   .track-card {
     flex-direction: row;
     align-content: center;
-    max-width: 100%;
-    height: auto;
+    max-width: 95%;
+    height: 43vw;
     justify-items: left;
     gap: 1vw;
   }
