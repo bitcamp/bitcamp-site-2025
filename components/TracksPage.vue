@@ -188,15 +188,6 @@ export default {
   align-items: center;
 }
 
-.tracks-grid1 {
-  display: flex;
-  gap: 8rem;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .track-card {
   display: flex;
   max-width: 36.5rem;
@@ -300,10 +291,10 @@ export default {
     display: flex;
     flex-direction: row;
     align-content: center;
-    max-width: 100%;
+    width: 80vw;
     height: auto;
     justify-items: left;
-    gap: 1vw;
+
   }
 
   .title-container {
@@ -325,9 +316,10 @@ export default {
 }
 
   .tracks-grid {
+    gap: 0rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 25vw;
+    padding-bottom: 0;
   }
 
   .foot {
@@ -338,7 +330,7 @@ export default {
     flex-direction: row;
     align-content: center;
     max-width: 95%;
-    height: 43vw;
+    height: 37vh;
     justify-items: left;
     gap: 1vw;
   }
@@ -355,4 +347,18 @@ export default {
     max-width: 85%;
   }
 }
+
+@media (max-width: 400px) {
+  .feet {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 80vw;
+    height: auto;
+    justify-items: left;
+
+  }
+}
+
+
 </style>
