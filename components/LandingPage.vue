@@ -1,5 +1,6 @@
 <template>
     <div class="gradient">
+        <img src="../assets/img/images/flattened_landing.svg" class="dino-background " alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
                 <button class="register-button">REGISTER</button>
@@ -55,7 +56,7 @@ export default {
     color: white;
     z-index: 1;
     right: 0;
-    top: 44vw;
+    top: 50vw;
     width: 48%
 }
 
