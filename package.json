@@ -29,6 +29,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "tslib": "^2.5.1",
-    "vue-gtag-next": "^1.14.0"
+    "vue-gtag-next": "^1.14.0",
+    "vue-router": "^4.5.0"
   }
 }
