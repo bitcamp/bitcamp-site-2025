@@ -3,13 +3,6 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   ssr: false,
 
-  nitro: {
-    preset: 'netlify',
-    externals: {
-      inline: ['@vue/compiler-dom']
-    },
-  },
-
   typescript: {
     strict: true,
   },

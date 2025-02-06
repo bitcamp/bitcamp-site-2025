@@ -1,0 +1,11 @@
+# Netlify redirects
+/roster                 https://drive.google.com/drive/u/2/folders/1s7qMXgS7U_w4r9a-1stJr28FNdTuy2q9    302
+/contact-collection     https://docs.google.com/spreadsheets/d/1Trm41fPxQ_SBUbGt8IssJNdJbeKkfqKmbBSH2YwN2-Q/edit?gid=0#gid=0          302
+/tabling                https://docs.google.com/spreadsheets/d/1lTmNZD6ltLjzdzvN1EJHagVhiSs41l4YuTisGzJ78_Y/edit?usp=sharing    302
+/careerfair             https://www.signupgenius.com/go/4090F4BAEA62DA0F85-47122826-2024#/                                      302
+/bingo                  https://docs.google.com/presentation/d/1b_vGuxNUugOr2asN3s3kQJRIUaCPRSiUGdgAVSHEgPo/edit?pli=1#slide=id.g2b6c60f4b7b_1_0    302
+/minors                 https://docs.google.com/spreadsheets/d/1hAgzGCY1IbsgR1r9wF9K4-mOLsEQm39VUHVPdfIfueI/edit#gid=820760475  302
+/orgapp                 https://docs.google.com/forms/d/e/1FAIpQLScin76sbIQVSFoxjaxiJbTnIjWYcubCxHI4N55_Ha9tOPweVA/closedform
+/swag                   https://forms.gle/RJf9diCQ1BR9iU2u7     302
+/orgslides              https://docs.google.com/presentation/d/1_r4N4RGKsEdzfK9c5G3NfuKdHzToxYtQUKD2dtzD7c8/edit#slide=id.g27eff62ca8d_1_5
+/theme                  https://forms.gle/ET2dQceBWBVMG5oM7    302

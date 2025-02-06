@@ -30,6 +30,7 @@
     "@vue/compiler-dom": "^3.5.13",
     "@vueuse/core": "^10.4.1",
     "bootstrap": "^5.3.3",
+    "tslib": "^2.5.1",
     "vue-gtag-next": "^1.14.0"
   }
 }
