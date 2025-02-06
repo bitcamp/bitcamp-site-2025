@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   ssr: false,
 
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify',
+    externals: {
+      inline: ['@vue/compiler-dom']
+    },
   },
 
   typescript: {
