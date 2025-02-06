@@ -122,5 +122,4 @@ export default {
         padding-bottom: calc(341% - 240vw);
     }
 }
-
 </style>
