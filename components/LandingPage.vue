@@ -3,7 +3,7 @@
         <img src="../assets/img/images/flattened_landing.svg" class="dino-background " alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
-                <button class="register-button">REGISTER</button>
+                <a target="_blank" href="https://register.bit.camp" class="register-button">REGISTER</a>
             </div>
             <ExplorationMessage />
         </div>
