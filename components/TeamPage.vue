@@ -7,7 +7,7 @@
             </div>
             <div class="mid_content_container">
                 <div class="team_image">
-                    <img class="team_photo" src="../assets/img/images/TEAM PIC.svg" alt="lebron" />
+                    <img class="team_photo" src="../assets/img/images/team_pic.png" alt="lebron" />
                 </div>
                 <div class="message">
                     <div class="message_text">
