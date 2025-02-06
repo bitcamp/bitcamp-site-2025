@@ -3,6 +3,7 @@
         <div class="top-cliffs-div">
             <img src="../assets/img/faq/faq_sponsor_background_top.png" class="top-cliffs"/>
         </div>
+        <img src="../assets/img/faq/lava_better_quality.svg" class="faq-background " alt="faq image" />
         <div class="content-wrapper">
             <div class="faq-header">
                 <div class="faq-rock-div">
@@ -252,6 +253,18 @@
     margin-left: 20.637119113%;
     
   }
+  .faq-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+
 
   .sponsor-rock-main {
     // opacity: .5;

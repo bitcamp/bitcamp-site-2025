@@ -1,6 +1,6 @@
 <template>
     <div class="gradient">
-        <img src="../assets/img/images/DinolandingGroup.svg" class="dino-background " alt="landing image" />
+        <img src="../assets/img/images/landing_better_quality.svg" class="dino-background " alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
                 <button class="register-button">REGISTER</button>
