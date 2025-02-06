@@ -2,25 +2,22 @@
   <div class="wrapper" ref="el">
     <div class="app-container">
       <Navbar />
-      <Break />
       <LandingPage />
-      <Break />
       <TracksPage />
-      <Break />
       <CampGamesPage />
-      <Break />
+      <div class="transition1"></div>
       <TeamPage />
-      <Break />
+      <div class="transition2"></div>
       <FAQSponsorPage />
-      <Break />
       <FooterContent />
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import { Break } from '#build/components';
 import Navbar from '~/components/Navbar.vue';
-// import Break from '../components/Break.vue';
+import Break from '../components/Break.vue';
 // import CampGamesPage from '../components/CampGamesPage.vue';
 // import FAQSponsorPage from '../components/FAQSponsorPage.vue';
 // import FooterContent from "../components/FooterContent.vue"
@@ -31,7 +28,7 @@ import Navbar from '~/components/Navbar.vue';
 export default {
   name: 'HomePage',
   // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
-  components: { Navbar },
+  components: { Navbar, Break },
 
   head() {
     return {
@@ -141,5 +138,50 @@ export default {
   min-height: 100vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.LandingPage, .TracksPage, .CampGamesPage {
+  position: absolute;
+  width: 100%;
+}
+
+.LandingPage {
+  top: 0;
+  height: 33%; /* Adjust height as needed */
+  background-color: lightblue;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TracksPage {
+  top: 25%; /* Controls overlap with Landing Page */
+  height: 50%; /* Adjust height as needed */
+  background-color: lightgreen;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CampGamesPage {
+  bottom: 0;
+  height: 33%; /* Adjust height as needed */
+  background-color: lightcoral;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition1 {
+  background-image: linear-gradient(#500001, #34045A);
+  height: 4vw;
+}
+
+.transition2 {
+  background-image: linear-gradient(#34045A, #500001);
+  height:4vw;
 }
 </style>
