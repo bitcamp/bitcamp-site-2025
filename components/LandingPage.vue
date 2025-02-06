@@ -1,6 +1,5 @@
 <template>
     <div class="gradient">
-        <img src="../assets/img/images/DinoLandingGroup.svg" class="dino-background " alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
                 <button class="register-button">REGISTER</button>
@@ -122,5 +121,4 @@ export default {
         padding-bottom: calc(341% - 240vw);
     }
 }
-
 </style>
