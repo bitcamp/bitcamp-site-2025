@@ -7,7 +7,7 @@
             </div>
             <div class="mid_content_container">
                 <div class="team_image">
-                    <img class="team_photo" src="../assets/img/images/TEAM PIC.svg" alt="lebron" />
+                    <img class="team_photo" src="../assets/img/images/team_pic.svg" alt="lebron" />
                 </div>
                 <div class="message">
                     <div class="message_text">
@@ -86,7 +86,6 @@ export default {
 .team_photo {
     width: 90%;
 }
-
 .message {
     background-image: url(../assets/img/images/message_background.svg);
     background-repeat: no-repeat;
