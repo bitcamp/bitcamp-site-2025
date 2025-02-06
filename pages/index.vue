@@ -140,14 +140,17 @@ export default {
   background-repeat: no-repeat;
 }
 
-.LandingPage, .TracksPage, .CampGamesPage {
+.LandingPage,
+.TracksPage,
+.CampGamesPage {
   position: absolute;
   width: 100%;
 }
 
 .LandingPage {
   top: 0;
-  height: 33%; /* Adjust height as needed */
+  height: 33%;
+  /* Adjust height as needed */
   background-color: lightblue;
   z-index: 1;
   display: flex;
@@ -156,8 +159,10 @@ export default {
 }
 
 .TracksPage {
-  top: 25%; /* Controls overlap with Landing Page */
-  height: 50%; /* Adjust height as needed */
+  top: 25%;
+  /* Controls overlap with Landing Page */
+  height: 50%;
+  /* Adjust height as needed */
   background-color: lightgreen;
   z-index: 2;
   display: flex;
@@ -167,7 +172,8 @@ export default {
 
 .CampGamesPage {
   bottom: 0;
-  height: 33%; /* Adjust height as needed */
+  height: 33%;
+  /* Adjust height as needed */
   background-color: lightcoral;
   z-index: 1;
   display: flex;
@@ -181,7 +187,10 @@ export default {
 }
 
 .transition2 {
-  background-image: linear-gradient(#34045A, #500001);
-  height:4vw;
+  background-image: linear-gradient(#34045A, #4d0b08);
+  height: 4vw;
+  /* border: 1rem; */
+  /* border-top: 4px solid #34045A;
+  border-bottom: 4px solid #4d0b08; */
 }
 </style>
