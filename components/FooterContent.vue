@@ -12,7 +12,7 @@
               Copyright &copy; 2019 - 2024 Bitcamp. All Rights Reserved.
             </div>
           </div>
-          <img class="elvis" src="../assets/img/images/elvis.svg" alt="elvis">
+          <!-- <img class="elvis" src="../assets/img/images/elvis.svg" alt="elvis"> -->
         </div>
       </div>
     </div>
