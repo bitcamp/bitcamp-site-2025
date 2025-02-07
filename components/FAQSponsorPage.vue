@@ -248,6 +248,11 @@ function toggleButton(question: string) {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .faq-background {
+    height: auto;
+  }
+}
 
 .sponsor-rock-main {
   // opacity: .5;

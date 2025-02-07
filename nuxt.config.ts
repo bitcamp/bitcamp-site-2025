@@ -11,5 +11,5 @@ export default defineNuxtConfig({
     '~/assets/css/global.css',
     '~/public/bitcamp-brand/bitcamp.css'
   ],
-  compatibilityDate: '2024-09-13',
+  compatibilityDate: '2025-02-06',
 });
