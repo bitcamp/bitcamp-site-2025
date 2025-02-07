@@ -131,7 +131,7 @@ export default {
 
 .app-container {
   overflow: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   display: flex;
   flex-direction: column;
   width: 100vw;
