@@ -1,9 +1,9 @@
 <template>
   <div id="faq" class="section">
     <div class="top-cliffs-div">
-      <img src="../assets/img/faq/faq_sponsor_background_top.png" class="top-cliffs" />
+      <img src="../assets/img/faq/faq_top_cliffs.png" class="top-cliffs" />
     </div>
-    <img src="../assets/img/faq/lava_better_quality.svg" class="faq-background " alt="faq image" />
+    <!-- <img src="../assets/img/faq/lava_better (2).png" class="faq-background " alt="faq image" /> -->
     <div class="content-wrapper">
       <div class="faq-header">
         <div class="faq-rock-div">
@@ -44,6 +44,9 @@
         </div>
       </div>
       <div class="sponsor-contents"></div>
+    </div>
+    <div class="bottom-cliffs-div">
+      <img src="../assets/img/faq/faq_bottom_rocks.png" class="bottom-cliffs"/>
     </div>
   </div>
 </template>
@@ -178,11 +181,11 @@ function toggleButton(question: string) {
 }
 
 .content-wrapper {
-  background-image: url("~/assets/img/faq/faq_sponsor_background_middle.png");
+  background-image: url("assets/img/faq/faq_lava.png");
   background-size: 100% 100%;
   border-top: 1px solid #000;
   // idk why corder-top fixes the gradient continuity but it does
-  // width: 100vw;
+  // width: 100%;
   // height: 100%;
   // margin-top: -142.75623%;
 }
