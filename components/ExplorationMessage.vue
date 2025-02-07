@@ -19,7 +19,6 @@ export default {
 
 <style scoped>
 .exploration-message {
-    background-color: #b94923;
     border-radius: 6rem;
     border: 15px solid #ffd978;
     border-right-style: none;
@@ -41,7 +40,7 @@ export default {
 
 @media (max-width: 796px) {
     .exploration-message {
-        background-image: linear-gradient(#084600, #c4b500);
+        background-image: linear-gradient(#034801, #c4b500);
         border: 0;
         border-radius: 0;
         text-align: center;

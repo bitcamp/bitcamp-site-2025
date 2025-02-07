@@ -75,7 +75,7 @@ export default {
     font-weight: bold;
     padding: 1.7rem 4.8rem;
     letter-spacing: 0.2rem;
-    margin-bottom: 10%;
+    margin-bottom: 8.5%;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
