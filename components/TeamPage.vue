@@ -1,5 +1,5 @@
 <template>
-    <div class="gradient">
+    <div id="roster" class="gradient">
         <div class="page_container">
             <div class="page_header">
                 <img class="header_image" src="../assets/img/images/our_team_img.svg" alt="lebron" />

@@ -41,9 +41,6 @@
             <a href="#roster" class="page-type">Our Team</a>
           </li>
           <li class="page">
-            <a href="#schedule" class="page-type">Schedule</a>
-          </li>
-          <li class="page">
             <a href="#faq" class="page-type">FAQ</a>
           </li>
           <li class="page">
