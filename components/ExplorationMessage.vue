@@ -19,6 +19,7 @@ export default {
 
 <style scoped>
 .exploration-message {
+    background-color: #b94923;
     border-radius: 6rem;
     border: 15px solid #ffd978;
     border-right-style: none;
