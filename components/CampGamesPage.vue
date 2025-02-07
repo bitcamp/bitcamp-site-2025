@@ -88,7 +88,7 @@ export default {
     display: none;
 }
 .gradient {
-    background-image: url(assets/img/images/marshies-new.svg);
+    background-image: url(assets/img/images/marshies-new.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 176vh;
@@ -127,7 +127,7 @@ export default {
         display: block;
     }
     .gradient {
-        background-image: url(assets/img/images/Browncavestretched.svg);
+        background-image: url(assets/img/images/Browncavestretched.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

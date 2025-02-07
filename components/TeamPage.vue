@@ -7,7 +7,7 @@
             </div>
             <div class="mid_content_container">
                 <div class="team_image">
-                    <img class="team_photo" src="../assets/img/images/team_pic.svg" alt="lebron" />
+                    <img class="team_photo" src="../assets/img/images/team_pic.webp" alt="lebron" />
                 </div>
                 <div class="message">
                     <div class="message_text">
@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .gradient {
-    background-image: url(assets/img/images/purplecaves.svg);
+    background-image: url(assets/img/images/purplecaves.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

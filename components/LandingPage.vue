@@ -1,6 +1,6 @@
 <template>
     <div class="gradient">
-        <img src="../assets/img/images/flattened_landing.svg" class="dino-background " alt="landing image" />
+        <img src="../assets/img/images/flattened_landing.webp" class="dino-background" alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
                 <a target="_blank" href="https://register.bit.camp" class="register-button">REGISTER</a>
@@ -57,7 +57,7 @@ export default {
     z-index: 1;
     right: 0;
     top: 50vw;
-    width: 48%
+    width: 48%;
 }
 
 .button-wrapper {

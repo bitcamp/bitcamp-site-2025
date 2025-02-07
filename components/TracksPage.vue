@@ -242,7 +242,7 @@ export default {
     border: none;
     box-shadow: none;
     max-width: 95vw;
-    background: url("/assets/img/icons/Rectangle 121 (1).svg");
+    background: url("/assets/img/images/tracks-background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,6 +250,7 @@ export default {
 
   .gradient {
     padding: 0;
+    background: none;
   }
 
   .track-icon {
