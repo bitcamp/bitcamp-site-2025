@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="sponsor-header">
+      <div id="sponsors" class="sponsor-header">
         <div class="sponsor-rock-div">
           <img src="~/assets/img/faq/sponsor_rock.svg" class="sponsor-rock-main" />
           <div class="sponsor-rock-shadow-div">

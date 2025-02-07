@@ -1,5 +1,5 @@
 <template>
-  <div class="tracks-page gradient">
+  <div id="tracks" class="tracks-page gradient">
     <div class="tracks-container">
       <div class="title-container">
         <img src="@/assets/img/icons/foot-1.svg" class="foot" />

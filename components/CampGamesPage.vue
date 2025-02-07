@@ -1,6 +1,6 @@
 <template>
     <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
-    <div class="cfg-top">
+    <div id="campfire-games" class="cfg-top">
         <img
             class="marshie-skeleton"
             src="assets\img\images\Marshieskeleton 1.svg"
