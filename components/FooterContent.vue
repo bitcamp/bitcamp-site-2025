@@ -12,7 +12,6 @@
               Copyright &copy; 2019 - 2024 Bitcamp. All Rights Reserved.
             </div>
           </div>
-          <img class="elvis" src="../assets/img/images/elvis.svg" alt="elvis">
         </div>
       </div>
     </div>
@@ -56,7 +55,7 @@ export default {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 5vw;
+  bottom: 6.5vw;
   font-size: 1.5vw;
 }
 
@@ -78,7 +77,7 @@ export default {
 }
 
 .gradient {
-  background-color: #560000;
+  background-color: #540000;;
 }
 
 .section-container {
