@@ -9,7 +9,7 @@
             <a href="/brand.pdf">Brand Guidelines</a> |
             <a href="mailto:hello@bit.camp">Contact Us</a>
             <div class="copyright">
-              Copyright &copy; 2019 - 2024 Bitcamp. All Rights Reserved.
+              Copyright &copy; 2019 - 2025 Bitcamp. All Rights Reserved.
             </div>
           </div>
         </div>
@@ -77,7 +77,8 @@ export default {
 }
 
 .gradient {
-  background-color: #540000;;
+  background-color: #540000;
+  ;
 }
 
 .section-container {
