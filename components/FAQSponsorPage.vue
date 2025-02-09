@@ -7,12 +7,12 @@
     <div class="content-wrapper">
       <div class="faq-header">
         <div class="faq-rock-div">
-          <img src="~/assets/img/faq/faq_rock.svg" class="faq-rock-main" />
+          <img src="../assets/img/faq/faq_rock.svg" class="faq-rock-main" />
           <div class="faq-rock-shadow-div">
-            <img src="~/assets/img/faq/faq_rock_shadow.svg" class="faq-rock-shadow" />
+            <img src="../assets/img/faq/faq_rock_shadow.svg" class="faq-rock-shadow" />
           </div>
           <div class="faq-text-div">
-            <img src="~/assets/img/faq/faq_text.svg" class="faq-text" />
+            <img src="../assets/img/faq/faq_text.svg" class="faq-text" />
           </div>
         </div>
       </div>
@@ -25,8 +25,8 @@
                 {{ faq.question }}
               </button>
               <div :class="faq.question === currentOpenedQuestion
-                  ? 'Answer_Opened'
-                  : 'Answer'
+                ? 'Answer_Opened'
+                : 'Answer'
                 " v-html="faq.answer"></div>
             </div>
           </div>
@@ -34,19 +34,19 @@
       </div>
       <div id="sponsors" class="sponsor-header">
         <div class="sponsor-rock-div">
-          <img src="~/assets/img/faq/sponsor_rock.svg" class="sponsor-rock-main" />
+          <img src="../assets/img/faq/sponsor_rock.svg" class="sponsor-rock-main" />
           <div class="sponsor-rock-shadow-div">
-            <img src="~/assets/img/faq/sponsor_rock_shadow.svg" class="sponsor-rock-shadow" />
+            <img src="../assets/img/faq/sponsor_rock_shadow.svg" class="sponsor-rock-shadow" />
           </div>
           <div class="sponsor-text-div">
-            <img src="~/assets/img/faq/sponsor_text.svg" class="sponsor-text" />
+            <img src="../assets/img/faq/sponsor_text.svg" class="sponsor-text" />
           </div>
         </div>
       </div>
       <div class="sponsor-contents"></div>
     </div>
     <div class="bottom-cliffs-div">
-      <img src="../assets/img/faq/faq_bottom_rocks.png" class="bottom-cliffs"/>
+      <img src="../assets/img/faq/faq_bottom_rocks.png" class="bottom-cliffs" />
     </div>
   </div>
 </template>
@@ -154,14 +154,6 @@ function toggleButton(question: string) {
 
 <style scoped lang="scss">
 .section {
-  // background-image: url("~/assets/img/faq/faq_sponsor_background_middle.png");
-  // padding-top: 157.75623%;
-  // background-size: cover !important;
-  // background-attachment: local;
-  // width: 100vw;
-  // height: ;
-  // width: 100vw;
-  // height: 100vw;
   flex-shrink: 0;
   position: relative;
 }
