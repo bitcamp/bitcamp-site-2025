@@ -126,10 +126,20 @@ export default {
 
 <style scoped>
 .gradient {
-  background: linear-gradient(to bottom, #ff5b01, #ffcc66);
+  background: linear-gradient(to bottom, #5d3006, #6e1708);
   display: flex;
   justify-content: center;
   padding: 4vw 2vw;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .gradient {
+    background: linear-gradient(to bottom, #5d3006, #b94923);
+    display: flex;
+    justify-content: center;
+    padding: 4vw 2vw;
+  }
 }
 
 .tracks-container {
@@ -228,7 +238,8 @@ export default {
 
 .track-card.right {
   flex-direction: column;
-  text-align: right; /* Adjust text alignment for the right side */
+  text-align: right;
+  /* Adjust text alignment for the right side */
 }
 
 .feet {
@@ -264,7 +275,7 @@ export default {
     max-width: 28vw;
     height: auto;
     padding-bottom: 6vw;
-}
+  }
 
   .track-text-cont {
     display: flex;
@@ -275,8 +286,10 @@ export default {
   }
 
   .title {
-    width: 80vw; /* Dynamically scale title width */
-    height: auto; /* Let height adjust automatically */
+    width: 80vw;
+    /* Dynamically scale title width */
+    height: auto;
+    /* Let height adjust automatically */
     padding-top: 32vw;
   }
 
@@ -291,22 +304,23 @@ export default {
   }
 
   .title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8vw;
-  margin-bottom: 2vw;
-  flex-wrap: wrap;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    margin-bottom: 2vw;
+    flex-wrap: wrap;
+  }
 
   .track-card.left {
-  flex-direction: row;
-}
+    flex-direction: row;
+  }
 
   .track-card.right {
-  flex-direction: row-reverse;
-  text-align: right; /* Adjust text alignment for the right side */
-}
+    flex-direction: row-reverse;
+    text-align: right;
+    /* Adjust text alignment for the right side */
+  }
 
   .tracks-grid {
     gap: 0rem;
@@ -329,14 +343,16 @@ export default {
   }
 
   .track-title {
-    font-size: 1.7em; /* Scale font size dynamically */
+    font-size: 1.7em;
+    /* Scale font size dynamically */
     max-width: 100%;
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
   .track-description {
-    font-size: 1em; /* Scale font size for readability */
+    font-size: 1em;
+    /* Scale font size for readability */
     max-width: 85%;
   }
 }
@@ -353,6 +369,4 @@ export default {
 
   }
 }
-
-
 </style>

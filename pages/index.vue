@@ -3,6 +3,7 @@
     <div class="app-container">
       <Navbar />
       <LandingPage />
+      <div class="transition0"></div>
       <TracksPage />
       <CampGamesPage />
       <div class="transition1"></div>
@@ -179,6 +180,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.transition0 {
+  background-image: linear-gradient(#1f470c, #5d3007);
+  height: 4vw;
 }
 
 .transition1 {
