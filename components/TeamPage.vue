@@ -104,7 +104,7 @@ export default {
 
 .message_text {
     margin-left: 12%;
-    margin-right: 2%;
+    margin-right: 5%;
     text-align: center;
     font-size: 17px;
 }
