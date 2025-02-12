@@ -156,7 +156,7 @@ export default {
   align-items: center;
   justify-content: center;
   margin-top: -25rem;
-  z-index: 1000000;
+  z-index: 1000;
 }
 
 .title-container {
@@ -245,7 +245,7 @@ export default {
 
 @media (max-width: 796px) {
   .tracks-container {
-    padding: 5vh 3vw;
+    padding: 10vh 3vw;
     border-radius: 0;
     border: none;
     box-shadow: none;
@@ -254,6 +254,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
   }
 
   .gradient {
@@ -363,8 +364,19 @@ export default {
     width: 80vw;
     height: auto;
     justify-items: left;
+  }
 
-
+  .tracks-container {
+    padding: 15vh 3vw;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 95vw;
+    background: url("/assets/img/images/tracks-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
   }
 }
 </style>

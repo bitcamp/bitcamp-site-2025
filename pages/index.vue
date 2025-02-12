@@ -187,6 +187,14 @@ export default {
   height: 4vw;
 }
 
+@media (max-width: 796px) {
+  .transition0 {
+    background-image: linear-gradient(#9a9c00, #b94923);
+    height: 10vw;
+    z-index: 100000;
+  }
+}
+
 .transition1 {
   background-image: linear-gradient(#500001, #34045A);
   height: 4vw;

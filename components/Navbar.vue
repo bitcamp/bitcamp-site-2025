@@ -123,7 +123,7 @@ $bitcamp: var(--color-bitcamp);
 $mango: var(--color-mango);
 
 header {
-  z-index: 100; // should be higher than everything else
+  z-index: 100000; // should be higher than everything else
   position: fixed;
   border: 0;
   width: 80%;
