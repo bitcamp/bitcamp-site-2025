@@ -177,7 +177,7 @@ export default {
   padding-bottom: 8rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: first baseline;
 }
 
 .track-card {
@@ -185,7 +185,8 @@ export default {
   max-width: 36.5rem;
   text-align: center;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  justify-content: first baseline;
 }
 
 .track-text-cont {
@@ -198,12 +199,6 @@ export default {
 }
 
 .track-icon {
-  width: 9vw;
-  max-width: 9vw;
-  height: auto;
-}
-
-.special-icon {
   width: 9vw;
   max-width: 9vw;
   height: auto;
@@ -259,13 +254,6 @@ export default {
     height: auto;
   }
 
-  .special-icon {
-    width: 28vw;
-    max-width: 28vw;
-    height: auto;
-    padding-bottom: 6vw;
-}
-
   .track-text-cont {
     display: flex;
     width: 80vw;
@@ -313,6 +301,7 @@ export default {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    align-items: center;
   }
 
   .foot {
