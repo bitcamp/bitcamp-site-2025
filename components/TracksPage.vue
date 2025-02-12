@@ -243,7 +243,7 @@ export default {
   display: none;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 796px) {
   .tracks-container {
     padding: 5vh 3vw;
     border-radius: 0;
