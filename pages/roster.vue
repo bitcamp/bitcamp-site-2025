@@ -2,6 +2,7 @@
     <div class="wrapper" ref="el">
         <div class="app-container">
             <div class="image image-day"></div>
+                <div class="roster-container"></div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
             <!-- <div class="image image-night"></div> -->
@@ -146,6 +147,16 @@ export default {
 
 .image-sunrise {
     background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
+}
+
+.roster-container {
+    background-color: #143542;
+    width: 61vw;
+    height: 100vh;
+    opacity: 0.76;
+    position: absolute;
+    top: 0;
+    left: 20%;
 }
 
 @media (max-width: 796px) {
