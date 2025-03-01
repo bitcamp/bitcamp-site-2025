@@ -3,11 +3,17 @@
         <div class="app-container">
             <div class="image image-day"></div>
                 <div class="roster-container">
-                    <RosterCard
-                        name="John Doe"
-                        position="Software Engineer"
-                        pronouns="he/him"
-                    />
+                    <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
+                    <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
+                    <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
+                    <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
+                    <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
+                    <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
+                    <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
+                    <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
+                    <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
+                    <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
+                    <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
                 </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
@@ -157,6 +163,8 @@ export default {
 }
 
 .roster-container {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #143542;
     width: 61vw;
     height: 100vh;
