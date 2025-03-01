@@ -1,110 +1,65 @@
 <template>
-    <div class="wrapper" ref="el">
+    <div class="wrapper" ref="wrapperRef">
         <div class="app-container">
             <div class="image image-day"></div>
-                <div class="roster-container"></div>
-            <!-- <div class="image image-late-day"></div> -->
-            <!-- <div class="image image-sunset"></div> -->
-            <!-- <div class="image image-night"></div> -->
-            <!-- <div class="image image-sunrise"></div> -->
+            <div class="image image-late-day"></div>
+            <div class="image image-sunset"></div>
+            <div class="image image-night"></div>
+            <div class="image image-sunrise"></div>
+
+            <div class="content">
+                
+                <div class="filler"></div>
+            </div>
         </div>
     </div>
 </template>
 
 <script lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
     name: 'HomePage',
-    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
-    components: {},
+    setup() {
+        const wrapperRef = ref<HTMLElement | null>(null);
 
-    head() {
+        const handleScroll = () => {
+            if (!wrapperRef.value) return;
+
+            const scrollTop = wrapperRef.value.scrollTop;
+            const visibleHeight = wrapperRef.value.clientHeight;
+            const totalHeight = wrapperRef.value.scrollHeight - visibleHeight;
+            const fraction = scrollTop / totalHeight; // 0 to 1
+
+            // Query each layer
+            const dayEl = wrapperRef.value.querySelector('.image-day') as HTMLElement;
+            const lateEl = wrapperRef.value.querySelector('.image-late-day') as HTMLElement;
+            const sunsetEl = wrapperRef.value.querySelector('.image-sunset') as HTMLElement;
+            const nightEl = wrapperRef.value.querySelector('.image-night') as HTMLElement;
+            const sunriseEl = wrapperRef.value.querySelector('.image-sunrise') as HTMLElement;
+
+            // Modify the opacity based on scroll fraction
+            dayEl.style.opacity = fraction < 0.20 ? `${Math.max(0.9, 1 - fraction * 5)}` : '0';  // Half transparent instead of fully white
+            lateEl.style.opacity = fraction >= 0.10 && fraction < 0.40 ? `${Math.max(0.9, 1 - (fraction - 0.20) * 5)}` : '0';
+            sunsetEl.style.opacity = fraction >= 0.30 && fraction < 0.60 ? `${Math.max(0.9, 1 - (fraction - 0.40) * 5)}` : '0';
+            nightEl.style.opacity = fraction >= 0.50 && fraction < 0.80 ? `${Math.max(0.9, 1 - (fraction - 0.60) * 5)}` : '0';
+            sunriseEl.style.opacity = fraction >= 0.70 ? `${Math.max(0.9, 1 - (fraction - 0.80) * 5)}` : '0';
+        };
+
+        // Attach/remove scroll listener
+        onMounted(() => {
+            if (wrapperRef.value) {
+                wrapperRef.value.addEventListener('scroll', handleScroll);
+            }
+        });
+        onBeforeUnmount(() => {
+            if (wrapperRef.value) {
+                wrapperRef.value.removeEventListener('scroll', handleScroll);
+            }
+        });
+
         return {
-            title: 'Bitcamp',
-            meta: [
-                {
-                    name: 'description',
-                    content:
-                        "Bitcamp is a place for exploration. You will have 36 hours to delve into your curiosities, learn something new, and make something awesome. With world-class mentors and hundreds of fellow campers, you're in for an amazing time. If you're ready for an adventure, see you by the fire!",
-                },
-                {
-                    property: 'og:title',
-                    content: 'Bitcamp 2024',
-                },
-                {
-                    property: 'og:site_name',
-                    content: 'Bitcamp 2024',
-                },
-                {
-                    property: 'og:url',
-                    content: 'https://bit.camp/',
-                },
-                {
-                    property: 'og:description',
-                    content:
-                        "Bitcamp is a place for exploration. You will have 36 hours to delve into your curiosities, learn something new, and make something awesome. With world-class mentors and hundreds of fellow campers, you're in for an amazing time. If you're ready for an adventure, see you by the fire!",
-                },
-                {
-                    property: 'og:type',
-                    content: 'website',
-                },
-                {
-                    property: 'twitter:card',
-                    content: 'summary',
-                },
-                {
-                    property: 'twitter:url',
-                    content: 'https://bit.camp/',
-                },
-                {
-                    property: 'twitter:title',
-                    content: 'Bitcamp 2024',
-                },
-                {
-                    property: 'twitter:description',
-                    content:
-                        "Bitcamp is a place for exploration. You will have 36 hours to delve into your curiosities, learn something new, and make something awesome. With world-class mentors and hundreds of fellow campers, you're in for an amazing time. If you're ready for an adventure, see you by the fire!",
-                },
-                {
-                    name: 'msapplication-TileColor',
-                    content: '#ff6f3f',
-                },
-                {
-                    name: 'msapplication-config',
-                    content: '/bitcamp-brand/favicons/browserconfig.xml',
-                },
-                {
-                    name: 'theme-color',
-                    content: '#ffffff',
-                },
-            ],
-            link: [
-                {
-                    rel: 'icon',
-                    type: 'image/png',
-                    sizes: '32x32',
-                    href: '/bitcamp-brand/favicons/favicon-32x32.png',
-                },
-                {
-                    rel: 'icon',
-                    type: 'image/png',
-                    sizes: '16x16',
-                    href: '/bitcamp-brand/favicons/favicon-16x16.png',
-                },
-                {
-                    rel: 'manifest',
-                    href: '/bitcamp-brand/favicons/site.webmanifest',
-                },
-                {
-                    rel: 'mask-icon',
-                    href: '/bitcamp-brand/favicons/safari-pinned-tab.svg',
-                    color: '#ff6f3f',
-                },
-                {
-                    rel: 'shortcut icon',
-                    href: '/bitcamp-brand/favicons/favicon.ico',
-                },
-            ],
+            wrapperRef,
         };
     },
 };
@@ -113,7 +68,7 @@ export default {
 <style scoped>
 .wrapper {
     overflow-y: scroll;
-    overflow-x: hidden;
+    position: relative;
     height: 100vh;
 }
 
@@ -123,48 +78,58 @@ export default {
 }
 
 .image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.2s linear; /* Smooth transition for opacity */
 }
 
+/* Set background images */
 .image-day {
     background-image: url("../assets/img/images/Daybeachmockup.svg");
+    z-index: 1;
+    opacity: 1; 
 }
 
 .image-late-day {
     background-image: url("../assets/img/images/LateDaybeachmockup.svg");
+    z-index: 2;
+    opacity: 0;
 }
 
 .image-sunset {
     background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
+    z-index: 3;
+    opacity: 0;
 }
 
 .image-night {
     background-image: url("../assets/img/images/Nightbeachmockup.svg");
+    z-index: 4;
+    opacity: 0;
 }
 
 .image-sunrise {
     background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
+    z-index: 5;
+    opacity: 0;
+
 }
 
-.roster-container {
-    background-color: #143542;
-    width: 61vw;
-    height: 100vh;
-    opacity: 0.76;
-    position: absolute;
-    top: 0;
-    left: 20%;
+.content {
+    position: relative;
+    z-index: 999;
+    min-height: 500vh;
+    padding: 2rem;
 }
 
-@media (max-width: 796px) {
-    .transition0 {
-        background-image: linear-gradient(#9a9c00, #b94923);
-        height: 10vw;
-        z-index: 100000;
-    }
+.filler {
+    height: 300vh;
 }
 </style>
 
