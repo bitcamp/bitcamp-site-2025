@@ -2,7 +2,13 @@
     <div class="wrapper" ref="el">
         <div class="app-container">
             <div class="image image-day"></div>
-                <div class="roster-container"></div>
+                <div class="roster-container">
+                    <RosterCard
+                        name="John Doe"
+                        position="Software Engineer"
+                        pronouns="he/him"
+                    />
+                </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
             <!-- <div class="image image-night"></div> -->
@@ -120,6 +126,7 @@ export default {
 .app-container {
     display: flex;
     flex-direction: column;
+    font-family: 'Aleo', sans-serif;
 }
 
 .image {
