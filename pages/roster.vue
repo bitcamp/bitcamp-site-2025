@@ -2,19 +2,19 @@
     <div class="wrapper" ref="el">
         <div class="app-container">
             <div class="image image-day"></div>
-                <div class="roster-container">
-                    <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
-                    <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
-                    <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
-                    <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
-                    <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
-                    <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
-                    <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
-                    <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
-                    <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
-                    <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
-                    <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
-                </div>
+            <div class="roster-container">
+                <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
+                <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
+                <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
+                <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
+                <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
+                <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
+                <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
+                <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
+                <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
+                <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
+                <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
+            </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
             <!-- <div class="image image-night"></div> -->
@@ -172,6 +172,7 @@ export default {
     position: absolute;
     top: 0;
     left: 20%;
+    overflow-y: auto;
 }
 
 @media (max-width: 796px) {
