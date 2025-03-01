@@ -56,11 +56,14 @@
                     </div>
                     <div class="sponsor-text-div">
                         <img src="~/assets/img/faq/sponsor_text.svg" class="sponsor-text"/>
+                        <div class="sponsor-contents">
+                          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+                        </div> 
                     </div>
+
                 </div>
             </div>
-            <div class="sponsor-contents"></div>
-        </div> 
+        </div>
         <div class="bottom-cliffs-div">
             <img src="../assets/img/faq/faq_sponsor_background_bottom.png" class="bottom-cliffs"/>
         </div>  
@@ -265,10 +268,19 @@
     object-fit: cover;
 }
 
-
   .sponsor-rock-main {
     // opacity: .5;
     fill: #8B2000;
+  }
+
+  .sponsor-logo {
+    max-height: 30vh;
+    padding-top: 10%;
+  }
+
+  .sponsor-contents {
+    display:flex;
+    justify-items: center;
   }
 
   .sponsor-rock-shadow-div {
@@ -474,6 +486,12 @@
       height: 100%;
       font-size: 2.5vw;
     }
+
+    .sponsor-logo {
+    max-height: 12vh;
+    padding: 4%;
+  }
+    
 
     // .top-cliffs {
     //   width: 200%;
