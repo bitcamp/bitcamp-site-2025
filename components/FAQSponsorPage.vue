@@ -29,30 +29,30 @@
                 : 'Answer'
                 " v-html="faq.answer"></div>
             </div>
-            <div class="sponsor-header">
-                <div class="sponsor-rock-div">
-                    <img src="~/assets/img/faq/sponsor_rock.svg" class="sponsor-rock-main"/>
-                    <div class="sponsor-rock-shadow-div">
-                        <img src="~/assets/img/faq/sponsor_rock_shadow.svg" class="sponsor-rock-shadow"/>
-                    </div>
-                    <div class="sponsor-text-div">
-                        <img src="~/assets/img/faq/sponsor_text.svg" class="sponsor-text"/>
-                        <div class="sponsor-contents">
-                          <a href="https://www.standoutstickers.com/" target="_blank">
-                            <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
-                          </a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="bottom-cliffs-div">
-            <img src="../assets/img/faq/faq_sponsor_background_bottom.png" class="bottom-cliffs"/>
-        </div>  
+      </div>
+      <div id="sponsors" class="sponsor-header">
+        <div class="sponsor-rock-div">
+          <img src="../assets/img/faq/sponsor_rock.svg" class="sponsor-rock-main" />
+          <div class="sponsor-rock-shadow-div">
+            <img src="../assets/img/faq/sponsor_rock_shadow.svg" class="sponsor-rock-shadow" />
+          </div>
+          <div class="sponsor-text-div">
+            <img src="../assets/img/faq/sponsor_text.svg" class="sponsor-text" />
+          </div>
+        </div>
+      </div>
+      <div class="sponsor-contents">
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+        </a>
       </div>
     </div>
+    <div class="bottom-cliffs-div">
+      <img src="../assets/img/faq/faq_bottom_rocks.png" class="bottom-cliffs" />
+    </div>
   </div>
-</div>
 </template>
 
 <script setup lang="ts">
@@ -284,38 +284,31 @@ function toggleButton(question: string) {
 }
 
 .sponsor-rock-shadow {
-  // opacity: .5;
   fill: #560001;
 }
 
-  .sponsor-rock-main {
-    // opacity: .5;
+.sponsor-rock-main {
     fill: #8B2000;
   }
-
   .sponsor-logo {
     max-height: 30vh;
     padding-top: 10%;
   }
-
   .sponsor-contents {
     display:flex;
     justify-items: center;
   }
-
   .sponsor-rock-shadow-div {
     position: absolute;
-    // width: 399px;
     width: 99.5%;
-    // height: 60.5px;
     height: 73.076923%;
     flex-shrink: 0;
+  }
 
 .sponsor-text-div {
   position: absolute;
   width: 67.395657418%;
   margin-top: -21%;
-  // margin-left: 21.95416164%;
   margin-left: 21.95416164%;
   z-index: 2;
 }
@@ -480,26 +473,10 @@ function toggleButton(question: string) {
     height: 100%;
     font-size: 2.5vw;
   }
-
-    .sponsor-logo {
+  .sponsor-logo {
     max-height: 12vh;
     padding: 4%;
   }
-    
-
-    // .top-cliffs {
-    //   width: 200%;
-    // }
-
-    // .bottom-cliffs {
-    //   width: 200%;
-    // }
-    
-    // .content-wrapper {
-    //   background-size: 200% 100%;
-    // }
-  }
-  
   // .top-cliffs {
   //   width: 200%;
   // }
