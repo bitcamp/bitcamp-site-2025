@@ -3,17 +3,40 @@
         <div class="app-container">
             <div class="image image-day"></div>
             <div class="roster-container">
+                <h1>Experience</h1>
                 <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
                 <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
                 <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
                 <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
                 <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
                 <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
-                <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
+                <RosterCard name="Alex Luo" position="Position" pronouns="he/him" />
                 <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
                 <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
                 <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
                 <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
+                <h1>Logistics</h1>
+                <RosterCard name="Anoushka Arora" position="Position" pronouns="she/her" />
+                <RosterCard name="Sneha Balur" position="Position" pronouns="she/her" />
+                <RosterCard name="James (Jim) Joseph Barry" position="Position" pronouns="he/him" />
+                <RosterCard name="Anshu Chandrasekhar" position="Position" pronouns="she/her" />
+                <RosterCard name="Shreya Gavarapattu" position="Position" pronouns="she/her" />
+                <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her" />
+                <RosterCard name="Tiffany Liu" position="Position" pronouns="she/her" />
+                <RosterCard name="Benjamin (Ben) Losey" position="Position" pronouns="he/him" />
+                <RosterCard name="Charis Wang" position="Position" pronouns="she/her" />
+                <RosterCard name="Ryan Zhao" position="Position" pronouns="he/him" />
+                <RosterCard name="Jessica Zhou" position="Position" pronouns="she/her" />
+                <h1>Marketing</h1>
+                <RosterCard name="Sameer Chawla" position="Position" pronouns="he/him" />
+                <RosterCard name="Kai Chen" position="Position" pronouns="he/him" />
+                <RosterCard name="Ben DiMarco" position="Position" pronouns="he/him" />
+                <RosterCard name="Srinidhi (Sri) Guruvayurappan" position="Position" pronouns="she/her" />
+                <RosterCard name="Purva Jani" position="Position" pronouns="she/her" />
+                <RosterCard name="Kaylee Kim" position="Position" pronouns="she/her" />
+                <RosterCard name="Richard Mukam Jr" position="Position" pronouns="he/him" />
+                <RosterCard name="Grace Yang" position="Position" pronouns="she/her" />
+
             </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->

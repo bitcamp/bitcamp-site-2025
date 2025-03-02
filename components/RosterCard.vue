@@ -23,6 +23,53 @@
           </div>
         </div>
       </div>
+      </div>
+  </div>
+
+  <!-- Name -->
+  <h2 class="name">{{ name }}</h2>
+
+  <!-- Position -->
+  <p class="position">{{ position }}</p>
+
+  <!-- Pronouns -->
+  <p class="pronouns"><i>{{ pronouns }}</i></p>
+  </div>
+</template>
+
+<script>
+export default {
+props: {
+  name: {
+    type: String,
+    default: 'John Doe'
+  },
+  position: {
+    type: String,
+    default: 'Software Engineer'
+  },
+  pronouns: {
+    type: String,
+    default: 'he/him'
+  }
+}
+};
+</script>
+
+<style scoped>
+  /* Import the Aleo font */
+  @import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+  /* Container (without background) */
+  .roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Aleo', sans-serif;
+  }
   
       <!-- Name -->
       <h2 class="name">{{ name }}</h2>
