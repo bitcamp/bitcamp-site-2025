@@ -43,15 +43,16 @@
                           </a>
                         </div> 
                     </div>
-
                 </div>
             </div>
         </div>
         <div class="bottom-cliffs-div">
             <img src="../assets/img/faq/faq_sponsor_background_bottom.png" class="bottom-cliffs"/>
         </div>  
+      </div>
     </div>
   </div>
+</div>
 </template>
 
 <script setup lang="ts">
