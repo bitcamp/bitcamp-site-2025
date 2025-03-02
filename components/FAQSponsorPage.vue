@@ -57,7 +57,9 @@
                     <div class="sponsor-text-div">
                         <img src="~/assets/img/faq/sponsor_text.svg" class="sponsor-text"/>
                         <div class="sponsor-contents">
-                          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+                          <a href="https://www.standoutstickers.com/" target="_blank">
+                            <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+                          </a>
                         </div> 
                     </div>
 
