@@ -1,9 +1,9 @@
 <template>
     <div class="gradient">
-        <img src="../assets/img/images/DinoLandingGroup.svg" class="dino-background " alt="landing image" />
+        <img src="../assets/img/images/flattened_landing.webp" class="dino-background" alt="landing image" />
         <div class="content-wrapper">
             <div class="button-wrapper">
-                <button class="register-button">REGISTER</button>
+                <a target="_blank" href="https://register.bit.camp" class="register-button">REGISTER</a>
             </div>
             <ExplorationMessage />
         </div>
@@ -56,8 +56,8 @@ export default {
     color: white;
     z-index: 1;
     right: 0;
-    top: 44vw;
-    width: 48%
+    top: 50vw;
+    width: 48%;
 }
 
 .button-wrapper {
@@ -122,5 +122,4 @@ export default {
         padding-bottom: calc(341% - 240vw);
     }
 }
-
 </style>

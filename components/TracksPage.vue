@@ -1,5 +1,5 @@
 <template>
-  <div class="tracks-page gradient">
+  <div id="tracks" class="tracks-page gradient">
     <div class="tracks-container">
       <div class="title-container">
         <img src="@/assets/img/icons/foot-1.svg" class="foot" />
@@ -126,10 +126,20 @@ export default {
 
 <style scoped>
 .gradient {
-  background: linear-gradient(to bottom, #ff5b01, #ffcc66);
+  background: linear-gradient(to bottom, #5d3006, #6e1708);
   display: flex;
   justify-content: center;
   padding: 4vw 2vw;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .gradient {
+    background: linear-gradient(to bottom, #5d3006, #b94923);
+    display: flex;
+    justify-content: center;
+    padding: 4vw 2vw;
+  }
 }
 
 .tracks-container {
@@ -145,6 +155,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -25rem;
+  z-index: 1000;
 }
 
 .title-container {
@@ -177,7 +189,7 @@ export default {
   padding-bottom: 8rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: first baseline;
 }
 
 .track-card {
@@ -186,6 +198,7 @@ export default {
   text-align: center;
   flex-direction: column;
   align-items: center;
+  justify-content: first baseline;
 }
 
 .track-text-cont {
@@ -198,12 +211,6 @@ export default {
 }
 
 .track-icon {
-  width: 9vw;
-  max-width: 9vw;
-  height: auto;
-}
-
-.special-icon {
   width: 9vw;
   max-width: 9vw;
   height: auto;
@@ -228,28 +235,31 @@ export default {
 
 .track-card.right {
   flex-direction: column;
-  text-align: right; /* Adjust text alignment for the right side */
+  text-align: right;
+  /* Adjust text alignment for the right side */
 }
 
 .feet {
   display: none;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 796px) {
   .tracks-container {
-    padding: 5vh 3vw;
+    padding: 10vh 3vw;
     border-radius: 0;
     border: none;
     box-shadow: none;
     max-width: 95vw;
-    background: url("/assets/img/icons/Rectangle 121 (1).svg");
+    background: url("/assets/img/images/tracks-background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
   }
 
   .gradient {
     padding: 0;
+    background: none;
   }
 
   .track-icon {
@@ -263,7 +273,7 @@ export default {
     max-width: 28vw;
     height: auto;
     padding-bottom: 6vw;
-}
+  }
 
   .track-text-cont {
     display: flex;
@@ -274,8 +284,10 @@ export default {
   }
 
   .title {
-    width: 80vw; /* Dynamically scale title width */
-    height: auto; /* Let height adjust automatically */
+    width: 80vw;
+    /* Dynamically scale title width */
+    height: auto;
+    /* Let height adjust automatically */
     padding-top: 32vw;
   }
 
@@ -290,28 +302,30 @@ export default {
   }
 
   .title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8vw;
-  margin-bottom: 2vw;
-  flex-wrap: wrap;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    margin-bottom: 2vw;
+    flex-wrap: wrap;
+  }
 
   .track-card.left {
-  flex-direction: row;
-}
+    flex-direction: row;
+  }
 
   .track-card.right {
-  flex-direction: row-reverse;
-  text-align: right; /* Adjust text alignment for the right side */
-}
+    flex-direction: row-reverse;
+    text-align: right;
+    /* Adjust text alignment for the right side */
+  }
 
   .tracks-grid {
     gap: 0rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    align-items: center;
   }
 
   .foot {
@@ -328,14 +342,16 @@ export default {
   }
 
   .track-title {
-    font-size: 1.7em; /* Scale font size dynamically */
+    font-size: 1.7em;
+    /* Scale font size dynamically */
     max-width: 100%;
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
   .track-description {
-    font-size: 1em; /* Scale font size for readability */
+    font-size: 1em;
+    /* Scale font size for readability */
     max-width: 85%;
   }
 }
@@ -348,10 +364,19 @@ export default {
     width: 80vw;
     height: auto;
     justify-items: left;
+  }
 
-
+  .tracks-container {
+    padding: 15vh 3vw;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 95vw;
+    background: url("/assets/img/images/tracks-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
   }
 }
-
-
 </style>

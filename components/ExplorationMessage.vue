@@ -35,13 +35,14 @@ export default {
 }
 
 .exploration-container {
+    padding-top: 40px;
     position: relative;
     width: 100%;
 }
 
 @media (max-width: 796px) {
     .exploration-message {
-        background-image: linear-gradient(#084600, #c4b500);
+        background-image: linear-gradient(#084600, #9D9E00);
         border: 0;
         border-radius: 0;
         text-align: center;
