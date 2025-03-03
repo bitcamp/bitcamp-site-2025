@@ -3,18 +3,39 @@
         <div class="app-container">
             <div class="image image-day"></div>
             <div class="roster-container">
-                <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
-                <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
-                <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
-                <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
-                <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
-                <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
-                <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
-                <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
-                <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
-                <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
-                <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
+                <div class="organizers-container">
+                    <h1>Directors</h1>
+                    <RosterCard name="Amber Chen" position="Marketing Director" pronouns="she/her" url="https://www.linkedin.com/in/amber--chen/" />
+                    <RosterCard name="Ananya Nagireddy" position="Experience Director" pronouns="she/her" url="https://www.linkedin.com/in/ananya-nagireddy-70233a1a0/" />
+                    <RosterCard name="Beatrice Chung" position="Sponsorship Director" pronouns="she/her" url="https://www.linkedin.com/in/beatricechung/" />
+                    <RosterCard name="Daniel Chung" position="Finance Director" pronouns="he/him" url="https://www.linkedin.com/in/daniel03chung/" />
+                    <RosterCard name="Julia Chen" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/julia-z-chen/" />
+                    <RosterCard name="Neha Veeragandham" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/nehaveeragandham/" />
+                    <RosterCard name="Nitya Venkatiahgari" position="Events Director" pronouns="she/her" url="https://linkedin.com/in/nitya-venkatiahgari" />
+                    <RosterCard name="Sai Pranav Theerthala" position="Tech Director" pronouns="he/him" url="https://www.linkedin.com/in/sai-pranav-theerthala" />
+                    <RosterCard name="Saloni Shah" position="Tech Director" pronouns="she/her" url="https://www.linkedin.com/in/saloni-k-shah/" />
+                    <RosterCard name="Soumika (Mika) Pendem" position="Design Director" pronouns="she/her" url="https://www.linkedin.com/in/soumika-pendem/" />
+                    <h1>Design</h1>
+                    <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/adrien-rozario-847b68249/" />
+                    <RosterCard name="Angela Zhang" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/angela-zhang915" />
+                    <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/dahn-kim-a92934254/" />
+                    <RosterCard name="Kyra Yip" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/kyra-skye-yip/" />
+                    <RosterCard name="Olivia Zhang" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/oliviaszhang" />
+                    <RosterCard name="Tracy Anne Tan" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/tracy-anne-tan-69a37a27b" />
+                    <RosterCard name="Trisha Anand" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anandtrisha/" />
+                    <RosterCard name="Vivian Howe" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/vivianhowe/" />
+                    <RosterCard name="Wendy Tu" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/wendy-tu-umd/" />
+                    <h1>Events</h1>
+                    <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him" />
+                    <RosterCard name="Anunithaa (Anu) Rajakumaresan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anunithaa-rajakumaresan-180261238/" />
+                    <RosterCard name="Hannah Chen" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/hannah-chen-30099b27b" />
+                    <RosterCard name="Harleen Green" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/harleengreen" />
+                    <RosterCard name="Ishaan Bhardvaj" position="Events Organizer" pronouns="he/him" url="https://www.linkedin.com/in/ishaan-b-bhardvaj" />
+                    <RosterCard name="Meilin Yuan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/meilinyuan" />
+                    <RosterCard name="Saanvi Kataria" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/-saanvikataria" />
+                    <RosterCard name="Sofia (Sofie) Douglass" position="Events Organizer" pronouns="she/her" />
             </div>
+        </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
             <!-- <div class="image image-night"></div> -->
@@ -123,6 +144,11 @@ export default {
 </script>
 
 <style scoped>
+  .organizers-container > h1 {
+    flex-basis: 100%;
+    text-align: center;
+    color: white;
+  }
 .wrapper {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -165,14 +191,29 @@ export default {
 .roster-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #143542;
     width: 61vw;
+    width: 90%;
+    max-width: 840px; /* 4 cards * (200px each + small gaps) */
     height: 100vh;
     opacity: 0.76;
     position: absolute;
     top: 0;
-    left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     overflow-y: auto;
+    padding: 10px; /* Optional: adjust horizontal padding if needed */
+}
+
+
+.organizers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    position: absolute;
 }
 
 @media (max-width: 796px) {
