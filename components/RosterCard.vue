@@ -1,66 +1,57 @@
 <template>
   <div class="profile-card">
-  <!-- Profile Image + LinkedIn Badge -->
-  <div class="profile-header">
+    <div class="profile-header">
       <div class="profile-image">
-        <img 
-          :src="headshot"
-          alt="LinkedIn"
-          class="profile-image"
-          />
-        <a 
-            v-if="url" 
-            :href="url" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="linkedin-badge"
-          >
-          <img 
-          src="assets/img/icons/linkedin.webp" 
-          alt="LinkedIn"
-          />
+        <img v-if="imageSrc" :src="imageSrc" alt="Profile Image" class="profile-pic" />
+        <img v-else src="" alt="Default Profile" class="profile-pic default-profile" />
+
+        <a
+          v-if="linkedinUrl" 
+          :href="linkedinUrl" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="linkedin-badge"
+        >
+          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" />
         </a>
+        <div v-else class="linkedin-badge">
+          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" />
+        </div>
       </div>
-  </div>
+    </div>
 
-  <!-- Name -->
-  <h2 class="name">{{ name }}</h2>
+    <h2 class="name">{{ name }}</h2>
 
-  <!-- Position -->
-  <p class="position">{{ position }}</p>
+    <p class="position">{{ position }}</p>
 
-  <!-- Pronouns -->
-  <p class="pronouns"><i>{{ pronouns }}</i></p>
-
-  <p class="pronouns"><i>{{ headshot }}</i></p>
-
+    <p class="pronouns"><i>{{ pronouns }}</i></p>
   </div>
 </template>
 
 <script>
 export default {
-props: {
-  name: {
-    type: String,
-    default: 'John Doe'
-  },
-  position: {
-    type: String,
-    default: 'Software Engineer'
-  },
-  pronouns: {
-    type: String,
-    default: 'he/him'
-  },
-  url: {
-    type: String,
-    default: ' '
-  },
-  headshot: {
-    type: String,
-    default: 'assets/img/headshots/rishiagarwal.jpg'
+  props: {
+    name: {
+      type: String,
+      default: 'John Doe'
+    },
+    position: {
+      type: String,
+      default: 'Position'
+    },
+    pronouns: {
+      type: String,
+      default: 'he/him'
+    },
+    imageSrc: {
+      type: String,
+      default: '' // Profile image URL
+    },
+    linkedinUrl: {
+      type: String,
+      default: '' // LinkedIn profile URL
+    }
   }
-}
 };
 </script>
 
@@ -92,25 +83,24 @@ props: {
     width: 80px;
     height: 80px;
     background-color: #b0c4de;
-    background-image: headshot;
     border-radius: 50%;
     margin: 0 auto 10px;
     position: relative; /* Needed for absolute positioning of the badge */
   }
 
-  .profile-image img {
-  width: 100%;  /* Ensures it fills the parent container */
-  height: 100%;
-  object-fit: cover; /* Ensures the aspect ratio is preserved */
-  border-radius: 50%;
-}
-
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 50%;
+  }
+  
   /* LinkedIn Badge (overlapping top-left of profile image) */
   .linkedin-badge {
     position: absolute;
-    top: -8px;      /* Adjust to control vertical overlap */
-    left: -8px;     /* Adjust to control horizontal overlap */
-    width: 30px;    /* Increased badge size */
+    top: -8px;
+    left: -8px;
+    width: 30px;    
     height: 30px;
     background: white;
     border-radius: 50%;
@@ -122,28 +112,27 @@ props: {
   }
   
   .linkedin-badge img {
-    width: 35px;    /* Increase the logo size */
+    width: 35px; 
     height: 35px;
     border-radius: 50%;
     object-fit: contain;
-    padding: 2px;   /* Adjust for spacing between the logo and the badge border */
+    padding: 2px;
   }
   
-  /* Text Styles */
   .name {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px; /* Keeps the spacing below the name */
+    margin-bottom: 10px;
   }
   
   .position {
     font-size: 14px;
-    margin-bottom: 0; /* Removes extra spacing after the position */
+    margin-bottom: 0;
   }
   
   .pronouns {
     font-size: 12px;
     font-style: italic;
-    margin-top: 0; /* Removes extra spacing above the pronouns */
+    margin-top: 0;
   }
 </style>
