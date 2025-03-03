@@ -5,35 +5,35 @@
             <div class="roster-container">
                 <div class="organizers-container">
                     <h1>Directors</h1>
-                    <RosterCard name="Amber Chen" position="Marketing Director" pronouns="she/her" url="https://www.linkedin.com/in/amber--chen/" />
-                    <RosterCard name="Ananya Nagireddy" position="Experience Director" pronouns="she/her" url="https://www.linkedin.com/in/ananya-nagireddy-70233a1a0/" />
-                    <RosterCard name="Beatrice Chung" position="Sponsorship Director" pronouns="she/her" url="https://www.linkedin.com/in/beatricechung/" />
-                    <RosterCard name="Daniel Chung" position="Finance Director" pronouns="he/him" url="https://www.linkedin.com/in/daniel03chung/" />
-                    <RosterCard name="Julia Chen" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/julia-z-chen/" />
-                    <RosterCard name="Neha Veeragandham" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/nehaveeragandham/" />
-                    <RosterCard name="Nitya Venkatiahgari" position="Events Director" pronouns="she/her" url="https://linkedin.com/in/nitya-venkatiahgari" />
+                    <RosterCard name="Amber Chen" position="Marketing Director" pronouns="she/her" url="https://www.linkedin.com/in/amber--chen/" :photo="amber" />
+                    <RosterCard name="Ananya Nagireddy" position="Experience Director" pronouns="she/her" url="https://www.linkedin.com/in/ananya-nagireddy-70233a1a0/" :photo="ananya" />
+                    <RosterCard name="Beatrice Chung" position="Sponsorship Director" pronouns="she/her" url="https://www.linkedin.com/in/beatricechung/" :photo="beatrice" />
+                    <RosterCard name="Daniel Chung" position="Finance Director" pronouns="he/him" url="https://www.linkedin.com/in/daniel03chung/" :photo="daniel" />
+                    <RosterCard name="Julia Chen" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/julia-z-chen/" :photo="julia" />
+                    <RosterCard name="Neha Veeragandham" position="Logistics Director" pronouns="she/her" url="https://www.linkedin.com/in/nehaveeragandham/" :photo="neha" />
+                    <RosterCard name="Nitya Venkatiahgari" position="Events Director" pronouns="she/her" url="https://linkedin.com/in/nitya-venkatiahgari" :photo="nitya" />
                     <RosterCard name="Sai Pranav Theerthala" position="Tech Director" pronouns="he/him" url="https://www.linkedin.com/in/sai-pranav-theerthala" />
-                    <RosterCard name="Saloni Shah" position="Tech Director" pronouns="she/her" url="https://www.linkedin.com/in/saloni-k-shah/" />
-                    <RosterCard name="Soumika (Mika) Pendem" position="Design Director" pronouns="she/her" url="https://www.linkedin.com/in/soumika-pendem/" />
+                    <RosterCard name="Saloni Shah" position="Tech Director" pronouns="she/her" url="https://www.linkedin.com/in/saloni-k-shah/" :photo="saloni" />
+                    <RosterCard name="Soumika (Mika) Pendem" position="Design Director" pronouns="she/her" url="https://www.linkedin.com/in/soumika-pendem/" :photo="mika" />
                     <h1>Design</h1>
-                    <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/adrien-rozario-847b68249/" />
-                    <RosterCard name="Angela Zhang" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/angela-zhang915" />
-                    <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/dahn-kim-a92934254/" />
-                    <RosterCard name="Kyra Yip" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/kyra-skye-yip/" />
-                    <RosterCard name="Olivia Zhang" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/oliviaszhang" />
-                    <RosterCard name="Tracy Anne Tan" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/tracy-anne-tan-69a37a27b" />
-                    <RosterCard name="Trisha Anand" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anandtrisha/" />
-                    <RosterCard name="Vivian Howe" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/vivianhowe/" />
-                    <RosterCard name="Wendy Tu" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/wendy-tu-umd/" />
+                    <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/adrien-rozario-847b68249/" :photo="adrien" />
+                    <RosterCard name="Angela Zhang" position="Design Organizer" pronouns="she/her" url="www.linkedin.com/in/angela-zhang915" :photo="angela" />
+                    <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="they/them" url="https://www.linkedin.com/in/dahn-kim-a92934254/" :photo="dahn" />
+                    <RosterCard name="Kyra Yip" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/kyra-skye-yip/" :photo="kyra" />
+                    <RosterCard name="Olivia Zhang" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/oliviaszhang" :photo="olivia" />
+                    <RosterCard name="Tracy Anne Tan" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/tracy-anne-tan-69a37a27b" :photo="tracy" />
+                    <RosterCard name="Trisha Anand" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anandtrisha/" :photo="trish" />
+                    <RosterCard name="Vivian Howe" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/vivianhowe/" :photo="vivian" />
+                    <RosterCard name="Wendy Tu" position="Design Organizer" pronouns="she/her" url="https://www.linkedin.com/in/wendy-tu-umd/" :photo="wendy" />
                     <h1>Events</h1>
-                    <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him" />
-                    <RosterCard name="Anunithaa (Anu) Rajakumaresan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anunithaa-rajakumaresan-180261238/" />
-                    <RosterCard name="Hannah Chen" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/hannah-chen-30099b27b" />
-                    <RosterCard name="Harleen Green" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/harleengreen" />
-                    <RosterCard name="Ishaan Bhardvaj" position="Events Organizer" pronouns="he/him" url="https://www.linkedin.com/in/ishaan-b-bhardvaj" />
-                    <RosterCard name="Meilin Yuan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/meilinyuan" />
-                    <RosterCard name="Saanvi Kataria" position="Events Organizer" pronouns="she/her" url="www.linkedin.com/in/-saanvikataria" />
-                    <RosterCard name="Sofia (Sofie) Douglass" position="Events Organizer" pronouns="she/her" />
+                    <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him" :photo="adrian"/>
+                    <RosterCard name="Anunithaa (Anu) Rajakumaresan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/anunithaa-rajakumaresan-180261238/" :photo="anu" />
+                    <RosterCard name="Hannah Chen" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/hannah-chen-30099b27b" :photo="hannah" />
+                    <RosterCard name="Harleen Green" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/harleengreen" :photo="harleen" />
+                    <RosterCard name="Ishaan Bhardvaj" position="Events Organizer" pronouns="he/him" url="https://www.linkedin.com/in/ishaan-b-bhardvaj" :photo="ishaan" />
+                    <RosterCard name="Meilin Yuan" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/meilinyuan" :photo="meilin" />
+                    <RosterCard name="Saanvi Kataria" position="Events Organizer" pronouns="she/her" url="https://www.linkedin.com/in/-saanvikataria" :photo="saanvi" />
+                    <RosterCard name="Sofia (Sofie) Douglass" position="Events Organizer" pronouns="she/her" :photo="sofie" />
             </div>
         </div>
             <!-- <div class="image image-late-day"></div> -->
@@ -45,6 +45,35 @@
 </template>
 
 <script lang="ts">
+import amber from '../assets/img/images/headshots/Amber Chen.jpg';
+import ananya from '../assets/img/images/headshots/Ananya Nagireddy.jpg';
+import beatrice from '../assets/img/images/headshots/Beatrice Chung.jpg';
+import daniel from '../assets/img/images/headshots/Daniel Chung.jpg';
+import julia from '../assets/img/images/headshots/Julia Chen.jpg';
+import mika from '../assets/img/images/headshots/Mika Pendem.jpg';
+import neha from '../assets/img/images/headshots/Neha Veeragandham.jpg';
+import nitya from '../assets/img/images/headshots/Nitya Venkatiahgari.jpeg';
+import saloni from '../assets/img/images/headshots/Saloni Shah.jpg';
+
+import adrien from '../assets/img/images/headshots/Adrien Rozario.jpg';
+import angela from '../assets/img/images/headshots/Angela Zhang.jpg';
+import dahn from '../assets/img/images/headshots/Dahn Kim.png';
+import kyra from '../assets/img/images/headshots/Kyra Yip.png';
+import olivia from '../assets/img/images/headshots/Olivia Zhang.jpg';
+import tracy from '../assets/img/images/headshots/Tracy Anne Tan.jpg';
+import trish from '../assets/img/images/headshots/Trisha Anand.jpg';
+import vivian from '../assets/img/images/headshots/Vivian Howe.jpg';
+import wendy from '../assets/img/images/headshots/Wendy Tu.jpg';
+
+import adrian from '../assets/img/images/headshots/Adrian Alphons.jpg';
+import anu from '../assets/img/images/headshots/Anunithaa Rajakumaresan.jpg';
+import hannah from '../assets/img/images/headshots/Hannah Chen.jpg';
+import harleen from '../assets/img/images/headshots/Harleen Green.jpg';
+import ishaan from '../assets/img/images/headshots/Ishaan Bhardvaj.jpg';
+import meilin from '../assets/img/images/headshots/Meilin Yuan Professional.jpg';
+import saanvi from '../assets/img/images/headshots/Saanvi_Kataria.jpg';
+import sofie from '../assets/img/images/headshots/Sofie_Douglass.jpg';
+
 
 export default {
     name: 'HomePage',
@@ -139,8 +168,38 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            amber,
+            ananya,
+            beatrice,
+            daniel,
+            julia,
+            mika,
+            neha,
+            nitya,
+            saloni,
+            adrien,
+            angela,
+            dahn,
+            kyra,
+            olivia,
+            tracy,
+            trish,
+            vivian,
+            wendy,
+            adrian,
+            anu,
+            hannah,
+            harleen,
+            ishaan,
+            meilin,
+            saanvi,
+            sofie
+        }
+    }
 };
+
 </script>
 
 <style scoped>

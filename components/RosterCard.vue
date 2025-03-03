@@ -80,6 +80,7 @@ props: {
 .profile-image {
     width: 80px;
     height: 80px;
+    background-color: #b0c4de;
     border-radius: 50%;
     margin: 0 auto 10px;
     position: relative; /* Needed for absolute positioning of the badge */
@@ -116,6 +117,7 @@ props: {
     border: 1px solid white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 
 .linkedin-badge img {
     width: 35px; 
