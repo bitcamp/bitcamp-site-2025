@@ -3,17 +3,34 @@
         <div class="app-container">
             <div class="image image-day"></div>
             <div class="roster-container">
-                <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" />
-                <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" />
-                <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" />
-                <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" />
-                <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" />
-                <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" />
-                <RosterCard name="Alex Luo" position="Position" pronouns="they/them" />
-                <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" />
-                <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" />
-                <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" />
-                <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" />
+                <div class="team-name">Co-Executive</div>
+                <RosterCard name="Anjali Samavedam" position="Co-Executive Director" pronouns="she/her" url="https://www.linkedin.com/in/anjali-samavedam/"/>
+                <RosterCard name="Sharvari Tirodkar" position="Co-Executive Director" pronouns="she/her" url="http://linkedin.com/in/stirodka/"/>
+                
+                <div class="team-name">Sponsorship</div>
+                <RosterCard name="Rishi Agarwal" position="Sponsorship (General, Mass Mailing)" pronouns="he/him" url="http://www.linkedin.com/in/rishi-agarwal13" headshot="~/assets/img/headshots/rishiagarwal.jpg"/>
+                <RosterCard name="Nikita (Niki) Arya" position="Sponsorship (Contact Finders/Writers)" pronouns="she/her" url="http://www.linkedin.com/in/nikitaaryaa"/>
+                <RosterCard name="Melanie Chen" position="Finance (Invoicing)" pronouns="she/her" url="https://www.linkedin.com/in/melaniechenn"/>
+                <RosterCard name="Aditri Gadigi" position="Finance (Reimbursements)" pronouns="she/her" url="http://www.linkedin.com/in/aditrig"/>
+                <RosterCard name="Jennifer Li" position="Sponsorship (General, Mass Mailing)" pronouns="she/her" url="https://www.linkedin.com/in/li-jennifer-j/"/>
+                <RosterCard name="Saharsh Maloo" position="Sponsorship (General, Mass Mailing)" pronouns="he/him" url="https://www.linkedin.com/in/saharsh-maloo"/>
+                <RosterCard name="Bhavini Pandey" position="Sponsorship (Contact Finders/Writers)" pronouns="she/her" url="https://www.linkedin.com/in/bhavini-pandey-05/"/>
+
+                <div class="team-name">Tech</div>
+                <RosterCard name="Mohe Edeen Abu Maizer" position="position" pronouns="he/him" url="https://www.linkedin.com/in/moheedeen/"/>
+                <RosterCard name="Eileen Chen" position="position" pronouns="she/her" url="https://www.linkedin.com/in/eileendc/"/>
+                <RosterCard name="Tyson Cheung" position="position" pronouns="he/him" url="https://www.linkedin.com/in/tyson-cheung"/>
+                <RosterCard name="Arya Gijare" position="position" pronouns="she/her" url="https://www.linkedin.com/in/arya-gijare/"/>
+                <RosterCard name="Sanya Gupta" position="position" pronouns="she/her" url="https://www.linkedin.com/in/sanya-gupta7"/>
+                <RosterCard name="Joanne Lee" position="position" pronouns="she/her" url="https://www.linkedin.com/in/joanneynlee"/>
+                <RosterCard name="Devon Lai" position="position" pronouns="he/him" url="http://www.linkedin.com/in/devon-lai"/>
+                <RosterCard name="Harrison Padgett" position="position" pronouns="he/him" url="https://www.linkedin.com/in/harrison-padgett"/>
+                <RosterCard name="Swathi Pulipati" position="position" pronouns="she/her" url="https://linkedin.com/in/swathi-pulipati-1b450b232"/>
+                <RosterCard name="Thirunavukkarasu (Thiru) Sethuraman" position="position" pronouns="he/him" url="https://www.linkedin.com/in/thirus27"/>
+                <RosterCard name="Srujana Theerthala" position="position" pronouns="she/her" url="https://www.linkedin.com/in/srujana-theerthala-165671262"/>
+                <RosterCard name="Harini Thirukonda" position="position" pronouns="she/her" url="https://www.linkedin.com/in/harini-thirukonda-190036238/"/>
+
+
             </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
@@ -135,6 +152,18 @@ export default {
     font-family: 'Aleo', sans-serif;
 }
 
+.team-name {
+    font-family: Aleo;
+    font-weight: 700;
+    font-size: 4vh;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
 .image {
     height: 100vh;
     background-size: cover;
@@ -173,6 +202,7 @@ export default {
     top: 0;
     left: 20%;
     overflow-y: auto;
+    justify-content: center;
 }
 
 @media (max-width: 796px) {

@@ -3,12 +3,23 @@
   <!-- Profile Image + LinkedIn Badge -->
   <div class="profile-header">
       <div class="profile-image">
-      <div class="linkedin-badge">
+        <img 
+          :src="headshot"
+          alt="LinkedIn"
+          class="profile-image"
+          />
+        <a 
+            v-if="url" 
+            :href="url" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="linkedin-badge"
+          >
           <img 
           src="assets/img/icons/linkedin.webp" 
-          alt="LinkedIn" 
+          alt="LinkedIn"
           />
-      </div>
+        </a>
       </div>
   </div>
 
@@ -20,6 +31,9 @@
 
   <!-- Pronouns -->
   <p class="pronouns"><i>{{ pronouns }}</i></p>
+
+  <p class="pronouns"><i>{{ headshot }}</i></p>
+
   </div>
 </template>
 
@@ -37,6 +51,14 @@ props: {
   pronouns: {
     type: String,
     default: 'he/him'
+  },
+  url: {
+    type: String,
+    default: ' '
+  },
+  headshot: {
+    type: String,
+    default: 'assets/img/headshots/rishiagarwal.jpg'
   }
 }
 };
@@ -70,11 +92,19 @@ props: {
     width: 80px;
     height: 80px;
     background-color: #b0c4de;
+    background-image: headshot;
     border-radius: 50%;
     margin: 0 auto 10px;
     position: relative; /* Needed for absolute positioning of the badge */
   }
-  
+
+  .profile-image img {
+  width: 100%;  /* Ensures it fills the parent container */
+  height: 100%;
+  object-fit: cover; /* Ensures the aspect ratio is preserved */
+  border-radius: 50%;
+}
+
   /* LinkedIn Badge (overlapping top-left of profile image) */
   .linkedin-badge {
     position: absolute;
