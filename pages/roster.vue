@@ -1,8 +1,9 @@
 <template>
     <div class="wrapper" ref="el">
         <div class="app-container">
-            <div class="image image-day"></div>
+            <div class="image image-day">
                 <div class="roster-container"></div>
+            </div>
             <!-- <div class="image image-late-day"></div> -->
             <!-- <div class="image image-sunset"></div> -->
             <!-- <div class="image image-night"></div> -->
@@ -123,10 +124,13 @@ export default {
 }
 
 .image {
+    position: relative;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 .image-day {
@@ -156,7 +160,6 @@ export default {
     opacity: 0.76;
     position: absolute;
     top: 0;
-    left: 20%;
 }
 
 @media (max-width: 796px) {
