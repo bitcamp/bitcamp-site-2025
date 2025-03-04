@@ -25,7 +25,9 @@
 
             </div>
             <div class="bottom_button_container">
-                <img class="meet_team_image" src="../assets/img/images/meet_team_button.svg" alt="lebron" />
+                <a href="/roster" target="_blank">
+                    <img class="meet_team_image" src="../assets/img/images/meet_team_button.svg" alt="lebron" />
+                </a>
             </div>
 
         </div>
