@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="exp" class="container">
+        <div class="team-name">Experience</div>
         <div class="section">
             <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" :imageSrc="avanti"
                 linkedinUrl="https://www.linkedin.com/in/avantiathavale/" />

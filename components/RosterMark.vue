@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="mark" class="container">
+        <div class="team-name">Marketing</div>
         <div class="section">
             <RosterCard name="Sameer Chawla" position="Position" pronouns="he/him" :imageSrc="sameer"
                 linkedinUrl="https://www.linkedin.com/in/sameer-chawla01/" />

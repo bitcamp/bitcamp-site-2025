@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="sponsfin" class="container">
+        <div class="team-name">Sponsorship and Finance</div>
         <div class="section">
             <RosterCard name="Rishi Agarwal" position="Sponsorship" pronouns="he/him" :imageSrc="rishi"
                 linkedinUrl="http://www.linkedin.com/in/rishi-agarwal13" />

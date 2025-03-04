@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="dir" class="container">
+        <div class="team-name">Directors</div>
         <div class="section">
             <RosterCard name="Soumika (Mika) Pendem" position="Design Director" pronouns="she/her"
                 linkedinUrl="https://www.linkedin.com/in/soumika-pendem/" :imageSrc="mika" />

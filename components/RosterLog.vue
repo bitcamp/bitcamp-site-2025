@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="log" class="container">
+        <div class="team-name">Logistics</div>
         <div class="section">
             <RosterCard name="Anoushka Arora" position="Position" pronouns="she/her" :imageSrc="anoushka"
                 linkedinUrl="https://www.linkedin.com/in/anoushka-arora-b77929153/" />

@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="design" class="container">
+        <div class="team-name">Design</div>
         <div class="section">
             <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them"
                 linkedinUrl="https://www.linkedin.com/in/adrien-rozario-847b68249/" :imageSrc="adrien" />

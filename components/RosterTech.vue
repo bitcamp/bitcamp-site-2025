@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="tech" class="container">
+        <div class="team-name">Tech</div>
         <div class="section">
             <RosterCard name="Mohe Edeen Abu Maizer" position="Tech Member" pronouns="he/him" :imageSrc="mohe"
                 linkedinUrl="https://www.linkedin.com/in/moheedeen/" />

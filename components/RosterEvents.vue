@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="events" class="container">
+        <div class="team-name">Events</div>
         <div class="section">
             <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him" :imageSrc="adrian" />
             <RosterCard name="Anunithaa (Anu) Rajakumaresan" position="Events Organizer" pronouns="she/her"

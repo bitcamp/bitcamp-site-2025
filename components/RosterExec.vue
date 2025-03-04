@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="exec" class="container">
+        <div class="team-name">Co-Executives</div>
         <div class="section">
             <RosterCard name="Anjali Samavedam" position="Co-Executive Director" pronouns="she/her" :imageSrc="anjali"
                 linkedinUrl="https://www.linkedin.com/in/anjali-samavedam/" />

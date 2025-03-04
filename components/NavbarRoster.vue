@@ -2,12 +2,12 @@
     <header>
         <nav>
             <div class="non-pages">
-                <div id="logo-container">
+                <!-- <div id="logo-container">
                     <a tag="img" href="/">
                         <img id="logo-with-text" src="~/public/bitcamp-brand/logos/logotype.png" />
                         <img id="logo-image" src="~/public/bitcamp-brand/logos/bitcamp.png" />
                     </a>
-                </div>
+                </div> -->
                 <div class="hamburgerContainer">
                     <button class="hamburger hamburger--spin" type="button" style="color: #ffffff"
                         :class="{ 'is-active': showDropdown }" @click="toggleDropdown">
@@ -19,45 +19,44 @@
             </div>
 
             <ul v-if="showDropdown || bigScreen" class="nav-pages">
-                <li class="page">
-                    <a href="#tracks" class="page-type">Tracks</a>
-                </li>
-
-                <li class="page">
-                    <a href="#campfire-games" class="page-type">Campfire Games</a>
-                </li>
-                <li class="page">
-                    <a href="#roster" class="page-type">Our Team</a>
-                </li>
-                <li class="page">
-                    <a href="#faq" class="page-type">FAQ</a>
-                </li>
-                <li class="page">
-                    <a href="#sponsors" class="page-type">Sponsors</a>
-                </li>
-
-                <template v-if="bigScreen">
-                    <a id="mlh-trust-badge" style="
-                  display: block;
-                  height: 32px;
-                  width: 32px;
-                  max-width: 100px;
-                  min-width: 60px;
-                  width: 10%;
-                  top: -30px;
-                  margin-top: -1.5rem;
-                  position: absolute;
-                  right: -10vw;
-                " href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=yellow"
-                        target="_blank">
-                        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-yellow.svg"
-                            alt="Major League Hacking 2025 Hackathon Season" style="width:100%">
+                <div id="logo-container">
+                    <a tag="img" href="/">
+                        <img id="logo-with-text" src="~/public/bitcamp-brand/logos/logotype.png" />
+                        <img id="logo-image" src="~/public/bitcamp-brand/logos/bitcamp.png" />
                     </a>
-                </template>
+                </div>
+                <li class="page">
+                    <a href="#exec" class="page-type">Co-Executives</a>
+                </li>
+
+                <li class="page">
+                    <a href="#dir" class="page-type">Directors</a>
+                </li>
+                <li class="page">
+                    <a href="#design" class="page-type">Design</a>
+                </li>
+                <li class="page">
+                    <a href="#events" class="page-type">Events</a>
+                </li>
+                <li class="page">
+                    <a href="#exp" class="page-type">Experience</a>
+                </li>
+                <li class="page">
+                    <a href="#log" class="page-type">Logistics</a>
+                </li>
+                <li class="page">
+                    <a href="#mark" class="page-type">Marketing</a>
+                </li>
+                <li class="page">
+                    <a href="#sponsfin" class="page-type">Sponsorship and Finance</a>
+                </li>
+                <li class="page">
+                    <a href="#tech" class="page-type">Tech</a>
+                </li>
+                <li class="page">
+                    <a href="#old" class="page-type">Senior Advisors</a>
+                </li>
             </ul>
-
-
-
         </nav>
     </header>
 
@@ -125,13 +124,12 @@ header {
     z-index: 100000; // should be higher than everything else
     position: fixed;
     border: 0;
-    width: 80%;
-    left: 45%;
+    width: 100%;
+    margin-left: 50%;
     transform: translateX(-50%);
     background-color: #FFEAC7;
-    border-radius: 50px;
-    justify-content: center;
-    margin-top: 30px;
+    // border-radius: 50px;
+    // margin-top: 30px;
 }
 
 nav {
@@ -141,18 +139,17 @@ nav {
 }
 
 #logo-container {
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 1px;
+    // position: absolute;
+    // margin-left: 5%;
+    margin-top: 0.5%;
     height: 100%;
-    width: 10%;
+    width: 6.9%;
 }
 
 #logo-with-text {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
-    margin-left: 20px;
 }
 
 #logo-image {
@@ -174,7 +171,6 @@ nav {
 
 .nav-pages {
     display: flex;
-    margin-left: 10vw;
     flex-direction: row;
     justify-content: space-evenly;
 }

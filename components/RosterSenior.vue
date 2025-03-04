@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <div class="team-name">Co-Executive</div>
+    <div id="old" class="container">
+        <div class="team-name">Senior Advisors</div>
         <div class="section">
             <RosterCard name="Eric Chen" position="Senior Advisor" pronouns="he/him" :imageSrc="eric" />
             <RosterCard name="Anthony Huynh" position="Senior Advisor" pronouns="he/him" :imageSrc="anthony" />

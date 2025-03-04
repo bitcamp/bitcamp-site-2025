@@ -1,9 +1,14 @@
 <template>
-    <div class="wrapper" ref="el">
+    <div class="wrapper" ref="wrapperRef">
         <NavbarRoster />
         <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
+            <div class="image image-day"></div>
+            <div class="image image-late-day"></div>
+            <div class="image image-sunset"></div>
+            <div class="image image-night"></div>
+            <div class="image image-sunrise"></div>
+            <div class="roster-container">
+                <div class="color-container">
                     <RosterExec />
                     <RosterDirector />
                     <RosterDesign />
@@ -17,10 +22,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
@@ -37,9 +38,48 @@ import RosterSenior from '~/components/RosterSenior.vue'
 import RosterTech from '~/components/RosterTech.vue'
 import RosterSponsFin from '~/components/RosterSponsFin.vue'
 
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 export default {
     name: 'HomePage',
     components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+
+    setup() {
+        const wrapperRef = ref<HTMLElement | null>(null);
+        const handleScroll = () => {
+            if (!wrapperRef.value) return;
+            const scrollTop = wrapperRef.value.scrollTop;
+            const visibleHeight = wrapperRef.value.clientHeight;
+            const totalHeight = wrapperRef.value.scrollHeight - visibleHeight;
+            const fraction = scrollTop / totalHeight;
+
+            const dayEl = wrapperRef.value.querySelector('.image-day') as HTMLElement;
+            const lateEl = wrapperRef.value.querySelector('.image-late-day') as HTMLElement;
+            const sunsetEl = wrapperRef.value.querySelector('.image-sunset') as HTMLElement;
+            const nightEl = wrapperRef.value.querySelector('.image-night') as HTMLElement;
+            const sunriseEl = wrapperRef.value.querySelector('.image-sunrise') as HTMLElement;
+
+            dayEl.style.opacity = fraction < 0.20 ? `${Math.max(0.9, 1 - fraction * 5)}` : '0';  // Half transparent instead of fully white
+            lateEl.style.opacity = fraction >= 0.10 && fraction < 0.40 ? `${Math.max(0.9, 1 - (fraction - 0.20) * 5)}` : '0';
+            sunsetEl.style.opacity = fraction >= 0.30 && fraction < 0.60 ? `${Math.max(0.9, 1 - (fraction - 0.40) * 5)}` : '0';
+            nightEl.style.opacity = fraction >= 0.50 && fraction < 0.80 ? `${Math.max(0.9, 1 - (fraction - 0.60) * 5)}` : '0';
+            sunriseEl.style.opacity = fraction >= 0.70 ? `${Math.max(0.9, 1 - (fraction - 0.80) * 5)}` : '0';
+        };
+
+        onMounted(() => {
+            if (wrapperRef.value) {
+                wrapperRef.value.addEventListener('scroll', handleScroll);
+            }
+        });
+
+        onBeforeUnmount(() => {
+            if (wrapperRef.value) {
+                wrapperRef.value.removeEventListener('scroll', handleScroll);
+            }
+        });
+        return {
+            wrapperRef,
+        };
+    },
 
     head() {
         return {
@@ -136,12 +176,16 @@ export default {
 
 <style scoped>
 .wrapper {
-    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    height: 100vh;
 }
 
 .app-container {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
     font-family: 'Aleo', sans-serif;
 }
 
@@ -158,44 +202,63 @@ export default {
 }
 
 .image {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    background-size: cover;
+    transition: opacity 0.2s linear;
+    /* Smooth transition for opacity */
 }
 
 .image-day {
     background-image: url("../assets/img/images/Daybeachmockup.svg");
+    z-index: 1;
+    opacity: 1;
 }
 
 .image-late-day {
     background-image: url("../assets/img/images/LateDaybeachmockup.svg");
+    z-index: 2;
+    opacity: 0;
 }
 
 .image-sunset {
     background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
+    z-index: 3;
+    opacity: 0;
 }
 
 .image-night {
     background-image: url("../assets/img/images/Nightbeachmockup.svg");
+    z-index: 4;
+    opacity: 0;
 }
 
 .image-sunrise {
     background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
+    z-index: 5;
+    opacity: 0;
 }
 
 .roster-container {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
+    /* background-color: rgba(20, 53, 66, 0.69);
+    width: 69%; */
     justify-content: center;
+    z-index: 99999;
+}
+
+.color-container {
+    padding-top: 2.5rem;
+    background-color: rgba(20, 53, 66, 0.69);
+    width: 69%;
 }
 </style>
