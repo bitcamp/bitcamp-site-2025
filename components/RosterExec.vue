@@ -1,45 +1,23 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Anjali Samavedam" position="Co-Executive Director" pronouns="she/her" :imageSrc="anjali"
+                linkedinUrl="https://www.linkedin.com/in/anjali-samavedam/" />
+            <RosterCard name="Sharvari Tirodkar" position="Co-Executive Director" pronouns="she/her"
+                :imageSrc="sharvari" linkedinUrl="http://linkedin.com/in/stirodka/" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import anjali from '../assets/img/images/headshots/anjali.jpg'
+import sharvari from '../assets/img/images/headshots/sharvari.jpg'
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +107,20 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            anjali,
+            sharvari,
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +135,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

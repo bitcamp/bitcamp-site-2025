@@ -1,45 +1,53 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Mohe Edeen Abu Maizer" position="Tech Member" pronouns="he/him" :imageSrc="mohe"
+                linkedinUrl="https://www.linkedin.com/in/moheedeen/" />
+            <RosterCard name="Eileen Chen" position="Tech Member" pronouns="she/her" :imageSrc="eileen"
+                linkedinUrl="https://www.linkedin.com/in/eileendc/" />
+            <RosterCard name="Tyson Cheung" position="Tech Member" pronouns="he/him" :imageSrc="tyson"
+                linkedinUrl="https://www.linkedin.com/in/tyson-cheung" />
+            <RosterCard name="Arya Gijare" position="Tech Member" pronouns="she/her" :imageSrc="arya"
+                linkedinUrl="https://www.linkedin.com/in/arya-gijare/" />
+            <RosterCard name="Sanya Gupta" position="Tech Member" pronouns="she/her" :imageSrc="sanya"
+                linkedinUrl="https://www.linkedin.com/in/sanya-gupta7" />
+            <RosterCard name="Joanne Lee" position="Tech Member" pronouns="she/her" :imageSrc="joanne"
+                linkedinUrl="https://www.linkedin.com/in/joanneynlee" />
+            <RosterCard name="Devon Lai" position="Tech Member" pronouns="he/him" :imageSrc="devon"
+                linkedinUrl="http://www.linkedin.com/in/devon-lai" />
+            <RosterCard name="Harrison Padgett" position="Tech Member" pronouns="he/him" :imageSrc="harrison"
+                linkedinUrl="https://www.linkedin.com/in/harrison-padgett" />
+            <RosterCard name="Swathi Pulipati" position="Tech Member" pronouns="she/her" :imageSrc="swathi"
+                linkedinUrl="https://linkedin.com/in/swathi-pulipati-1b450b232" />
+            <RosterCard name="Thirunavukkarasu (Thiru) Sethuraman" position="Tech Member" pronouns="he/him"
+                :imageSrc="thiru" linkedinUrl="https://www.linkedin.com/in/thirus27" />
+            <RosterCard name="Srujana Theerthala" position="Tech Member" pronouns="she/her" :imageSrc="srujana"
+                linkedinUrl="https://www.linkedin.com/in/srujana-theerthala-165671262" />
+            <RosterCard name="Harini Thirukonda" position="Tech Member" pronouns="she/her" :imageSrc="harini"
+                linkedinUrl="https://www.linkedin.com/in/harini-thirukonda-190036238/" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import mohe from '../assets/img/images/headshots/mohe.jpg';
+import eileen from '../assets/img/images/headshots/eileenchen.jpg';
+import tyson from '../assets/img/images/headshots/tysoncheung.jpg';
+import arya from '../assets/img/images/headshots/aryagijare.jpg';
+import sanya from '../assets/img/images/headshots/sanyagupta.jpg';
+import joanne from '../assets/img/images/headshots/joannelee.jpg';
+import devon from '../assets/img/images/headshots/devonlai.jpg';
+import harrison from '../assets/img/images/headshots/harrisonpadgett.jpg';
+import swathi from '../assets/img/images/headshots/swathipulipati.jpg';
+import thiru from '../assets/img/images/headshots/thirusethuraman.jpg';
+import srujana from '../assets/img/images/headshots/srujanatheerthala.jpg';
+import harini from '../assets/img/images/headshots/harinithirukonda.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +137,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            mohe, eileen, tyson, arya, sanya, joanne, devon, harrison, swathi, thiru, srujana, harini
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +164,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

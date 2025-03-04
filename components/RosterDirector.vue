@@ -1,45 +1,46 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Soumika (Mika) Pendem" position="Design Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/soumika-pendem/" :imageSrc="mika" />
+            <RosterCard name="Nitya Venkatiahgari" position="Events Director" pronouns="she/her"
+                linkedinUrl="https://linkedin.com/in/nitya-venkatiahgari" :imageSrc="nitya" />
+            <RosterCard name="Ananya Nagireddy" position="Experience Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/ananya-nagireddy-70233a1a0/" :imageSrc="ananya" />
+            <RosterCard name="Julia Chen" position="Logistics Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/julia-z-chen/" :imageSrc="julia" />
+            <RosterCard name="Neha Veeragandham" position="Logistics Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/nehaveeragandham/" :imageSrc="neha" />
+            <RosterCard name="Amber Chen" position="Marketing Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/amber--chen/" :imageSrc="amber" />
+            <RosterCard name="Beatrice Chung" position="Sponsorship Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/beatricechung/" :imageSrc="beatrice" />
+            <RosterCard name="Daniel Chung" position="Finance Director" pronouns="he/him"
+                linkedinUrl="https://www.linkedin.com/in/daniel03chung/" :imageSrc="daniel" />
+            <RosterCard name="Saloni Shah" position="Tech Director" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/saloni-k-shah/" :imageSrc="saloni" />
+            <RosterCard name="Sai Pranav Theerthala" position="Tech Director" pronouns="he/him"
+                linkedinUrl="https://www.linkedin.com/in/sai-pranav-theerthala" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import amber from '../assets/img/images/headshots/Amber Chen.jpg';
+import ananya from '../assets/img/images/headshots/Ananya Nagireddy.jpg';
+import beatrice from '../assets/img/images/headshots/Beatrice Chung.jpg';
+import daniel from '../assets/img/images/headshots/Daniel Chung.jpg';
+import julia from '../assets/img/images/headshots/Julia Chen.jpg';
+import mika from '../assets/img/images/headshots/Mika Pendem.jpg';
+import neha from '../assets/img/images/headshots/Neha Veeragandham.jpg';
+import nitya from '../assets/img/images/headshots/Nitya Venkatiahgari.jpeg';
+import saloni from '../assets/img/images/headshots/Saloni Shah.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +130,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            mika, nitya, ananya, julia, neha, amber, beatrice, daniel, saloni
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +157,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

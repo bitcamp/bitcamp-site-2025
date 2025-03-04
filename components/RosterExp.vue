@@ -1,45 +1,50 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" :imageSrc="avanti"
+                linkedinUrl="https://www.linkedin.com/in/avantiathavale/" />
+            <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" :imageSrc="aditi"
+                linkedinUrl="https://www.linkedin.com/in/aditichalasani/" />
+            <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" :imageSrc="debarshi"
+                linkedinUrl="https://www.linkedin.com/in/debarshi-dey/" />
+            <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them"
+                linkedinUrl="https://www.linkedin.com/in/sifene-fufa-a8975b33b//" />
+            <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" :imageSrc="sam"
+                linkedinUrl="https://www.linkedin.com/in/samuel-galita-7498a5225/" />
+            <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" :imageSrc="jas"
+                linkedinUrl="https://www.linkedin.com/in/jaskaran-gill123/" />
+            <RosterCard name="Alex Luo" position="Position" pronouns="he/him" :imageSrc="alex"
+                linkedinUrl="https://www.linkedin.com/in/alexbluo/" />
+            <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" :imageSrc="nithika"
+                linkedinUrl="https://www.linkedin.com/in/nithika-ramanathan/" />
+            <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" :imageSrc="michelle"
+                linkedinUrl="https://www.linkedin.com/in/michelle-rhee-900903292/" />
+            <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" :imageSrc="anannya"
+                linkedinUrl="https://www.linkedin.com/in/anannya-trehan/" />
+            <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" :imageSrc="michelleY"
+                linkedinUrl="https://www.linkedin.com/in/michelle-yu-57122b246/" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import avanti from '../assets/img/images/headshots/Avanti Athavale.jpg';
+import aditi from '../assets/img/images/headshots/Aditi Chalasani.jpg';
+import debarshi from '../assets/img/images/headshots/Debarshi Dey - Headshot.jpeg';
+// import sif from '../assets/img/images/headshots/Sifene Fufa.jpg';
+import sam from '../assets/img/images/headshots/Sam Galita.jpg';
+import jas from '../assets/img/images/headshots/Jaskaran Gill.jpg';
+import alex from '../assets/img/images/headshots/Alex Luo.jpg';
+import nithika from '../assets/img/images/headshots/Nithika Ramanathan.jpeg';
+import michelle from '../assets/img/images/headshots/Michelle Rhee.jpg';
+import anannya from '../assets/img/images/headshots/Anannya Trehan.jpg';
+import michelleY from '../assets/img/images/headshots/Michelle Yu.jpeg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +134,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            avanti, aditi, debarshi, sam, jas, alex, nithika, michelle, anannya, michelleY
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +161,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

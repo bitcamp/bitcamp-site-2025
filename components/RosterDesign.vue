@@ -1,45 +1,44 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them"
+                linkedinUrl="https://www.linkedin.com/in/adrien-rozario-847b68249/" :imageSrc="adrien" />
+            <RosterCard name="Angela Zhang" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="www.linkedin.com/in/angela-zhang915" :imageSrc="angela" />
+            <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="they/them"
+                linkedinUrl="https://www.linkedin.com/in/dahn-kim-a92934254/" :imageSrc="dahn" />
+            <RosterCard name="Kyra Yip" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/kyra-skye-yip/" :imageSrc="kyra" />
+            <RosterCard name="Olivia Zhang" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/oliviaszhang" :imageSrc="olivia" />
+            <RosterCard name="Tracy Anne Tan" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/tracy-anne-tan-69a37a27b" :imageSrc="tracy" />
+            <RosterCard name="Trisha Anand" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/anandtrisha/" :imageSrc="trish" />
+            <RosterCard name="Vivian Howe" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/vivianhowe/" :imageSrc="vivian" />
+            <RosterCard name="Wendy Tu" position="Design Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/wendy-tu-umd/" :imageSrc="wendy" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import adrien from '../assets/img/images/headshots/Adrien Rozario.jpg';
+import angela from '../assets/img/images/headshots/Angela Zhang.jpg';
+import dahn from '../assets/img/images/headshots/Dahn Kim.png';
+import kyra from '../assets/img/images/headshots/Kyra Yip.png';
+import olivia from '../assets/img/images/headshots/Olivia Zhang.jpg';
+import tracy from '../assets/img/images/headshots/Tracy Anne Tan.jpg';
+import trish from '../assets/img/images/headshots/Trisha Anand.jpg';
+import vivian from '../assets/img/images/headshots/Vivian Howe.jpg';
+import wendy from '../assets/img/images/headshots/Wendy Tu.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +128,27 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            adrien,
+            angela,
+            dahn,
+            kyra,
+            olivia,
+            tracy,
+            trish,
+            vivian,
+            wendy
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +163,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

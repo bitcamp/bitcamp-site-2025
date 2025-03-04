@@ -1,45 +1,38 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Rishi Agarwal" position="Sponsorship" pronouns="he/him" :imageSrc="rishi"
+                linkedinUrl="http://www.linkedin.com/in/rishi-agarwal13" />
+            <RosterCard name="Nikita (Niki) Arya" position="Sponsorship (Contact Finders/Writers)" pronouns="she/her"
+                :imageSrc="nikita" linkedinUrl="http://www.linkedin.com/in/nikitaaryaa" />
+            <RosterCard name="Melanie Chen" position="Finance (Invoicing)" pronouns="she/her" :imageSrc="melanie"
+                linkedinUrl="https://www.linkedin.com/in/melaniechenn" />
+            <RosterCard name="Aditri Gadigi" position="Finance (Reimbursements)" pronouns="she/her" :imageSrc="aditri"
+                linkedinUrl="http://www.linkedin.com/in/aditrig" />
+            <RosterCard name="Jennifer Li" position="Sponsorship (General, Mass Mailing)" pronouns="she/her"
+                :imageSrc="jennifer" linkedinUrl="https://www.linkedin.com/in/li-jennifer-j/" />
+            <RosterCard name="Saharsh Maloo" position="Sponsorship (General, Mass Mailing)" pronouns="he/him"
+                :imageSrc="saharsh" linkedinUrl="https://www.linkedin.com/in/saharsh-maloo" />
+            <RosterCard name="Bhavini Pandey" position="Sponsorship (Contact Finders/Writers)" pronouns="she/her"
+                :imageSrc="bhavini" linkedinUrl="https://www.linkedin.com/in/bhavini-pandey-05/" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import rishi from '../assets/img/images/headshots/rishiagarwal.jpg';
+import saharsh from '../assets/img/images/headshots/saharashmaloo2.jpg';
+import nikita from '../assets/img/images/headshots/nikitaarya.jpg';
+import melanie from '../assets/img/images/headshots/melaniechen.jpg';
+import aditri from '../assets/img/images/headshots/aditrigadigi.jpg';
+import jennifer from '../assets/img/images/headshots/jenniferli.jpg';
+import bhavini from '../assets/img/images/headshots/bhavinipandey.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +122,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            rishi, nikita, melanie, aditri, jennifer, saharsh, bhavini
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +149,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

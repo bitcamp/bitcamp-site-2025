@@ -1,45 +1,40 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him" :imageSrc="adrian" />
+            <RosterCard name="Anunithaa (Anu) Rajakumaresan" position="Events Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/anunithaa-rajakumaresan-180261238/" :imageSrc="anu" />
+            <RosterCard name="Hannah Chen" position="Events Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/hannah-chen-30099b27b" :imageSrc="hannah" />
+            <RosterCard name="Harleen Green" position="Events Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/harleengreen" :imageSrc="harleen" />
+            <RosterCard name="Ishaan Bhardvaj" position="Events Organizer" pronouns="he/him"
+                linkedinUrl="https://www.linkedin.com/in/ishaan-b-bhardvaj" :imageSrc="ishaan" />
+            <RosterCard name="Meilin Yuan" position="Events Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/meilinyuan" :imageSrc="meilin" />
+            <RosterCard name="Saanvi Kataria" position="Events Organizer" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/-saanvikataria" :imageSrc="saanvi" />
+            <RosterCard name="Sofia (Sofie) Douglass" position="Events Organizer" pronouns="she/her"
+                :imageSrc="sofie" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import adrian from '../assets/img/images/headshots/Adrian Alphons.jpg';
+import anu from '../assets/img/images/headshots/Anunithaa Rajakumaresan.jpg';
+import hannah from '../assets/img/images/headshots/Hannah Chen.jpg';
+import harleen from '../assets/img/images/headshots/Harleen Green.jpg';
+import ishaan from '../assets/img/images/headshots/Ishaan Bhardvaj.jpg';
+import meilin from '../assets/img/images/headshots/Meilin Yuan Professional.jpg';
+import saanvi from '../assets/img/images/headshots/Saanvi_Kataria.jpg';
+import sofie from '../assets/img/images/headshots/Sofie_Douglass.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +124,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            adrian, anu, hannah, harleen, ishaan, meilin, saanvi, sofie
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +151,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>

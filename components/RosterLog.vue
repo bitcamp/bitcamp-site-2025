@@ -1,45 +1,50 @@
 <template>
-    <div class="wrapper" ref="el">
-        <NavbarRoster />
-        <div class="app-container">
-            <div class="image image-day">
-                <div class="roster-container">
-                    <RosterExec />
-                    <RosterDirector />
-                    <RosterDesign />
-                    <RosterEvents />
-                    <RosterExp />
-                    <RosterLog />
-                    <RosterMark />
-                    <RosterSponsFin />
-                    <RosterTech />
-                    <RosterSenior />
-                </div>
-            </div>
+    <div class="container">
+        <div class="team-name">Co-Executive</div>
+        <div class="section">
+            <RosterCard name="Anoushka Arora" position="Position" pronouns="she/her" :imageSrc="anoushka"
+                linkedinUrl="https://www.linkedin.com/in/anoushka-arora-b77929153/" />
+            <RosterCard name="Sneha Balur" position="Position" pronouns="she/her" :imageSrc="sneha"
+                linkedinUrl="https://www.linkedin.com/in/sneha-balur/" />
+            <RosterCard name="James (Jim) Joseph Barry" position="Position" pronouns="he/him" :imageSrc="jim"
+                linkedinUrl="https://www.linkedin.com/in/james-barry-good-choice/?profileId=ACoAAFB_MukBscIhyXIavb9ybwfFmzfPhNf033k" />
+            <RosterCard name="Anshu Chandrasekhar" position="Position" pronouns="she/her" :imageSrc="anshu"
+                linkedinUrl="https://www.linkedin.com/in/anshu-chandrasekhar/" />
+            <RosterCard name="Shreya Gavarapattu" position="Position" pronouns="she/her" :imageSrc="shreya"
+                linkedinUrl="https://www.linkedin.com/in/shreyagav/" />
+            <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her"
+                linkedinUrl="https://www.linkedin.com/in/naomi-kaul-a1b1341ba/" />
+            <RosterCard name="Tiffany Liu" position="Position" pronouns="she/her" :imageSrc="tiffany"
+                linkedinUrl="https://www.linkedin.com/in/tiffany-liu-776628244/" />
+            <RosterCard name="Benjamin (Ben) Losey" position="Position" pronouns="he/him" :imageSrc="ben"
+                linkedinUrl="https://www.linkedin.com/in/benjamin-losey/" />
+            <RosterCard name="Charis Wang" position="Position" pronouns="she/her" :imageSrc="charis"
+                linkedinUrl="https://www.linkedin.com/in/charswng/" />
+            <RosterCard name="Ryan Zhao" position="Position" pronouns="he/him" :imageSrc="ryan"
+                linkedinUrl="https://www.linkedin.com/in/ryanzhao27/" />
+            <RosterCard name="Jessica Zhou" position="Position" pronouns="she/her" :imageSrc="jessica"
+                linkedinUrl="https://www.linkedin.com/in/jessica-zhou-2a53021b3/" />
         </div>
-        <!-- <div class="image image-late-day"></div> -->
-        <!-- <div class="image image-sunset"></div> -->
-        <!-- <div class="image image-night"></div> -->
-        <!-- <div class="image image-sunrise"></div> -->
     </div>
 </template>
 
 <script lang="ts">
-import NavbarRoster from '~/components/NavbarRoster.vue'
-import RosterExec from '~/components/RosterExec.vue'
-import RosterDirector from '~/components/RosterDirector.vue'
-import RosterDesign from '~/components/RosterDesign.vue'
-import RosterEvents from '~/components/RosterEvents.vue'
-import RosterExp from '~/components/RosterExp.vue'
-import RosterLog from '~/components/RosterLog.vue'
-import RosterMark from '~/components/RosterMark.vue'
-import RosterSenior from '~/components/RosterSenior.vue'
-import RosterTech from '~/components/RosterTech.vue'
-import RosterSponsFin from '~/components/RosterSponsFin.vue'
+import anoushka from '../assets/img/images/headshots/Anoushka Arora.jpg';
+import sneha from '../assets/img/images/headshots/Sneha Balur.jpeg';
+import jim from '../assets/img/images/headshots/James Barry.jpeg';
+import anshu from '../assets/img/images/headshots/Anshu_C.jpg';
+import shreya from '../assets/img/images/headshots/Shreya Gavarapattu.jpg';
+// import naomi from '../assets/img/images/headshots/Naomi Kaul.jpg';
+import tiffany from '../assets/img/images/headshots/Tiffany Liu.jpg';
+import ben from '../assets/img/images/headshots/Ben Losey.jpeg';
+import charis from '../assets/img/images/headshots/Charis Wang.jpg';
+import ryan from '../assets/img/images/headshots/Ryan Zhao.jpg';
+import jessica from '../assets/img/images/headshots/Jessica Zhou.jpg';
 
 export default {
     name: 'HomePage',
-    components: { RosterDesign, RosterDirector, RosterExec, RosterExp, RosterLog, RosterMark, RosterSenior, RosterSponsFin, RosterTech },
+    // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
+    components: {},
 
     head() {
         return {
@@ -129,20 +134,19 @@ export default {
                 },
             ],
         };
-    },
+    }, data() {
+        return {
+            anoushka, sneha, jim, anshu, shreya, tiffany, ben, charis, ryan, jessica
+        }
+    }
 };
 
 </script>
 
 <style scoped>
-.wrapper {
-    overflow-x: hidden;
-}
-
-.app-container {
+.container {
     display: flex;
     flex-direction: column;
-    font-family: 'Aleo', sans-serif;
 }
 
 .team-name {
@@ -157,45 +161,11 @@ export default {
     padding-bottom: 2vh;
 }
 
-.image {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.section {
     display: flex;
     justify-content: center;
-}
-
-.image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
-}
-
-.image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
-}
-
-.image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
-}
-
-.image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
-}
-
-.image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
-}
-
-.roster-container {
-    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    background-color: rgba(20, 53, 66, 0.69);
-    position: absolute;
-    top: 0;
-    overflow-y: auto;
-    width: 69%;
-    justify-content: center;
+    width: 100%;
 }
 </style>
