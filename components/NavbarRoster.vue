@@ -127,7 +127,9 @@ header {
     width: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
-    background-color: #FFEAC7;
+    // background-color: #FFEAC7;
+    background-color: #3d565c;
+
     // border-radius: 50px;
     // margin-top: 30px;
 }
@@ -157,7 +159,7 @@ nav {
 }
 
 .page-type {
-    color: #FF6F3F;
+    color: #FFFFFF;
     font-family: Aleo;
     font-size: 14px;
     font-style: normal;
