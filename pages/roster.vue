@@ -56,6 +56,80 @@
                             linkedinUrl="https://www.linkedin.com/in/wendy-tu-umd/" :imageSrc="wendy" />
                     </div>
 
+                    <div class="team-name">Experience</div>
+                    <div class="section">
+                        <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" :imageSrc="avanti"
+                            linkedinUrl="https://www.linkedin.com/in/avantiathavale/" />
+                        <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" :imageSrc="aditi"
+                            linkedinUrl="https://www.linkedin.com/in/aditichalasani/" />
+                        <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" :imageSrc="debarshi"
+                            linkedinUrl="https://www.linkedin.com/in/debarshi-dey/" />
+                        <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them"
+                            linkedinUrl="https://www.linkedin.com/in/sifene-fufa-a8975b33b//" />
+                        <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" :imageSrc="sam"
+                            linkedinUrl="https://www.linkedin.com/in/samuel-galita-7498a5225/" />
+                        <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" :imageSrc="jas"
+                            linkedinUrl="https://www.linkedin.com/in/jaskaran-gill123/" />
+                        <RosterCard name="Alex Luo" position="Position" pronouns="he/him" :imageSrc="alex"
+                            linkedinUrl="https://www.linkedin.com/in/alexbluo/" />
+                        <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" :imageSrc="nithika"
+                            linkedinUrl="https://www.linkedin.com/in/nithika-ramanathan/" />
+                        <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" :imageSrc="michelle"
+                            linkedinUrl="https://www.linkedin.com/in/michelle-rhee-900903292/" />
+                        <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" :imageSrc="anannya"
+                            linkedinUrl="https://www.linkedin.com/in/anannya-trehan/" />
+                        <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" :imageSrc="michelleY"
+                            linkedinUrl="https://www.linkedin.com/in/michelle-yu-57122b246/" />
+                    </div>
+
+                    <div class="team-name">Logistics</div>
+                    <div class="section">
+                        <RosterCard name="Anoushka Arora" position="Position" pronouns="she/her" :imageSrc="anoushka"
+                            linkedinUrl="https://www.linkedin.com/in/anoushka-arora-b77929153/" />
+                        <RosterCard name="Sneha Balur" position="Position" pronouns="she/her" :imageSrc="sneha"
+                            linkedinUrl="https://www.linkedin.com/in/sneha-balur/" />
+                        <RosterCard name="James (Jim) Joseph Barry" position="Position" pronouns="he/him"
+                            :imageSrc="jim"
+                            linkedinUrl="https://www.linkedin.com/in/james-barry-good-choice/?profileId=ACoAAFB_MukBscIhyXIavb9ybwfFmzfPhNf033k" />
+                        <RosterCard name="Anshu Chandrasekhar" position="Position" pronouns="she/her" :imageSrc="anshu"
+                            linkedinUrl="https://www.linkedin.com/in/anshu-chandrasekhar/" />
+                        <RosterCard name="Shreya Gavarapattu" position="Position" pronouns="she/her" :imageSrc="shreya"
+                            linkedinUrl="https://www.linkedin.com/in/shreyagav/" />
+                        <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her"
+                            linkedinUrl="https://www.linkedin.com/in/naomi-kaul-a1b1341ba/" />
+                        <RosterCard name="Tiffany Liu" position="Position" pronouns="she/her" :imageSrc="tiffany"
+                            linkedinUrl="https://www.linkedin.com/in/tiffany-liu-776628244/" />
+                        <RosterCard name="Benjamin (Ben) Losey" position="Position" pronouns="he/him" :imageSrc="ben"
+                            linkedinUrl="https://www.linkedin.com/in/benjamin-losey/" />
+                        <RosterCard name="Charis Wang" position="Position" pronouns="she/her" :imageSrc="charis"
+                            linkedinUrl="https://www.linkedin.com/in/charswng/" />
+                        <RosterCard name="Ryan Zhao" position="Position" pronouns="he/him" :imageSrc="ryan"
+                            linkedinUrl="https://www.linkedin.com/in/ryanzhao27/" />
+                        <RosterCard name="Jessica Zhou" position="Position" pronouns="she/her" :imageSrc="jessica"
+                            linkedinUrl="https://www.linkedin.com/in/jessica-zhou-2a53021b3/" />
+                    </div>
+
+                    <div class="team-name">Marketing</div>
+                    <div class="section">
+                        <RosterCard name="Sameer Chawla" position="Position" pronouns="he/him" :imageSrc="sameer"
+                            linkedinUrl="https://www.linkedin.com/in/sameer-chawla01/" />
+                        <RosterCard name="Kai Chen" position="Position" pronouns="he/him" :imageSrc="kai"
+                            linkedinUrl="https://www.linkedin.com/in/kaiichen/" />
+                        <RosterCard name="Ben DiMarco" position="Position" pronouns="he/him" imageSrc=""
+                            linkedinUrl="https://www.linkedin.com/in/bendimarco/" />
+                        <RosterCard name="Srinidhi (Sri) Guruvayurappan" position="Position" pronouns="she/her"
+                            :imageSrc="sri"
+                            linkedinUrl="https://www.linkedin.com/in/srinidhi-guruvayurappan-1a40a829a/" />
+                        <RosterCard name="Purva Jani" position="Position" pronouns="she/her" :imageSrc="purva"
+                            linkedinUrl="https://www.linkedin.com/in/purva-jani/" />
+                        <RosterCard name="Kaylee Kim" position="Position" pronouns="she/her" :imageSrc="kaylee"
+                            linkedinUrl="https://www.linkedin.com/in/kaylee-k/" />
+                        <RosterCard name="Richard Mukam Jr" position="Position" pronouns="he/him" :imageSrc="richard"
+                            linkedinUrl="https://www.linkedin.com/in/richardmukamjr/" />
+                        <RosterCard name="Grace Yang" position="Position" pronouns="she/her" :imageSrc="grace"
+                            linkedinUrl="https://www.linkedin.com/in/graceyang2027/" />
+                    </div>
+
                     <div class="team-name">Events</div>
                     <div class="section">
                         <RosterCard name="Adrian Alphons" position="Events Organizer" pronouns="he/him"
@@ -203,6 +277,36 @@ import meilin from '../assets/img/images/headshots/Meilin Yuan Professional.jpg'
 import saanvi from '../assets/img/images/headshots/Saanvi_Kataria.jpg';
 import sofie from '../assets/img/images/headshots/Sofie_Douglass.jpg';
 
+import avanti from '../assets/img/images/headshots/Avanti Athavale.jpg';
+import aditi from '../assets/img/images/headshots/Aditi Chalasani.jpg';
+import debarshi from '../assets/img/images/headshots/Debarshi Dey - Headshot.jpeg';
+// import sif from '../assets/img/images/headshots/Sifene Fufa.jpg';
+import sam from '../assets/img/images/headshots/Sam Galita.jpg';
+import jas from '../assets/img/images/headshots/Jaskaran Gill.jpg';
+import alex from '../assets/img/images/headshots/Alex Luo.jpg';
+import nithika from '../assets/img/images/headshots/Nithika Ramanathan.jpeg';
+import michelle from '../assets/img/images/headshots/Michelle Rhee.jpg';
+import anannya from '../assets/img/images/headshots/Anannya Trehan.jpg';
+import michelleY from '../assets/img/images/headshots/Michelle Yu.jpeg';
+import anoushka from '../assets/img/images/headshots/Anoushka Arora.jpg';
+import sneha from '../assets/img/images/headshots/Sneha Balur.jpeg';
+import jim from '../assets/img/images/headshots/James Barry.jpeg';
+import anshu from '../assets/img/images/headshots/Anshu_C.jpg';
+import shreya from '../assets/img/images/headshots/Shreya Gavarapattu.jpg';
+// import naomi from '../assets/img/images/headshots/Naomi Kaul.jpg';
+import tiffany from '../assets/img/images/headshots/Tiffany Liu.jpg';
+import ben from '../assets/img/images/headshots/Ben Losey.jpeg';
+import charis from '../assets/img/images/headshots/Charis Wang.jpg';
+import ryan from '../assets/img/images/headshots/Ryan Zhao.jpg';
+import jessica from '../assets/img/images/headshots/Jessica Zhou.jpg';
+import sameer from '../assets/img/images/headshots/SameerChawla.jpg';
+import kai from '../assets/img/images/headshots/Kai Chen.jpg';
+// import benD from '../assets/img/images/headshots/Ben DiMarco.jpg';
+import sri from '../assets/img/images/headshots/Srinidhi Guruvayurappan.jpeg';
+import purva from '../assets/img/images/headshots/Purva Jani.jpg';
+import kaylee from '../assets/img/images/headshots/Kaylee Kim.jpg';
+import richard from '../assets/img/images/headshots/Richard Mukham.jpg';
+import grace from '../assets/img/images/headshots/Grace Yang.jpg';
 
 export default {
     name: 'HomePage',
@@ -349,7 +453,34 @@ export default {
             ishaan,
             meilin,
             saanvi,
-            sofie
+            sofie,
+            avanti,
+            aditi,
+            debarshi,
+            sam,
+            jas,
+            alex,
+            nithika,
+            michelle,
+            anannya,
+            michelleY,
+            anoushka,
+            sneha,
+            jim,
+            anshu,
+            shreya,
+            tiffany,
+            ben,
+            charis,
+            ryan,
+            jessica,
+            sameer,
+            kai,
+            sri,
+            purva,
+            kaylee,
+            richard,
+            grace
         }
     }
 };
@@ -357,16 +488,8 @@ export default {
 </script>
 
 <style scoped>
-.organizers-container>h1 {
-    flex-basis: 100%;
-    text-align: center;
-    color: white;
-}
-
 .wrapper {
-    overflow-y: scroll;
     overflow-x: hidden;
-    height: 100vh;
 }
 
 .app-container {
@@ -420,27 +543,12 @@ export default {
 .roster-container {
     display: flex;
     flex-wrap: wrap;
-    width: 61vw;
-    width: 90%;
     max-width: 840px;
-    /* 4 cards * (200px each + small gaps) */
-    height: 100vh;
+    height: 100%;
     background-color: rgba(20, 53, 66, 0.69);
     position: absolute;
     top: 0;
     overflow-y: auto;
-    padding: 10px;
-    /* Optional: adjust horizontal padding if needed */
-}
-
-
-.organizers-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 90%;
-    height: auto;
-    position: absolute;
 }
 
 .section {
