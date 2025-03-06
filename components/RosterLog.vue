@@ -12,7 +12,7 @@
                 linkedinUrl="https://www.linkedin.com/in/anshu-chandrasekhar/" />
             <RosterCard name="Shreya Gavarapattu" position="Position" pronouns="she/her" :imageSrc="shreya"
                 linkedinUrl="https://www.linkedin.com/in/shreyagav/" />
-            <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her"
+            <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her" :imageSrc="naomi"
                 linkedinUrl="https://www.linkedin.com/in/naomi-kaul-a1b1341ba/" />
             <RosterCard name="Tiffany Liu" position="Position" pronouns="she/her" :imageSrc="tiffany"
                 linkedinUrl="https://www.linkedin.com/in/tiffany-liu-776628244/" />
@@ -29,17 +29,17 @@
 </template>
 
 <script lang="ts">
-import anoushka from '../assets/img/images/headshots/Anoushka Arora.jpg';
-import sneha from '../assets/img/images/headshots/Sneha Balur.jpeg';
-import jim from '../assets/img/images/headshots/James Barry.jpeg';
-import anshu from '../assets/img/images/headshots/Anshu_C.jpg';
-import shreya from '../assets/img/images/headshots/Shreya Gavarapattu.jpg';
-// import naomi from '../assets/img/images/headshots/Naomi Kaul.jpg';
-import tiffany from '../assets/img/images/headshots/Tiffany Liu.jpg';
-import ben from '../assets/img/images/headshots/Ben Losey.jpeg';
-import charis from '../assets/img/images/headshots/Charis Wang.jpg';
-import ryan from '../assets/img/images/headshots/Ryan Zhao.jpg';
-import jessica from '../assets/img/images/headshots/Jessica Zhou.jpg';
+import anoushka from '/assets/img/images/headshots/anoushkaarora.jpg';
+import sneha from 'assets/img/images/headshots/snehabalur.jpg';
+import jim from '/assets/img/images/headshots/jamesbarry.jpg';
+import anshu from '/assets/img/images/headshots/anshuchandrasekhar.jpg';
+import shreya from '/assets/img/images/headshots/shreyagavarapattu.jpg';
+import naomi from '/assets/img/images/headshots/naomikaul.jpg';
+import tiffany from '/assets/img/images/headshots/tiffanyliu.jpg';
+import ben from '/assets/img/images/headshots/benjaminlosey.jpg';
+import charis from '/assets/img/images/headshots/chariswang.jpg';
+import ryan from '/assets/img/images/headshots/ryanzhao.jpg';
+import jessica from '/assets/img/images/headshots/jessicazhou.jpg';
 
 export default {
     name: 'HomePage',
@@ -136,7 +136,7 @@ export default {
         };
     }, data() {
         return {
-            anoushka, sneha, jim, anshu, shreya, tiffany, ben, charis, ryan, jessica
+            anoushka, sneha, jim, anshu, shreya, naomi, tiffany, ben, charis, ryan, jessica
         }
     }
 };
