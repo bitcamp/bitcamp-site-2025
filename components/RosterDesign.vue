@@ -25,15 +25,15 @@
 </template>
 
 <script lang="ts">
-import adrien from '../assets/img/images/headshots/Adrien Rozario.jpg';
-import angela from '../assets/img/images/headshots/Angela Zhang.jpg';
-import dahn from '../assets/img/images/headshots/Dahn Kim.png';
-import kyra from '../assets/img/images/headshots/Kyra Yip.png';
-import olivia from '../assets/img/images/headshots/Olivia Zhang.jpg';
-import tracy from '../assets/img/images/headshots/Tracy Anne Tan.jpg';
-import trish from '../assets/img/images/headshots/Trisha Anand.jpg';
-import vivian from '../assets/img/images/headshots/Vivian Howe.jpg';
-import wendy from '../assets/img/images/headshots/Wendy Tu.jpg';
+import adrien from '../assets/img/images/headshots/Adrien.jpg';
+import angela from '../assets/img/images/headshots/Angela.jpg';
+import dahn from '../assets/img/images/headshots/Dahn.jpg';
+import kyra from '../assets/img/images/headshots/Kyra.jpg';
+import olivia from '../assets/img/images/headshots/Olivia.jpg';
+import tracy from '../assets/img/images/headshots/Tracy.jpg';
+import trish from '../assets/img/images/headshots/Trisha.jpg';
+import vivian from '../assets/img/images/headshots/Vivian.jpg';
+import wendy from '../assets/img/images/headshots/Wendy.jpg';
 
 export default {
     name: 'HomePage',
