@@ -28,7 +28,7 @@
 
 <script lang="ts">
 import amber from '../assets/img/images/headshots/Amber Chen.jpg';
-import ananya from '../assets/img/images/headshots/Ananya Nagireddy.jpg';
+import ananya from '../assets/img/images/headshots/Ananya.jpg';
 import beatrice from '../assets/img/images/headshots/Beatrice Chung.jpg';
 import daniel from '../assets/img/images/headshots/Daniel Chung.jpg';
 import julia from '../assets/img/images/headshots/Julia Chen.jpg';

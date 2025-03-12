@@ -8,7 +8,7 @@
                 linkedinUrl="https://www.linkedin.com/in/aditichalasani/" />
             <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" :imageSrc="debarshi"
                 linkedinUrl="https://www.linkedin.com/in/debarshi-dey/" />
-            <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them"
+            <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" :imageSrc="sif"
                 linkedinUrl="https://www.linkedin.com/in/sifene-fufa-a8975b33b//" />
             <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" :imageSrc="sam"
                 linkedinUrl="https://www.linkedin.com/in/samuel-galita-7498a5225/" />
@@ -22,24 +22,24 @@
                 linkedinUrl="https://www.linkedin.com/in/michelle-rhee-900903292/" />
             <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" :imageSrc="anannya"
                 linkedinUrl="https://www.linkedin.com/in/anannya-trehan/" />
-            <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" :imageSrc="michelleY"
+            <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" :imageSrc="michelleYu"
                 linkedinUrl="https://www.linkedin.com/in/michelle-yu-57122b246/" />
         </div>
     </div>
 </template>
 
 <script lang="ts">
-import avanti from '../assets/img/images/headshots/Avanti Athavale.jpg';
-import aditi from '../assets/img/images/headshots/Aditi Chalasani.jpg';
-import debarshi from '../assets/img/images/headshots/Debarshi Dey - Headshot.jpeg';
-// import sif from '../assets/img/images/headshots/Sifene Fufa.jpg';
-import sam from '../assets/img/images/headshots/Sam Galita.jpg';
-import jas from '../assets/img/images/headshots/Jaskaran Gill.jpg';
-import alex from '../assets/img/images/headshots/Alex Luo.jpg';
-import nithika from '../assets/img/images/headshots/Nithika Ramanathan.jpeg';
-import michelle from '../assets/img/images/headshots/Michelle Rhee.jpg';
-import anannya from '../assets/img/images/headshots/Anannya Trehan.jpg';
-import michelleY from '../assets/img/images/headshots/Michelle Yu.jpeg';
+import avanti from '../assets/img/images/headshots/Avanti.jpg';
+import aditi from '../assets/img/images/headshots/Aditi.jpg';
+import debarshi from '../assets/img/images/headshots/Debarshi.jpg';
+import sif from '../assets/img/images/headshots/Sifene.jpg';
+import sam from '../assets/img/images/headshots/Sam.jpg';
+import jas from '../assets/img/images/headshots/Jas.jpg';
+import alex from '../assets/img/images/headshots/Alex.jpg';
+import nithika from '../assets/img/images/headshots/Nithika.jpg';
+import michelle from '../assets/img/images/headshots/Michelle.jpg';
+import anannya from '../assets/img/images/headshots/Anannya.jpg';
+import michelleYu from '../assets/img/images/headshots/MichelleYu.jpg';
 
 export default {
     name: 'HomePage',
@@ -136,7 +136,7 @@ export default {
         };
     }, data() {
         return {
-            avanti, aditi, debarshi, sam, jas, alex, nithika, michelle, anannya, michelleY
+            avanti, aditi, debarshi, sam, alex, nithika, michelle, anannya, sif, jas, michelleYu
         }
     }
 };
