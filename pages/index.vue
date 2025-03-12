@@ -10,6 +10,7 @@
       <TeamPage />
       <div class="transition2"></div>
       <FAQSponsorPage />
+      <SocialIcons />
       <FooterContent />
     </div>
   </div>
@@ -25,6 +26,7 @@ import Break from '../components/Break.vue';
 // import LandingPage from '../components/LandingPage.vue';
 // import TeamPage from '../components/TeamPage.vue';
 // import TracksPage from '../components/TracksPage.vue';
+import Roster from "./roster.vue";
 
 export default {
   name: 'HomePage',

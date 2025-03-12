@@ -154,6 +154,7 @@ nav {
   max-width: 100%;
   object-fit: cover;
   margin-left: 20px;
+  margin-top: -2px;
 }
 
 #logo-image {

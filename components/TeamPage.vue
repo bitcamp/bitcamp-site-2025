@@ -122,6 +122,8 @@ export default {
     width: 70%;
     display: flex;
     margin-left: 5%;
+    margin-top: -15%;
+
 }
 
 @media screen and (max-width: 1110px) {

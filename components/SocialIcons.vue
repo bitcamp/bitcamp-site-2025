@@ -10,7 +10,7 @@
       <img src="/assets/img/icons/twitter.svg" class="social-icon" />
     </a>
     <a href="https://www.tiktok.com/@bitcamp_umd">
-      <img src="/assets/img/icons/tiktok.svg" class="social-icon tiktok-icon" />
+      <img src="/assets/img/icons/tiktok.svg" class="social-icon" />
     </a>
   </div>
 </template>
@@ -26,6 +26,9 @@ export default {
 .social-icon-container {
   display: flex;
   z-index: 10;
+  background-color: #540000;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
@@ -33,6 +36,7 @@ export default {
   display: inline-block;
   padding: 0.75vw;
   transition: transform 0.3s;
+  margin-top: 20px;
 }
 
 .social-icon:hover {
@@ -42,6 +46,7 @@ export default {
 .tiktok-icon {
   margin-left: -0.25vw;
   margin-right: -0.5vw;
+  margin-left: 500%;
 }
 
 /* mobile view - icon size */

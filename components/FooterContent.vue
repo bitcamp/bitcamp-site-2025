@@ -40,7 +40,7 @@ export default {
   /* position: relative; */
   box-sizing: border-box;
   margin-top: 5vw;
-  height: 15vw;
+  height: 7vw;
   width: 100vw;
   overflow: hidden;
 }
@@ -66,6 +66,10 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    height: 15vw;
+  }
+  
   .floatie-text {
     font-size: 2.5vw;
   }
