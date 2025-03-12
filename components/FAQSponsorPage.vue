@@ -45,6 +45,24 @@
       </div>
       <div class="sponsor-contents">
         <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/Peraton.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/Bloomberg.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.standoutstickers.com/" target="_blank">
           <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
         </a>
       </div>
