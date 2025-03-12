@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import amber from '../assets/img/images/headshots/Amber Chen.jpg';
+import amber from '../assets/img/images/headshots/Amber.png';
 import ananya from '../assets/img/images/headshots/Ananya.jpg';
 import beatrice from '../assets/img/images/headshots/beatricechung.jpg';
 import daniel from '../assets/img/images/headshots/danielchung1.jpg';
