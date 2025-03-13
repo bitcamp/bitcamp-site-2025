@@ -25,7 +25,7 @@
 
             </div>
             <div class="bottom_button_container">
-                <a href="/roster" target="_blank">
+                <a href="/roster" target="_blank" class="image_container">
                     <img class="meet_team_image" src="../assets/img/images/meet_team_button.svg" alt="lebron" />
                 </a>
             </div>
@@ -109,6 +109,7 @@ export default {
     margin-right: 5%;
     text-align: center;
     font-size: 17px;
+    color: white;
 }
 
 .bottom_button_container {
@@ -116,14 +117,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 13%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.meet_team_image {
-    width: 70%;
+.image_container {
     display: flex;
-    margin-left: 5%;
+    justify-content: center;
+}
+
+.meet_team_image {
+    width: 100%;
 }
 
 @media screen and (max-width: 1110px) {
