@@ -27,15 +27,16 @@
 </template>
 
 <script lang="ts">
-import amber from '../assets/img/images/headshots/Amber Chen.jpg';
+import amber from '../assets/img/images/headshots/Amber.png';
 import ananya from '../assets/img/images/headshots/Ananya.jpg';
-import beatrice from '../assets/img/images/headshots/Beatrice Chung.jpg';
-import daniel from '../assets/img/images/headshots/Daniel Chung.jpg';
-import julia from '../assets/img/images/headshots/Julia Chen.jpg';
-import mika from '../assets/img/images/headshots/Mika Pendem.jpg';
-import neha from '../assets/img/images/headshots/Neha Veeragandham.jpg';
-import nitya from '../assets/img/images/headshots/Nitya Venkatiahgari.jpeg';
-import saloni from '../assets/img/images/headshots/Saloni Shah.jpg';
+import beatrice from '../assets/img/images/headshots/beatricechung.jpg';
+import daniel from '../assets/img/images/headshots/danielchung1.jpg';
+import julia from '../assets/img/images/headshots/juliachen.jpg';
+import mika from '../assets/img/images/headshots/Mika.jpg';
+import neha from '../assets/img/images/headshots/nehaveeragandham.jpg';
+import nitya from '../assets/img/images/headshots/Nitya.jpg';
+import saloni from '../assets/img/images/headshots/salonishah.jpg';
+import sai from '../assets/img/images/headshots/saipranavtheerthala1.jpg'
 
 export default {
     name: 'HomePage',
