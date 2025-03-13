@@ -89,7 +89,7 @@ export default {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 796px) {
+@media (max-width: 975px) {
     .register-button {
         font-size: clamp(2rem, 7.5vw, 8rem);
         ;

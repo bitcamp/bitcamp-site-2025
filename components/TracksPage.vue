@@ -155,7 +155,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -25rem;
   z-index: 1000;
 }
 
@@ -243,17 +242,17 @@ export default {
   display: none;
 }
 
-@media (max-width: 796px) {
+@media (max-width: 975px) {
   .tracks-container {
     padding: 10vh 3vw;
     border-radius: 0;
     border: none;
     box-shadow: none;
     max-width: 95vw;
-    background: url("/assets/img/images/tracks-background.webp");
+    /* background: url("/assets/img/images/tracks-background.webp");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     z-index: 0;
   }
 
@@ -372,10 +371,10 @@ export default {
     border: none;
     box-shadow: none;
     max-width: 95vw;
-    background: url("/assets/img/images/tracks-background.webp");
+    /* background: url("/assets/img/images/tracks-background.webp");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     z-index: 0;
   }
 }

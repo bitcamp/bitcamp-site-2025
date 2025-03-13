@@ -40,7 +40,7 @@ export default {
     width: 100%;
 }
 
-@media (max-width: 796px) {
+@media (max-width: 975px) {
     .exploration-message {
         background-image: linear-gradient(#084600, #9D9E00);
         border: 0;
