@@ -6,7 +6,7 @@
                 linkedinUrl="https://www.linkedin.com/in/sameer-chawla01/" />
             <RosterCard name="Kai Chen" position="Position" pronouns="he/him" :imageSrc="kai"
                 linkedinUrl="https://www.linkedin.com/in/kaiichen/" />
-            <RosterCard name="Ben DiMarco" position="Position" pronouns="he/him" imageSrc=""
+            <RosterCard name="Ben DiMarco" position="Position" pronouns="he/him" :imageSrc="ben"
                 linkedinUrl="https://www.linkedin.com/in/bendimarco/" />
             <RosterCard name="Srinidhi (Sri) Guruvayurappan" position="Position" pronouns="she/her" :imageSrc="sri"
                 linkedinUrl="https://www.linkedin.com/in/srinidhi-guruvayurappan-1a40a829a/" />
@@ -23,14 +23,14 @@
 </template>
 
 <script lang="ts">
-import sameer from '../assets/img/images/headshots/SameerChawla.jpg';
-import kai from '../assets/img/images/headshots/Kai Chen.jpg';
-// import benD from '../assets/img/images/headshots/Ben DiMarco.jpg';
-import sri from '../assets/img/images/headshots/Srinidhi Guruvayurappan.jpeg';
-import purva from '../assets/img/images/headshots/Purva Jani.jpg';
-import kaylee from '../assets/img/images/headshots/Kaylee Kim.jpg';
-import richard from '../assets/img/images/headshots/Richard Mukham.jpg';
-import grace from '../assets/img/images/headshots/Grace Yang.jpg';
+import sameer from '../assets/img/images/headshots/Sameer.png';
+import kai from '../assets/img/images/headshots/Kai.png';
+import ben from '../assets/img/images/headshots/Ben.png';
+import sri from '../assets/img/images/headshots/Sri.png';
+import purva from '../assets/img/images/headshots/Purva.png';
+import kaylee from '../assets/img/images/headshots/Kaylee.png';
+import richard from '../assets/img/images/headshots/Richard.png';
+import grace from '../assets/img/images/headshots/Grace.png';
 
 export default {
     name: 'HomePage',
@@ -127,7 +127,7 @@ export default {
         };
     }, data() {
         return {
-            sameer, kai, sri, purva, kaylee, richard, grace
+            sameer, kai, sri, purva, kaylee, richard, grace, ben
         }
     }
 };
