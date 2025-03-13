@@ -21,21 +21,22 @@
             <RosterCard name="Saloni Shah" position="Tech Director" pronouns="she/her"
                 linkedinUrl="https://www.linkedin.com/in/saloni-k-shah/" :imageSrc="saloni" />
             <RosterCard name="Sai Pranav Theerthala" position="Tech Director" pronouns="he/him"
-                linkedinUrl="https://www.linkedin.com/in/sai-pranav-theerthala" />
+                linkedinUrl="https://www.linkedin.com/in/sai-pranav-theerthala" :imageSrc="sai" />
         </div>
     </div>
 </template>
 
 <script lang="ts">
-import amber from '../assets/img/images/headshots/Amber Chen.jpg';
-import ananya from '../assets/img/images/headshots/Ananya Nagireddy.jpg';
-import beatrice from '../assets/img/images/headshots/Beatrice Chung.jpg';
-import daniel from '../assets/img/images/headshots/Daniel Chung.jpg';
-import julia from '../assets/img/images/headshots/Julia Chen.jpg';
-import mika from '../assets/img/images/headshots/Mika Pendem.jpg';
-import neha from '../assets/img/images/headshots/Neha Veeragandham.jpg';
-import nitya from '../assets/img/images/headshots/Nitya Venkatiahgari.jpeg';
-import saloni from '../assets/img/images/headshots/Saloni Shah.jpg';
+import amber from '../assets/img/images/headshots/Amber.png';
+import ananya from '../assets/img/images/headshots/Ananya.jpg';
+import beatrice from '../assets/img/images/headshots/beatricechung.jpg';
+import daniel from '../assets/img/images/headshots/danielchung1.jpg';
+import julia from '../assets/img/images/headshots/juliachen.jpg';
+import mika from '../assets/img/images/headshots/Mika.jpg';
+import neha from '../assets/img/images/headshots/nehaveeragandham.jpg';
+import nitya from '../assets/img/images/headshots/Nitya.jpg';
+import saloni from '../assets/img/images/headshots/salonishah.jpg';
+import sai from '../assets/img/images/headshots/saipranavtheerthala1.jpg'
 
 export default {
     name: 'HomePage',
@@ -132,7 +133,7 @@ export default {
         };
     }, data() {
         return {
-            mika, nitya, ananya, julia, neha, amber, beatrice, daniel, saloni
+            mika, nitya, ananya, julia, neha, amber, beatrice, daniel, saloni, sai
         }
     }
 };

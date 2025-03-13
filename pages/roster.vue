@@ -261,4 +261,4 @@ export default {
     background-color: rgba(20, 53, 66, 0.69);
     width: 69%;
 }
-</style>
+</style>    
