@@ -3,14 +3,17 @@
     <div class="section-container">
       <div class="footer">
         <div class="floatie-text past-grid-container">
-          <div class="links">
-            <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a> |
-            <a href="/sponsor" target="_blank">Sponsor Us</a> |
-            <a href="/brand.pdf">Brand Guidelines</a> |
+          <div class="links_upper">
+            <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a>
+            <div class="links_break"> | </div>
+            <a href="/sponsor" target="_blank">Sponsor Us</a>
+            <div class="links_break"> | </div>
+            <a href="/brand.pdf">Brand Guidelines</a>
+            <div class="links_break"> | </div>
             <a href="mailto:hello@bit.camp">Contact Us</a>
-            <div class="copyright">
-              Copyright &copy; 2019 - 2025 Bitcamp. All Rights Reserved.
-            </div>
+          </div>
+          <div class="copyright">
+            Copyright &copy; 2019 - 2025 Bitcamp. All Rights Reserved.
           </div>
         </div>
       </div>
@@ -39,24 +42,53 @@ export default {
 .footer {
   /* position: relative; */
   box-sizing: border-box;
-  margin-top: 5vw;
   height: 15vw;
-  width: 100vw;
+  /* width: 100vw; */
+  text-align: center;
+  display: flex;
   overflow: hidden;
 }
 
+.links_upper {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Aleo';
+}
+
 .links a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .floatie-text {
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
   margin: auto;
   left: 0;
   right: 0;
   bottom: 6.5vw;
   font-size: 1.5vw;
+}
+
+.copyright {
+  color: white;
+  font-family: 'Aleo';
+}
+
+.links_break {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.links_upper a {
+  text-decoration: none;
+  color: white;
+}
+
+.links_upper a:hover,
+.links_upper a:visited,
+.links_upper a:active,
+.links_upper a:focus {
+  color: white;
 }
 
 @media (max-width: 976px) {
@@ -89,6 +121,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
 }
 

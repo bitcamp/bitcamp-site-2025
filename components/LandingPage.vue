@@ -62,22 +62,26 @@ export default {
 
 .button-wrapper {
     width: 100%;
-    padding: 0 0 3vw 3.2vw;
+    /* padding: 0 0 3vw 3.2vw; */
+    justify-content: center;
+    display: flex;
 }
 
 .register-button {
     background-color: #FFB353;
     border: none;
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     color: #4F2525;
     font-family: Aleo, sans-serif;
-    font-size: 3.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    padding: 1.7rem 4.8rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: 10%;
+    padding: 0.5rem 2.5rem;
+    letter-spacing: 0.1rem;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
 }
 
 .register-button:hover {
