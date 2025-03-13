@@ -36,7 +36,7 @@ import anshu from '/assets/img/images/headshots/anshuchandrasekhar.jpg';
 import shreya from '/assets/img/images/headshots/shreyagavarapattu.jpg';
 import naomi from '/assets/img/images/headshots/naomikaul.jpg';
 import tiffany from '/assets/img/images/headshots/tiffanyliu.jpg';
-import ben from '/assets/img/images/headshots/benjaminlosey.jpg';
+import ben from '/assets/img/images/headshots/benjaminlosey-min.jpg';
 import charis from '/assets/img/images/headshots/chariswang.jpg';
 import ryan from '/assets/img/images/headshots/ryanzhao.jpg';
 import jessica from '/assets/img/images/headshots/jessicazhou.jpg';
