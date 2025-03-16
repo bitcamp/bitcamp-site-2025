@@ -24,9 +24,9 @@
                 </div>
 
             </div>
-            <div class="bottom_button_container">
+            <a href="/roster" target="_blank" class="bottom_button_container">
                 <img class="meet_team_image" src="../assets/img/images/meet_team_button.svg" alt="lebron" />
-            </div>
+            </a>
 
         </div>
     </div>
