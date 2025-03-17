@@ -107,6 +107,7 @@ export default {
     margin-right: 5%;
     text-align: center;
     font-size: 17px;
+    color: white;
 }
 
 .bottom_button_container {
@@ -114,14 +115,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 13%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.meet_team_image {
-    width: 70%;
+.image_container {
     display: flex;
-    margin-left: 5%;
+    justify-content: center;
+}
+
+.meet_team_image {
+    width: 100%;
 }
 
 @media screen and (max-width: 1110px) {

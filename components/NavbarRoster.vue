@@ -150,7 +150,6 @@ nav {
     height: 100%;
     width: 6.9%;
 }
-
 #logo-with-text {
     max-height: 100%;
     max-width: 100%;
@@ -260,11 +259,9 @@ nav {
     width: 100%;
     margin-left: 5%;
 }
-
 .non-pages {
     display: none;
 }
-
 .dropdown-elements li:hover a {
     color: $bitcamp;
     border-radius: 0.5rem;
@@ -390,11 +387,9 @@ nav {
         position: relative;
         border: none;
     }
-
     #logo-container-inner {
         display: none;
     }
-
     .dropdown-elements li {
         margin: 2%;
     }
