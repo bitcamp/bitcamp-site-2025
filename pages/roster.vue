@@ -223,31 +223,31 @@ export default {
 }
 
 .image-day {
-    background-image: url("../assets/img/images/Daybeachmockup.svg");
+    background-image: url("../assets/img/images/Daybeachmockup.webp");
     z-index: 1;
     opacity: 1;
 }
 
 .image-late-day {
-    background-image: url("../assets/img/images/LateDaybeachmockup.svg");
+    background-image: url("../assets/img/images/LateDaybeachmockup.webp");
     z-index: 2;
     opacity: 0;
 }
 
 .image-sunset {
-    background-image: url("../assets/img/images/Sunsetbeachmockup.svg");
+    background-image: url("../assets/img/images/Sunsetbeachmockup.webp");
     z-index: 3;
     opacity: 0;
 }
 
 .image-night {
-    background-image: url("../assets/img/images/Nightbeachmockup.svg");
+    background-image: url("../assets/img/images/Nightbeachmockup.webp");
     z-index: 4;
     opacity: 0;
 }
 
 .image-sunrise {
-    background-image: url("../assets/img/images/Sunrisebeachmockup.svg");
+    background-image: url("../assets/img/images/Sunrisebeachmockup.webp");
     z-index: 5;
     opacity: 0;
 }
