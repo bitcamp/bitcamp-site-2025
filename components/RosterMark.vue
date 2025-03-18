@@ -2,21 +2,21 @@
     <div id="mark" class="container">
         <div class="team-name">Marketing</div>
         <div class="section">
-            <RosterCard name="Sameer Chawla" position="Position" pronouns="he/him" :imageSrc="sameer"
+            <RosterCard name="Sameer Chawla" position="Marketing Organizer" pronouns="he/him" :imageSrc="sameer"
                 linkedinUrl="https://www.linkedin.com/in/sameer-chawla01/" />
-            <RosterCard name="Kai Chen" position="Position" pronouns="he/him" :imageSrc="kai"
+            <RosterCard name="Kai Chen" position="Marketing Organizer" pronouns="he/him" :imageSrc="kai"
                 linkedinUrl="https://www.linkedin.com/in/kaiichen/" />
-            <RosterCard name="Ben DiMarco" position="Position" pronouns="he/him" :imageSrc="ben"
+            <RosterCard name="Ben DiMarco" position="Marketing Organizer" pronouns="he/him" :imageSrc="ben"
                 linkedinUrl="https://www.linkedin.com/in/bendimarco/" />
-            <RosterCard name="Srinidhi (Sri) Guruvayurappan" position="Position" pronouns="she/her" :imageSrc="sri"
-                linkedinUrl="https://www.linkedin.com/in/srinidhi-guruvayurappan-1a40a829a/" />
-            <RosterCard name="Purva Jani" position="Position" pronouns="she/her" :imageSrc="purva"
+            <RosterCard name="Srinidhi (Sri) Guruvayurappan" position="Marketing Organizer" pronouns="she/her"
+                :imageSrc="sri" linkedinUrl="https://www.linkedin.com/in/srinidhi-guruvayurappan-1a40a829a/" />
+            <RosterCard name="Purva Jani" position="Marketing Organizer" pronouns="she/her" :imageSrc="purva"
                 linkedinUrl="https://www.linkedin.com/in/purva-jani/" />
-            <RosterCard name="Kaylee Kim" position="Position" pronouns="she/her" :imageSrc="kaylee"
+            <RosterCard name="Kaylee Kim" position="Marketing Organizer" pronouns="she/her" :imageSrc="kaylee"
                 linkedinUrl="https://www.linkedin.com/in/kaylee-k/" />
-            <RosterCard name="Richard Mukam Jr" position="Position" pronouns="he/him" :imageSrc="richard"
+            <RosterCard name="Richard Mukam Jr" position="Marketing Organizer" pronouns="he/him" :imageSrc="richard"
                 linkedinUrl="https://www.linkedin.com/in/richardmukamjr/" />
-            <RosterCard name="Grace Yang" position="Position" pronouns="she/her" :imageSrc="grace"
+            <RosterCard name="Grace Yang" position="Marketing Organizer" pronouns="she/her" :imageSrc="grace"
                 linkedinUrl="https://www.linkedin.com/in/graceyang2027/" />
         </div>
     </div>
