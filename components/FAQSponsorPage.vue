@@ -44,8 +44,50 @@
         </div>
       </div>
       <div class="sponsor-contents">
+        <a href="https://www.peraton.com/" target="_blank">
+          <img src="../assets/img/icons/Peraton.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.bloomberg.com/" target="_blank">
+          <img src="../assets/img/icons/Bloomberg.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://ionq.com/" target="_blank">
+          <img src="../assets/img/icons/IonQ.svg" class="sponsor-logo"/>
+        </a>
         <a href="https://www.standoutstickers.com/" target="_blank">
-          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo" />
+          <img src="../assets/img/icons/standout.svg" class="sponsor-logo" />
+        </a>
+        <a href="https://aces.umd.edu/" target="_blank">
+          <img src="../assets/img/icons/ACES.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.ciphertechsolutions.com/" target="_blank">
+          <img src="../assets/img/icons/BlackFullLogo.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.capitalone.com/" target="_blank">
+          <img src="../assets/img/icons/CapitalOne.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.rhsmith.umd.edu/" target="_blank">
+          <img src="../assets/img/icons/DingmanCenter.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.fm.com/" target="_blank">
+          <img src="../assets/img/icons/FMGlobal.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.jhuapl.edu/" target="_blank">
+          <img src="../assets/img/icons/JHUAPL.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://stamp.umd.edu/pepsi_enhancement_fund" target="_blank">
+          <img src="../assets/img/icons/Pepsi.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.umdsga.com/" target="_blank">
+          <img src="../assets/img/icons/SGA.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://sustainability.umd.edu/sustainability-grants/umd-sustainability-mini-grant" target="_blank">
+          <img src="../assets/img/icons/SustainabilityFund.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://eng.umd.edu/" target="_blank">
+          <img src="../assets/img/icons/UMDClarkSchool.svg" class="sponsor-logo"/>
+        </a>
+        <a href="https://www.cs.umd.edu/" target="_blank">
+          <img src="../assets/img/icons/UMDCS.svg" class="sponsor-logo"/>
         </a>
       </div>
     </div>
@@ -292,12 +334,16 @@ function toggleButton(question: string) {
 }
 
 .sponsor-logo {
-  max-height: 30vh;
+  height: 15vh;
+  width: 30vw;
   padding-top: 10%;
 }
 
 .sponsor-contents {
   display: flex;
+  flex-wrap: wrap;
+  padding-left: 2vw;
+  padding-right: 2vw;
   justify-items: center;
 }
 
