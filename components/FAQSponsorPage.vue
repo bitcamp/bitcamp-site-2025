@@ -74,13 +74,13 @@
         <a href="https://www.jhuapl.edu/" target="_blank">
           <img src="~/assets/img/icons/JHUAPL.svg" class="sponsor-logo"/>
         </a>
-        <a href="https://www.pepsi.com/en-us/" target="_blank">
+        <a href="https://stamp.umd.edu/pepsi_enhancement_fund" target="_blank">
           <img src="~/assets/img/icons/Pepsi.svg" class="sponsor-logo"/>
         </a>
         <a href="https://www.umdsga.com/" target="_blank">
           <img src="~/assets/img/icons/SGA.svg" class="sponsor-logo"/>
         </a>
-        <a href="https://sustainability.umd.edu/sustainability-grants/umd-sustainability-fund-grant" target="_blank">
+        <a href="https://sustainability.umd.edu/sustainability-grants/umd-sustainability-mini-grant" target="_blank">
           <img src="~/assets/img/icons/SustainabilityFund.svg" class="sponsor-logo"/>
         </a>
         <a href="https://eng.umd.edu/" target="_blank">
