@@ -2,27 +2,27 @@
     <div id="exp" class="container">
         <div class="team-name">Experience</div>
         <div class="section">
-            <RosterCard name="Avanti Athavale" position="Position" pronouns="she/her" :imageSrc="avanti"
+            <RosterCard name="Avanti Athavale" position="Experience Organizer" pronouns="she/her" :imageSrc="avanti"
                 linkedinUrl="https://www.linkedin.com/in/avantiathavale/" />
-            <RosterCard name="Aditi Chalasani" position="Position" pronouns="she/her" :imageSrc="aditi"
+            <RosterCard name="Aditi Chalasani" position="Experience Organizer" pronouns="she/her" :imageSrc="aditi"
                 linkedinUrl="https://www.linkedin.com/in/aditichalasani/" />
-            <RosterCard name="Debarshi Dey" position="Position" pronouns="he/him" :imageSrc="debarshi"
+            <RosterCard name="Debarshi Dey" position="Experience Organizer" pronouns="he/him" :imageSrc="debarshi"
                 linkedinUrl="https://www.linkedin.com/in/debarshi-dey/" />
-            <RosterCard name="Sifene (Sif) Fufa" position="Position" pronouns="she/them" :imageSrc="sif"
+            <RosterCard name="Sifene (Sif) Fufa" position="Experience Organizer" pronouns="she/them" :imageSrc="sif"
                 linkedinUrl="https://www.linkedin.com/in/sifene-fufa-a8975b33b//" />
-            <RosterCard name="Samuel (Sam) Galita" position="Position" pronouns="he/him" :imageSrc="sam"
+            <RosterCard name="Samuel (Sam) Galita" position="Experience Organizer" pronouns="he/him" :imageSrc="sam"
                 linkedinUrl="https://www.linkedin.com/in/samuel-galita-7498a5225/" />
-            <RosterCard name="Jaskaran (Jas) Gill" position="Position" pronouns="he/him" :imageSrc="jas"
+            <RosterCard name="Jaskaran (Jas) Gill" position="Experience Organizer" pronouns="he/him" :imageSrc="jas"
                 linkedinUrl="https://www.linkedin.com/in/jaskaran-gill123/" />
-            <RosterCard name="Alex Luo" position="Position" pronouns="he/him" :imageSrc="alex"
+            <RosterCard name="Alex Luo" position="Experience Organizer" pronouns="he/him" :imageSrc="alex"
                 linkedinUrl="https://www.linkedin.com/in/alexbluo/" />
-            <RosterCard name="Nithika Ramanathan" position="Position" pronouns="she/her" :imageSrc="nithika"
+            <RosterCard name="Nithika Ramanathan" position="Experience Organizer" pronouns="she/her" :imageSrc="nithika"
                 linkedinUrl="https://www.linkedin.com/in/nithika-ramanathan/" />
-            <RosterCard name="Michelle Rhee" position="Position" pronouns="she/her" :imageSrc="michelle"
+            <RosterCard name="Michelle Rhee" position="Experience Organizer" pronouns="she/her" :imageSrc="michelle"
                 linkedinUrl="https://www.linkedin.com/in/michelle-rhee-900903292/" />
-            <RosterCard name="Anannya Trehan" position="Position" pronouns="she/her" :imageSrc="anannya"
+            <RosterCard name="Anannya Trehan" position="Experience Organizer" pronouns="she/her" :imageSrc="anannya"
                 linkedinUrl="https://www.linkedin.com/in/anannya-trehan/" />
-            <RosterCard name="Michelle Yu" position="Position" pronouns="she/her" :imageSrc="michelleYu"
+            <RosterCard name="Michelle Yu" position="Experience Organizer" pronouns="she/her" :imageSrc="michelleYu"
                 linkedinUrl="https://www.linkedin.com/in/michelle-yu-57122b246/" />
         </div>
     </div>

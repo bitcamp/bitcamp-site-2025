@@ -1,4 +1,5 @@
 <template>
+  <link rel="icon" href="bitcamp-site-2025/public/bitcamp-brand/favicons/favicon-16x16.png">
   <div class="wrapper" ref="el">
     <div class="app-container">
       <Navbar />
@@ -16,9 +17,9 @@
 </template>
 
 <script lang="ts">
-import { Break } from '#build/components';
+// import { Break } from '#build/components';
 import Navbar from '~/components/Navbar.vue';
-import Break from '../components/Break.vue';
+// import Break from '../components/Break.vue';
 // import CampGamesPage from '../components/CampGamesPage.vue';
 // import FAQSponsorPage from '../components/FAQSponsorPage.vue';
 // import FooterContent from "../components/FooterContent.vue"
@@ -30,7 +31,7 @@ import Roster from "./roster.vue";
 export default {
   name: 'HomePage',
   // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
-  components: { Navbar, Break },
+  components: { Navbar },
 
   head() {
     return {
@@ -43,11 +44,11 @@ export default {
         },
         {
           property: 'og:title',
-          content: 'Bitcamp 2024',
+          content: 'Bitcamp 2025',
         },
         {
           property: 'og:site_name',
-          content: 'Bitcamp 2024',
+          content: 'Bitcamp 2025',
         },
         {
           property: 'og:url',
@@ -72,7 +73,7 @@ export default {
         },
         {
           property: 'twitter:title',
-          content: 'Bitcamp 2024',
+          content: 'Bitcamp 2025',
         },
         {
           property: 'twitter:description',
@@ -97,21 +98,21 @@ export default {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',
-          href: '/bitcamp-brand/favicons/favicon-32x32.png',
+          href: '/bitcamp-brand/favicons/favicon-32x32.png', 
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '16x16',
-          href: '/bitcamp-brand/favicons/favicon-16x16.png',
+          href: '/bitcamp-brand/favicons/favicon-16x16.png', 
         },
         {
           rel: 'manifest',
-          href: '/bitcamp-brand/favicons/site.webmanifest',
+          href: '/bitcamp-brand/favicons/site.webmanifest', 
         },
         {
           rel: 'mask-icon',
-          href: '/bitcamp-brand/favicons/safari-pinned-tab.svg',
+          href: '/bitcamp-brand/favicons/safari-pinned-tab.svg', 
           color: '#ff6f3f',
         },
         {

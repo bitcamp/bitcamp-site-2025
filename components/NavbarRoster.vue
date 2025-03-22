@@ -294,7 +294,7 @@ nav {
     width: auto;
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
     header {
         z-index: 100000; // should be higher than everything else
         position: fixed;

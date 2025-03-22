@@ -2,27 +2,27 @@
     <div id="log" class="container">
         <div class="team-name">Logistics</div>
         <div class="section">
-            <RosterCard name="Anoushka Arora" position="Position" pronouns="she/her" :imageSrc="anoushka"
+            <RosterCard name="Anoushka Arora" position="Logistics Organizer" pronouns="she/her" :imageSrc="anoushka"
                 linkedinUrl="https://www.linkedin.com/in/anoushka-arora-b77929153/" />
-            <RosterCard name="Sneha Balur" position="Position" pronouns="she/her" :imageSrc="sneha"
+            <RosterCard name="Sneha Balur" position="Logistics Organizer" pronouns="she/her" :imageSrc="sneha"
                 linkedinUrl="https://www.linkedin.com/in/sneha-balur/" />
-            <RosterCard name="James (Jim) Joseph Barry" position="Position" pronouns="he/him" :imageSrc="jim"
+            <RosterCard name="James (Jim) Joseph Barry" position="Logistics Organizer" pronouns="he/him" :imageSrc="jim"
                 linkedinUrl="https://www.linkedin.com/in/james-barry-good-choice/?profileId=ACoAAFB_MukBscIhyXIavb9ybwfFmzfPhNf033k" />
-            <RosterCard name="Anshu Chandrasekhar" position="Position" pronouns="she/her" :imageSrc="anshu"
+            <RosterCard name="Anshu Chandrasekhar" position="Logistics Organizer" pronouns="she/her" :imageSrc="anshu"
                 linkedinUrl="https://www.linkedin.com/in/anshu-chandrasekhar/" />
-            <RosterCard name="Shreya Gavarapattu" position="Position" pronouns="she/her" :imageSrc="shreya"
+            <RosterCard name="Shreya Gavarapattu" position="Logistics Organizer" pronouns="she/her" :imageSrc="shreya"
                 linkedinUrl="https://www.linkedin.com/in/shreyagav/" />
-            <RosterCard name="Naomi Kaul" position="Position" pronouns="she/her" :imageSrc="naomi"
+            <RosterCard name="Naomi Kaul" position="Logistics Organizer" pronouns="she/her" :imageSrc="naomi"
                 linkedinUrl="https://www.linkedin.com/in/naomi-kaul-a1b1341ba/" />
-            <RosterCard name="Tiffany Liu" position="Position" pronouns="she/her" :imageSrc="tiffany"
+            <RosterCard name="Tiffany Liu" position="Logistics Organizer" pronouns="she/her" :imageSrc="tiffany"
                 linkedinUrl="https://www.linkedin.com/in/tiffany-liu-776628244/" />
-            <RosterCard name="Benjamin (Ben) Losey" position="Position" pronouns="he/him" :imageSrc="ben"
+            <RosterCard name="Benjamin (Ben) Losey" position="Logistics Organizer" pronouns="he/him" :imageSrc="ben"
                 linkedinUrl="https://www.linkedin.com/in/benjamin-losey/" />
-            <RosterCard name="Charis Wang" position="Position" pronouns="she/her" :imageSrc="charis"
+            <RosterCard name="Charis Wang" position="Logistics Organizer" pronouns="she/her" :imageSrc="charis"
                 linkedinUrl="https://www.linkedin.com/in/charswng/" />
-            <RosterCard name="Ryan Zhao" position="Position" pronouns="he/him" :imageSrc="ryan"
+            <RosterCard name="Ryan Zhao" position="Logistics Organizer" pronouns="he/him" :imageSrc="ryan"
                 linkedinUrl="https://www.linkedin.com/in/ryanzhao27/" />
-            <RosterCard name="Jessica Zhou" position="Position" pronouns="she/her" :imageSrc="jessica"
+            <RosterCard name="Jessica Zhou" position="Logistics Organizer" pronouns="she/her" :imageSrc="jessica"
                 linkedinUrl="https://www.linkedin.com/in/jessica-zhou-2a53021b3/" />
         </div>
     </div>

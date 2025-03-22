@@ -54,7 +54,7 @@
           <img src="~/assets/img/icons/IonQ.svg" class="sponsor-logo"/>
         </a>
         <a href="https://www.standoutstickers.com/" target="_blank">
-          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo"/>
+          <img src="~/assets/img/icons/standout.svg" class="sponsor-logo" />
         </a>
         <a href="https://aces.umd.edu/" target="_blank">
           <img src="~/assets/img/icons/ACES.svg" class="sponsor-logo"/>
@@ -175,7 +175,7 @@ const questions = ref<FAQ[]>([
   },
   {
     question: "Does Bitcamp provide travel accomodations or reimbursement?",
-    answer: "This year, Bitcamp will be providing reimbursements to travelers through an application that will be reviewed on a rolling basis. This application will be sent out through email to hackers who expressed interest in travel reimbursement during the registration process. We will consider reimbursing public transportation, rideshare, and inter-state transportation (train/plane). However, it is important to note that due to a limited budget, public transportation is encouraged and the most likely to be fully reimbursed! You will hear of your reimbursement decision within a matter of 1-2 days after you fill out our designated application. Depending on the state of our budget, we may also open a counter during the weekend of Bitcamp providing reimbursement on a case-by-case basis. Please review our FAQ document for further clarifications on the travel reimbursement process: <a class='link' href='https://bit.camp/travelfaq' target='_blank'>bit.camp/travelfaq</a>.",
+    answer: "Due to an unforeseen amount of applications and a limited budget, we unfortunately have closed our reimbursement application process from further interest. However, we will be evaluating reimbursement requests on a case-by-case basis during the weekend of Bitcamp.",
   },
   {
     question: 'Do I need to wear a mask?',
@@ -519,10 +519,12 @@ function toggleButton(question: string) {
     height: 100%;
     font-size: 2.5vw;
   }
+
   .sponsor-logo {
     max-height: 12vh;
     padding: 4%;
   }
+
   // .top-cliffs {
   //   width: 200%;
   // }

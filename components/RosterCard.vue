@@ -2,14 +2,14 @@
   <div class="profile-card">
     <div class="profile-header">
       <div class="profile-image">
-        <img v-if="imageSrc" :src="imageSrc" alt="Profile Image" class="profile-pic" />
-        <img v-else src="" alt="Default Profile" class="profile-pic default-profile" />
+        <img v-if="imageSrc" :src="imageSrc" alt="Profile Image" class="profile-pic" loading="lazy" />
+        <img v-else src="" alt="Default Profile" class="profile-pic default-profile" loading="lazy" />
 
         <a v-if="linkedinUrl" :href="linkedinUrl" target="_blank" rel="noopener noreferrer" class="linkedin-badge">
-          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" />
+          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" loading="lazy" />
         </a>
         <div v-else class="linkedin-badge">
-          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" />
+          <img src="assets/img/icons/linkedin.webp" alt="LinkedIn" loading="lazy" />
         </div>
       </div>
     </div>
