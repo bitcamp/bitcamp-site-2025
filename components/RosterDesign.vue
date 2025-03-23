@@ -2,11 +2,11 @@
     <div id="design" class="container">
         <div class="team-name">Design</div>
         <div class="section">
-            <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="they/them"
+            <RosterCard name="Adrien Rozario" position="Design Organizer" pronouns="she/her"
                 linkedinUrl="https://www.linkedin.com/in/adrien-rozario-847b68249/" :imageSrc="adrien" />
             <RosterCard name="Angela Zhang" position="Design Organizer" pronouns="she/her"
                 linkedinUrl="www.linkedin.com/in/angela-zhang915" :imageSrc="angela" />
-            <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="they/them"
+            <RosterCard name="Dahn Kim" position="Design Organizer" pronouns="she/her"
                 linkedinUrl="https://www.linkedin.com/in/dahn-kim-a92934254/" :imageSrc="dahn" />
             <RosterCard name="Kyra Yip" position="Design Organizer" pronouns="she/her"
                 linkedinUrl="https://www.linkedin.com/in/kyra-skye-yip/" :imageSrc="kyra" />
