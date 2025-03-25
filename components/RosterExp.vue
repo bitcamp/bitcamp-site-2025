@@ -8,7 +8,7 @@
                 linkedinUrl="https://www.linkedin.com/in/aditichalasani/" />
             <RosterCard name="Debarshi Dey" position="Experience Organizer" pronouns="he/him" :imageSrc="debarshi"
                 linkedinUrl="https://www.linkedin.com/in/debarshi-dey/" />
-            <RosterCard name="Sifene (Sif) Fufa" position="Experience Organizer" pronouns="she/them" :imageSrc="sif"
+            <RosterCard name="Sifene (Sif) Fufa" position="Experience Organizer" pronouns="she/her" :imageSrc="sif"
                 linkedinUrl="https://www.linkedin.com/in/sifene-fufa-a8975b33b//" />
             <RosterCard name="Samuel (Sam) Galita" position="Experience Organizer" pronouns="he/him" :imageSrc="sam"
                 linkedinUrl="https://www.linkedin.com/in/samuel-galita-7498a5225/" />
