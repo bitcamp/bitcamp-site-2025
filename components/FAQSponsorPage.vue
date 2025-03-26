@@ -43,52 +43,12 @@
           </div>
         </div>
       </div>
-      <div class="sponsor-contents">
-        <a href="https://www.peraton.com/" target="_blank">
-          <img src="../assets/img/icons/Peraton.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.bloomberg.com/" target="_blank">
-          <img src="../assets/img/icons/Bloomberg.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://ionq.com/" target="_blank">
-          <img src="../assets/img/icons/IonQ.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.standoutstickers.com/" target="_blank">
-          <img src="../assets/img/icons/standout.svg" class="sponsor-logo" />
-        </a>
-        <a href="https://aces.umd.edu/" target="_blank">
-          <img src="../assets/img/icons/ACES.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.ciphertechsolutions.com/" target="_blank">
-          <img src="../assets/img/icons/BlackFullLogo.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.capitalone.com/" target="_blank">
-          <img src="../assets/img/icons/CapitalOne.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.rhsmith.umd.edu/" target="_blank">
-          <img src="../assets/img/icons/DingmanCenter.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.fm.com/" target="_blank">
-          <img src="../assets/img/icons/FMGlobal.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.jhuapl.edu/" target="_blank">
-          <img src="../assets/img/icons/JHUAPL.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://stamp.umd.edu/pepsi_enhancement_fund" target="_blank">
-          <img src="../assets/img/icons/Pepsi.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.umdsga.com/" target="_blank">
-          <img src="../assets/img/icons/SGA.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://sustainability.umd.edu/sustainability-grants/umd-sustainability-mini-grant" target="_blank">
-          <img src="../assets/img/icons/SustainabilityFund.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://eng.umd.edu/" target="_blank">
-          <img src="../assets/img/icons/UMDClarkSchool.svg" class="sponsor-logo"/>
-        </a>
-        <a href="https://www.cs.umd.edu/" target="_blank">
-          <img src="../assets/img/icons/UMDCS.svg" class="sponsor-logo"/>
-        </a>
+      <div class="sponsor-logo-container">
+        <div class="sponsor-square">
+          <template v-for="sponsor in sponsors" :key="sponsor.name">
+            <SponsorCard :name="sponsor.name" :url="sponsor.url" />
+          </template>
+        </div>
       </div>
     </div>
     <div class="bottom-cliffs-div">
@@ -196,6 +156,109 @@ function toggleButton(question: string) {
     currentOpenedQuestion.value = question;
   }
 }
+
+const sponsors: Sponsor[] = [
+    {
+      name: "SGA",
+      amount: 55_000,
+      url: "https://www.umdsga.com/"
+    },
+    {
+      name: "UMD CS",
+      amount: 40_000,
+      url: "https://www.cs.umd.edu/"
+    },
+    {
+      name: "Peraton",
+      amount: 7000,
+      url: "https://www.peraton.com/"
+    },
+    {
+      name: "Bloomberg",
+      amount: 7000,
+      url: "https://www.bloomberg.com/"
+    },
+    {
+      name: "Cipher Tech",
+      amount: 6450,
+      url: "https://www.ciphertechsolutions.com/"
+    },
+    {
+      name: "Capital One",
+      amount: 6000,
+      url: "https://www.capitalone.com/"
+    },
+    {
+      name: "UMD Clark School",
+      amount: 5000,
+      url: "https://www.eng.umd.edu/"
+    },
+    {
+      name: "Intuit",
+      amount: 5000,
+      url: "https://www.intuit.com/"
+    },
+    {
+      name: "Cloudforce",
+      amount: 5000,
+      url: "https://gocloudforce.com/about-us/"
+    },
+    {
+      name: "Microsoft",
+      amount: 5000,
+      url: "https://www.microsoft.com/en-us/"
+    },
+    {
+      name: "FM Global",
+      amount: 3000,
+      url: "https://www.fm.com/"
+    },
+    {
+      name: "JHU APL",
+      amount: 3000,
+      url: "https://www.jhuapl.edu/"
+    },
+    {
+      name: "355 Code",
+      amount: 3000,
+      url: "https://www.355code.com/"
+    },
+    {
+      name: "Dingman Center",
+      amount: 2000,
+      url: "https://www.rhsmith.umd.edu/centers-initiatives/dingman-lamone-center"
+    },
+    {
+      name: "IonQ",
+      amount: 2000,
+      url: "https://www.ionq.com/"
+    },
+    {
+      name: "Sustainability",
+      amount: 1505,
+      url: "https://sustainability.umd.edu/sustainability-grants/umd-sustainability-fund-grant"
+    },
+    {
+      name: "ACES",
+      amount: 1000,
+      url: "https://www.aces.umd.edu/"
+    },
+    {
+      name: "UMD Smith School",
+      amount: 1000,
+      url: "https://www.rhsmith.umd.edu.com/"
+    },
+    {
+      name: "Pepsi",
+      amount: 500,
+      url: "https://stamp.umd.edu/pepsi_enhancement_fund"
+    },
+    {
+      name: "Do Good",
+      amount: 500,
+      url: "https://www.dogood.umd.edu"
+    },
+  ]
 </script>
 
 <style scoped lang="scss">
@@ -325,6 +388,27 @@ function toggleButton(question: string) {
   }
 }
 
+.sponsor-logo-container {
+  display: grid;
+  margin: auto;
+}
+
+.sponsor-square {
+  background-color: #FFDB8E;
+  border-color: #FE4600;
+  border-style: solid;
+  border-width: 17px;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 20px; /* Adjust the space between grid items */
+  padding: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  // align-content: center;
+}
+
 .sponsor-rock-shadow {
   fill: #560001;
 }
@@ -333,18 +417,88 @@ function toggleButton(question: string) {
   fill: #8B2000;
 }
 
-.sponsor-logo {
-  height: 15vh;
-  width: 30vw;
-  padding-top: 10%;
+
+
+@media only screen and (min-width: 992px) {
+  .sponsor-container {
+    & > * {
+      /* Dealing with 2 items in last row */
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: 6;
+      }
+
+      &:nth-last-child(2):nth-child(3n - 2) {
+        grid-column-end: 4;
+      }
+
+      /* Dealing with 1 item in last row */
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+  }
+
+  .sponsor-image {
+    width: 35vw;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
-.sponsor-contents {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  justify-items: center;
+@media only screen and (min-width: 850px) and (max-width: 992px) {
+  .sponsor-image {
+    width: 50vw;
+    left: 20%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 850px) {
+  .sponsor-image {
+    width: 48vw;
+    left: 15%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .sponsor-container {
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Dealing with 1 item in last row */
+    & > *:last-child:nth-child(2n - 1) {
+      grid-column-end: 4;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sponsor-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sponsor-image {
+    width: 70vw;
+    max-width: 100%;
+    left: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+.call-to-action {
+  display: block;
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 2rem;
+
+  & a {
+    color: var(--color-bitcamp);
+    text-decoration: none;
+  }
 }
 
 .sponsor-rock-shadow-div {
