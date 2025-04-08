@@ -9,7 +9,7 @@
       <CampGamesPage />
       <div class="transition1"></div>
       <TeamPage />
-      <div class="transition2"></div>
+      <Schedule :styles="{ height: '80vh', minHeight: '60rem' }" />
       <FAQSponsorPage />
       <FooterContent />
     </div>
@@ -19,6 +19,7 @@
 <script lang="ts">
 // import { Break } from '#build/components';
 import Navbar from '~/components/Navbar.vue';
+import Schedule from '~/components/Schedule.vue';
 // import Break from '../components/Break.vue';
 // import CampGamesPage from '../components/CampGamesPage.vue';
 // import FAQSponsorPage from '../components/FAQSponsorPage.vue';
@@ -30,7 +31,7 @@ import Navbar from '~/components/Navbar.vue';
 export default {
   name: 'HomePage',
   // components: { Navbar, FooterContent, LandingPage, Break, TracksPage, CampGamesPage, TeamPage, FAQSponsorPage },
-  components: { Navbar },
+  components: { Navbar, Schedule },
 
   head() {
     return {
@@ -183,6 +184,14 @@ export default {
   align-items: center;
 }
 
+.Schedule {
+  background: linear-gradient(
+    to bottom,
+    #31055A 0%,
+    #2B0542 8%,
+    #580000 100%
+  );
+}
 .transition0 {
   background-image: linear-gradient(#1f470c, #5d3007);
   height: 4vw;
@@ -199,13 +208,5 @@ export default {
 .transition1 {
   background-image: linear-gradient(#500001, #34045A);
   height: 4vw;
-}
-
-.transition2 {
-  background-image: linear-gradient(#34045A, #4d0b08);
-  height: 4vw;
-  /* border: 1rem; */
-  /* border-top: 4px solid #34045A;
-  border-bottom: 4px solid #4d0b08; */
 }
 </style>

@@ -31,6 +31,7 @@
     "redux-thunk": "^3.1.0",
     "tslib": "^2.5.1",
     "vue": "latest",
+    "vue-final-modal": "^4.5.5",
     "vue-gtag-next": "^1.14.0",
     "vue-router": "^4.5.0"
   }
