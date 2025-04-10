@@ -141,23 +141,23 @@ function closeModal() {
   margin: 0;
 }
 .event-category {
-  font-size: 1.125rem;
+  font-size: 1.9rem;
   color: rgba(white, 0.9);
   margin-top: -0.25rem;
   margin-bottom: 1rem;
 }
 .event-time {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   color: rgba(white, 0.75);
   margin-bottom: 0.25rem;
 }
 .event-location {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   color: rgba(white, 0.75);
 }
 .event-description {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   white-space: pre-wrap;
 }
 </style>

@@ -542,7 +542,7 @@
         }
       }
       .event-container {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
         min-width: 15rem;
         border-radius: 10px;
         padding: 0.75rem;
