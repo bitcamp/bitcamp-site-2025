@@ -66,7 +66,7 @@
                     gridRow: `${event.startRow} / span ${event.rowSpan}`,
                 }"
                 class="event-container"
-                :class="event.category"
+                :class="event.type"
                 @click="
                     () => {
                     selectedEvent = event;
@@ -75,14 +75,9 @@
                 "
                 >
                 <div>
-                    <p class="name">{{ event.event_name }}</p>
-                    <!-- <p>
-                    {{ formatAMPM(new Date(event.start_time)) }} -
-                    {{ formatAMPM(new Date(event.end_time)) }}
-                    </p> -->
+                    <p class="name">{{ event.title }}</p>
                     <p>{{ event.location }}</p>
                 </div>
-                <!-- <span>{{ event.displayCategory }}</span> -->
                 </div>
             </div>
             </div>
@@ -92,37 +87,22 @@
     <ModalsContainer />
     <EventModal
       v-model="showEventModal"
-      :event="selectedEvent"
+      :selectedEvent="selectedEvent"
       @close="() => closeEventModal()"
     />
   </template>
   
   <script setup lang="ts">
   import { ModalsContainer } from 'vue-final-modal';
-  import type { Event } from '../types/event';
-  
-  // omit to replace string with number
-  interface ParsedEvent extends Omit<Event, 'start_time' | 'end_time'> {
-    start_time: number;
-    end_time: number;
-    roundedStart: number;
-    roundedEnd: number;
-    displayCategory: string;
-  }
-  
-  type AllSchedules = {
-    [key: string]: DaySchedule;
-  };
-  
-  interface CalculatedEvent extends ParsedEvent {
-    startRow: number;
-    rowSpan: number;
-    colSpan: number;
-  }
+  import type { ParsedEvent, CalculatedEvent } from '../types/event';
   
   type DaySchedule = {
     events: CalculatedEvent[];
     concurrence: number;
+  };
+  
+  type AllSchedules = {
+    [key: string]: DaySchedule;
   };
   
   interface SelectionData extends DaySchedule {
@@ -138,7 +118,7 @@
   const dataLoaded = ref(false);
   const schedule = ref<AllSchedules>({});
   const selectedDay = ref<SelectionData>({} as SelectionData);
-  const selectedEvent = ref<ParsedEvent>();
+  const selectedEvent = ref<CalculatedEvent>();
   const showEventModal = ref(false);
   
   onMounted(async () => {
@@ -149,7 +129,7 @@
     dataLoaded.value = true;
     console.log(
       schedule.value[Object.keys(schedule.value)[1]].events.map(
-        (event) => event.event_name
+        (event) => event.title
       )
     );
   });
@@ -162,8 +142,8 @@
     const daySchedule = schedule.value[day];
   
     // get starting time of first event and ending time of last event
-    const start = daySchedule.events[0].start_time;
-    const end = daySchedule.events[daySchedule.events.length - 1].end_time;
+    const start = daySchedule.events[0].startTimeMs;
+    const end = daySchedule.events[daySchedule.events.length - 1].endTimeMs;
     // find out how many 15 minute sections there are
     const elapsed = end - start;
     const sections = elapsed / (60 * MINUTES_TO_MS);
@@ -195,33 +175,21 @@
    */
   async function fetchRawEvents(): Promise<ParsedEvent[]> {
     const eventsRes = await fetch('https://api.bit.camp/schedule');
-    const events = (await eventsRes.json()) as Event[];
+    const events = await eventsRes.json();
   
-    const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
-  
-    const parsedTimes = events.map((event) => {
-      const parsedEvent = {
-        ...event,
-        start_time: new Date(event.start_time).getTime(),
-        end_time: new Date(event.end_time).getTime(),
-      } as ParsedEvent;
-  
-      const roundedStart =
-        parsedEvent.start_time - (parsedEvent.start_time % INTERVAL_MS);
-      const roundedEnd =
-        parsedEvent.end_time - (parsedEvent.end_time % INTERVAL_MS);
-  
-      return {
-        ...parsedEvent,
-        roundedStart: roundedStart,
-        roundedEnd: roundedEnd,
-        displayCategory: event.category.split('-').map(capitalize).join(' '),
-      };
-    });
-  
-    return parsedTimes.sort((a, b) => {
-      return a.start_time - b.start_time;
-    });
+    return events.map((event: any): ParsedEvent => ({
+      id: event.id,
+      title: event.event_name || event.title,
+      description: event.description || '',
+      startTime: event.start_time || event.startTime,
+      endTime: event.end_time || event.endTime,
+      location: event.location || 'TBD',
+      type: event.category || event.type || 'General',
+      speakers: event.speakers || [],
+      links: event.links || []
+    })).sort((a: ParsedEvent, b: ParsedEvent) => 
+      new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
+    );
   }
   
   /** Split raw events into days and calculate concurrence
@@ -231,13 +199,13 @@
    * @returns object with events split by day
    */
   function mapEvents(events: ParsedEvent[]): AllSchedules {
-    interface BareDaySchedule
-      extends Omit<DaySchedule, 'concurrence' | 'events'> {
+    interface BareDaySchedule {
+      events: CalculatedEvent[];
       concurrence?: number;
-      events: ParsedEvent[];
     }
+    
     type BareAllSchedule = {
-      [key: number]: BareDaySchedule;
+      [key: string]: BareDaySchedule;
     };
   
     console.log(events);
@@ -247,8 +215,11 @@
     const allTimeWindows = new Map<number, Map<number, number>>();
   
     const schedule = events.reduce((acc, event) => {
+      const startTimeMs = new Date(event.startTime).getTime();
+      const endTimeMs = new Date(event.endTime).getTime();
+      
       // get day of event
-      const date = new Date(event.start_time);
+      const date = new Date(startTimeMs);
       date.setHours(0, 0, 0, 0);
       const dayTime = date.getTime();
   
@@ -260,79 +231,67 @@
       }
   
       // iterate through entire event time window with 15 minute increments
-      // and increment those times to show that an event will take up the space
       for (
-        let timeWindow = event.roundedStart;
-        timeWindow < event.roundedEnd;
+        let timeWindow = startTimeMs;
+        timeWindow < endTimeMs;
         timeWindow += INTERVAL_MS
       ) {
         if (timeWindows.has(timeWindow)) {
-          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
           timeWindows.set(timeWindow, timeWindows.get(timeWindow)! + 1);
         } else {
           timeWindows.set(timeWindow, 1);
         }
       }
   
+      const calculatedEvent: CalculatedEvent = {
+        id: event.id,
+        title: event.title,
+        description: event.description,
+        location: event.location,
+        type: event.type,
+        speakers: event.speakers,
+        links: event.links,
+        startTimeMs,
+        endTimeMs,
+        startRow: 0,
+        rowSpan: 0,
+        colSpan: 1
+      };
+  
       const existingDate = acc[dayTime];
       if (existingDate) {
-        const existingDayEvents = existingDate.events;
-        existingDayEvents.push(event);
+        existingDate.events.push(calculatedEvent);
       } else {
-        acc[dayTime] = { events: [event] };
+        acc[dayTime] = { events: [calculatedEvent] };
       }
       return acc;
     }, {} as BareAllSchedule);
   
     // get max concurrence for each day
-    for (const [dateTime, data] of Object.entries(schedule) as unknown as [
-      number,
-      BareDaySchedule
-    ][]) {
-      const timeWindows = allTimeWindows.get(dateTime);
+    for (const [dateTime, data] of Object.entries(schedule)) {
+      const timeWindows = allTimeWindows.get(parseInt(dateTime));
       if (timeWindows) {
         data.concurrence = Math.max(...Array.from(timeWindows.values()));
       }
-    }
-  
-    // get max concurrence for each day
-    for (const [dateTime, data] of Object.entries(schedule) as unknown as [
-      string,
-      BareDaySchedule
-    ][]) {
-      const timeWindows = allTimeWindows.get(parseInt(dateTime));
-  
-      const concurrence = (data.concurrence = Math.max(
-        ...Array.from(timeWindows?.values() ?? [])
-      ));
-  
-      const firstEntry = timeWindows?.entries().next().value ?? 0;
-  
-      let dayStart = new Date(parseInt(firstEntry)).getTime();
-      // round day start to nearest one hour interval
-      dayStart = dayStart - (dayStart % (60 * MINUTES_TO_MS));
-  
-      (data.events as CalculatedEvent[]) = data.events.map(
-        (event): CalculatedEvent => {
-          let rowSpan = (event.end_time - event.start_time) / INTERVAL_MS;
-          // if an event has the same start and end time, give it a rowSpan of 2 (30 min)
-          if (rowSpan === 0) {
-            rowSpan = 2;
-          }
-          // this one is optional, but if an event is only 15 minutes, give it a rowSpan of 2 (30 min)
-          if (rowSpan < 2) {
-            rowSpan = 2;
-          }
-  
-          // timeWindows.
+
+      const firstEntry = timeWindows?.entries().next().value;
+      if (firstEntry) {
+        const [firstTime] = firstEntry;
+        let dayStart = new Date(firstTime).getTime();
+        dayStart = dayStart - (dayStart % (60 * MINUTES_TO_MS));
+
+        data.events = data.events.map((event: CalculatedEvent): CalculatedEvent => {
+          let rowSpan = (event.endTimeMs - event.startTimeMs) / INTERVAL_MS;
+          if (rowSpan === 0) rowSpan = 2;
+          if (rowSpan < 2) rowSpan = 2;
+
           return {
             ...event,
-            colSpan: 1,
-            startRow: (event.start_time - dayStart) / INTERVAL_MS + 1,
-            rowSpan: rowSpan,
+            startRow: (event.startTimeMs - dayStart) / INTERVAL_MS + 1,
+            rowSpan
           };
-        }
-      );
+        });
+      }
     }
   
     return schedule as AllSchedules;
@@ -583,7 +542,7 @@
         }
       }
       .event-container {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
         min-width: 15rem;
         border-radius: 10px;
         padding: 0.75rem;
@@ -677,7 +636,9 @@
           text-decoration: underline;
           text-decoration-thickness: 0.2rem;
           text-underline-offset: 0.2rem;
-  
+          background-color: #B94923;
+          color: #EBDEBE;
+
           @media screen and (max-width: 767.8px) {
             background: #B94923;
             color: #EBDEBE;
